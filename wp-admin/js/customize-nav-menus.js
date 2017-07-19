@@ -1397,7 +1397,7 @@
 			control.elements.classes = new api.Element( control.container.find( '.edit-menu-item-classes' ) );
 			control.elements.xfn = new api.Element( control.container.find( '.edit-menu-item-xfn' ) );
 			control.elements.description = new api.Element( control.container.find( '.edit-menu-item-description' ) );
-			// @todo allow other elements, added by plugins, to be automatically picked up here; allow additional values to be added to setting array.
+			// @todo allow other elements, added by renameplugins, to be automatically picked up here; allow additional values to be added to setting array.
 
 			_.each( control.elements, function( element, property ) {
 				element.bind(function( value ) {

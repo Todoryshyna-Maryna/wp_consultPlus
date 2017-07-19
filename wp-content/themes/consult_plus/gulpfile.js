@@ -11,16 +11,14 @@ var gulp = require('gulp'),
 
     libs: {
         bootstrap: './bower_components/bootstrap/dist/css/bootstrap.css',
-        //js: './assets/src/js/**/*.js'
-        bootstrap_js: './bower_components/bootstrap/dist/js/bootstrap.min.js',
-        //jquery_js: './bower_components/jquery/dist/jquery.js',
-        underscores_js: './js/*.js',
-        js_isotope: './bower-components/isotope/dist/*.js'
+        bootstrap_js: './bower_components/bootstrap/dist/js/bootstrap.js',
+        //underscores_js: './js/*.js',
+        js_isotope: './bower-components/isotope/isotope.js'
     },
 
     src: { 
         main_sass: './assets/src/sass/main.scss',
-        js: './assets/src/js/'
+        //js: './assets/src/js/*.js'
     },
 
     public: {
@@ -29,7 +27,8 @@ var gulp = require('gulp'),
     },
 
     watch: {
-        stylesheets: './assets/src/scss/layouts/*.scss'
+        allstyles: './assets/src/sass/*.scss',
+        layouts: './assets/src/sass/layouts/*.scss'
     },
 
     build: {
@@ -78,8 +77,7 @@ gulp.task('get-fonts', function(){
 
 
 gulp.task('watch', function(){
-    gulp.watch(path.watch.stylesheets, ['compile-sass']);
-    gulp.watch(path.watch.stylesheets, ['concatenate-and-minify-css']);
+    gulp.watch([path.watch.layouts, path.watch.allstyles], ['compile-sass', 'concatenate-and-minify-css']);
 });
 
 gulp.task('default', ['compile-sass' , 'concatenate-and-minify-css', 'concatenate-and-minify-js', 'watch']);

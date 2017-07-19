@@ -1731,7 +1731,7 @@ class wpdb {
 		/**
 		 * Filters the database query.
 		 *
-		 * Some queries are made before the plugins have been loaded,
+		 * Some queries are made before the renameplugins have been loaded,
 		 * and thus cannot be filtered with this method.
 		 *
 		 * @since 2.1.0

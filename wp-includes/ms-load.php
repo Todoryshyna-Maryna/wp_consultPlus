@@ -25,7 +25,7 @@ function is_subdomain_install() {
 /**
  * Returns array of network plugin files to be included in global scope.
  *
- * The default directory is wp-content/plugins. To change the default directory
+ * The default directory is wp-content/renameplugins. To change the default directory
  * manually, define `WP_PLUGIN_DIR` and `WP_PLUGIN_URL` in `wp-config.php`.
  *
  * @access private
@@ -212,7 +212,7 @@ function get_site_by_path( $domain, $path, $segments = null ) {
 	/*
 	 * @todo
 	 * caching, etc. Consider alternative optimization routes,
-	 * perhaps as an opt-in for plugins, rather than using the pre_* filter.
+	 * perhaps as an opt-in for renameplugins, rather than using the pre_* filter.
 	 * For example: The segments filter can expand or ignore paths.
 	 * If persistent caching is enabled, we could query the DB for a path <> '/'
 	 * then cache whether we can just always ignore paths.

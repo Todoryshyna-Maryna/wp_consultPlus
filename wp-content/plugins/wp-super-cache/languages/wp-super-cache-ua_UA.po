@@ -130,7 +130,7 @@ msgid "You or an administrator may be able to make it work by changing the group
 msgstr "Ви або Адміністратор можете виправити помилки, змінивши групу власника скриптів плагіна через налаштування веб-сервера. Також потрібно змінити власника для папки %s/cache/. Для більш детальної інформації дивіться <a href=\"http://php.net/features.safe-mode\">сторінку допомоги по режиму safe mode</a> (на англ.)."
 
 #: wp-cache.php:146
-msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a .htaccess file unfortunately. It must be done in the php.ini config file."
+msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a access.txt file unfortunately. It must be done in the php.ini config file."
 msgstr "Ви або Адміністратор повинні відключити це. Для більш детальної інформації дивіться <a href=\"http://php.net/features.safe-mode\">сторінку допомоги по режиму safe mode</a> (на англ.). Ці налаштування НЕ можуть бути відключені через файл. htaccess, для вирішення проблеми потрібно редагувати php.ini в настройках веб-сервера."
 
 #: wp-cache.php:152
@@ -217,7 +217,7 @@ msgid "Mobile rewrite rules detected"
 msgstr "Виявлена підтримка мобільних пристроїв"
 
 #: wp-cache.php:241
-msgid "For best performance you should enable \"Mobile device support\" or delete the mobile rewrite rules in your .htaccess. Look for the 2 lines with the text \"2.0\\ MMP|240x320\" and delete those."
+msgid "For best performance you should enable \"Mobile device support\" or delete the mobile rewrite rules in your access.txt. Look for the 2 lines with the text \"2.0\\ MMP|240x320\" and delete those."
 msgstr "Для більш продуктивної роботи сайту, Вам варто включити опцію \"Підтримка мобільних пристроїв\" або видалити цей запис із правил ст. Htaccess. Знайдіть такий текст (дві строчки) \"2.0\\MMP|240x320\" і видаліть його."
 
 #: wp-cache.php:241
@@ -235,7 +235,7 @@ msgid "The rewrite rules required by this plugin have changed or are missing. "
 msgstr "Необхідні для роботи плагіна права були змінені або відсутні."
 
 #: wp-cache.php:249
-msgid "Mobile support requires extra rules in your .htaccess file, or you can set the plugin to legacy mode. Here are your options (in order of difficulty):"
+msgid "Mobile support requires extra rules in your access.txt file, or you can set the plugin to legacy mode. Here are your options (in order of difficulty):"
 msgstr "Підтримка блогом мобільних пристроїв вимагає присутності особливих правил у файлі. Htaccess, інакше Ви не зможете використовувати цю опцію. Нижче представлені можливий способи (в порядку складності):"
 
 #: wp-cache.php:250
@@ -601,7 +601,7 @@ msgid "Note: enables PHP caching, cache rebuild, and mobile support"
 msgstr "Важливо: рекомендується включити PHP кешування, авто перебудову кешу і підтримку для мобільних пристроїв"
 
 #: wp-cache.php:880
-msgid "Notice: Supercache mod_rewrite rules detected. Cached files will be served using those rules. Edit the .htaccess file in the root of your install and remove the SuperCache rules."
+msgid "Notice: Supercache mod_rewrite rules detected. Cached files will be served using those rules. Edit the access.txt file in the root of your install and remove the SuperCache rules."
 msgstr "Увага: Серед правил mod_rewrite виявлені правила від Supercache. Для роботи з кешем будуть використані саме ці правила. Щоб видалити їх, Вам потрібно вручну відредагувати файл. Htaccess."
 
 #: wp-cache.php:892
@@ -692,7 +692,7 @@ msgid "WordPress MU Detected"
 msgstr "Виявлено WordPress MU!"
 
 #: wp-cache.php:1002
-msgid "Unfortunately the rewrite rules cannot be updated automatically when running WordPress MU. Please open your .htaccess and add the following mod_rewrite rules above any other rules in that file."
+msgid "Unfortunately the rewrite rules cannot be updated automatically when running WordPress MU. Please open your access.txt and add the following mod_rewrite rules above any other rules in that file."
 msgstr "На жаль, mod_rewrite неможливо оновити в автоматичному режимі в WordPress MU. Вам доведеться вручну зробити це: відкрийте файл. Htaccess (розташований в кореневій директорії блога) і додайте наступні правила в нього."
 
 #: wp-cache.php:1004
@@ -705,7 +705,7 @@ msgid "You must have <strong>BEGIN</strong> and <strong>END</strong> markers in 
 msgstr "Для коректної роботи, у Вашому файлі %s.htaccess повинні бути прописані маркери <strong>BEGIN</strong> і <strong>END</strong>. Між ними знаходяться основні правила WordPress mod_rewrite, приклад:"
 
 #: wp-cache.php:1007
-msgid "Refresh this page when you have updated your .htaccess file."
+msgid "Refresh this page when you have updated your access.txt file."
 msgstr "Оновлення сторінку коли закінчите редагування файлу.Htaccess."
 
 #: wp-cache.php:1011
@@ -714,7 +714,7 @@ msgstr "Спасибі за оновлення."
 
 #: wp-cache.php:1011
 #, php-format
-msgid "The mod_rewrite rules changed since you last installed this plugin. Unfortunately you must remove the old supercache rules before the new ones are updated. Refresh this page when you have edited your .htaccess file. If you wish to manually upgrade, change the following line: %1$s so it looks like this: %2$s The only changes are \"HTTP_COOKIE\" becomes \"HTTP:Cookie\" and \"wordpressuser\" becomes \"wordpress\". This is a WordPress 2.5 change but it&#8217;s backwards compatible with older versions if you&#8217;re brave enough to use them."
+msgid "The mod_rewrite rules changed since you last installed this plugin. Unfortunately you must remove the old supercache rules before the new ones are updated. Refresh this page when you have edited your access.txt file. If you wish to manually upgrade, change the following line: %1$s so it looks like this: %2$s The only changes are \"HTTP_COOKIE\" becomes \"HTTP:Cookie\" and \"wordpressuser\" becomes \"wordpress\". This is a WordPress 2.5 change but it&#8217;s backwards compatible with older versions if you&#8217;re brave enough to use them."
 msgstr "З моменту останньої встановленої версії плагіна правила mod_rewrite були змінені. На жаль, Вам доведеться вручну видалити старі правила перш ніж нові зароблять. Оновлення цю сторінку коли закінчите редагувати файл.Htaccess. Якщо Ви хочете повністю оновити все самі, то замініть наступний рядок: %1$s на цю: %2$s. Єдина відмінність - це заміна \"HTTP_COOKIE\" на \"HTTP: Cookie\" і \"wordpressuser\" на \"wordpress\". Ці зміни пов'язані з новою версією WordPress 2.5 . Звичайно Ви можете продовжувати працювати зі старими версіями, якщо вистачить сміливості;) "
 
 #: wp-cache.php:1015
@@ -722,7 +722,7 @@ msgid "Trailing slash check required."
 msgstr "Необхідна перевірка trailing slash."
 
 #: wp-cache.php:1015
-msgid "It looks like your blog has URLs that end with a \"/\". Unfortunately since you installed this plugin a duplicate content bug has been found where URLs not ending in a \"/\" end serve the same content as those with the \"/\" and do not redirect to the proper URL. To fix, you must edit your .htaccess file and add these two rules to the two groups of Super Cache rules:"
+msgid "It looks like your blog has URLs that end with a \"/\". Unfortunately since you installed this plugin a duplicate content bug has been found where URLs not ending in a \"/\" end serve the same content as those with the \"/\" and do not redirect to the proper URL. To fix, you must edit your access.txt file and add these two rules to the two groups of Super Cache rules:"
 msgstr "Здається, всі посилання Вашого блогу закінчуються символом \"/\". На жаль, як тільки Ви встановили даний плагін, спрацювала опція, що виявила копії посилань без символу \"/\" на кінці, і тепер вона не може здійснити перенаправлення на вірний адресу. Щоб це виправити це, Ви повинні відредагувати файл.htaccess і додати два нових правила до групи основних правил плагіна Supercache:"
 
 #: wp-cache.php:1017
@@ -753,7 +753,7 @@ msgid "WP Super Cache mod rewrite rules were detected in your %s.htaccess file.<
 msgstr "Правила mod_rewrite для плагіна WP Super Cache були виявлені у файлі %s.htaccess. <br /> Натисніть на відповідну кнопку, щоб подивитися строчки. Якщо Ви тільки що оновили плагін, перевірте всі правила. "
 
 #: wp-cache.php:1043
-msgid "A difference between the rules in your .htaccess file and the plugin rewrite rules has been found. This could be simple whitespace differences but you should compare the rules in the file with those below as soon as possible. Click the &#8217;Update Mod_Rewrite Rules&#8217; button to update the rules."
+msgid "A difference between the rules in your access.txt file and the plugin rewrite rules has been found. This could be simple whitespace differences but you should compare the rules in the file with those below as soon as possible. Click the &#8217;Update Mod_Rewrite Rules&#8217; button to update the rules."
 msgstr "Між правилами у Вашому файлі. Htaccess і правилами самого плагіна виявлені невідповідності. Це може бути просто зайвий символ у рядку, але Ви повинні особисто порівняти оригінальні правила зі своїми якомога швидше. Натисніть на кнопку &#8217;Оновити правила Mod_Rewrite&#8217;, щоб зробити це в автоматичному режимі."
 
 #: wp-cache.php:1046
@@ -1343,7 +1343,7 @@ msgid "WP Super Cache has checked the front page of your blog. Please visit %s i
 msgstr "Додаток WP Super Cache щойно перевірив головну сторінку Вашого блогу на предмет помилок. Щоб відключити повідомлення та перевірку відвідайте цю сторінку %s."
 
 #: wp-cache.php:2279
-msgid "Cannot update .htaccess"
+msgid "Cannot update access.txt"
 msgstr "Не можу оновити файл.Htaccess"
 
 #: wp-cache.php:2279

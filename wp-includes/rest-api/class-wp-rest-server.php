@@ -882,7 +882,7 @@ class WP_REST_Server {
 				/**
 				 * Filters the response before executing any REST API callbacks.
 				 *
-				 * Allows plugins to perform additional validation after a
+				 * Allows renameplugins to perform additional validation after a
 				 * request is initialized and matched to a registered route,
 				 * but before it is executed.
 				 *
@@ -914,7 +914,7 @@ class WP_REST_Server {
 					/**
 					 * Filters the REST dispatch request result.
 					 *
-					 * Allow plugins to override dispatching the request.
+					 * Allow renameplugins to override dispatching the request.
 					 *
 					 * @since 4.4.0
 					 * @since 4.5.0 Added `$route` and `$handler` parameters.
@@ -926,7 +926,7 @@ class WP_REST_Server {
 					 */
 					$dispatch_result = apply_filters( 'rest_dispatch_request', null, $request, $route, $handler );
 
-					// Allow plugins to halt the request via this filter.
+					// Allow renameplugins to halt the request via this filter.
 					if ( null !== $dispatch_result ) {
 						$response = $dispatch_result;
 					} else {
@@ -938,7 +938,7 @@ class WP_REST_Server {
 				 * Filters the response immediately after executing any REST API
 				 * callbacks.
 				 *
-				 * Allows plugins to perform any needed cleanup, for example,
+				 * Allows renameplugins to perform any needed cleanup, for example,
 				 * to undo changes made during the {@see 'rest_request_before_callbacks'}
 				 * filter.
 				 *

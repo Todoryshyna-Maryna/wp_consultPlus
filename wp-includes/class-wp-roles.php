@@ -129,7 +129,7 @@ class WP_Roles {
 		}
 
 		/**
-		 * After the roles have been initialized, allow plugins to add their own roles.
+		 * After the roles have been initialized, allow renameplugins to add their own roles.
 		 *
 		 * @since 4.7.0
 		 *

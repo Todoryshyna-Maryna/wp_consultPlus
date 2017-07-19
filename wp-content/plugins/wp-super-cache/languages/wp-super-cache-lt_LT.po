@@ -130,8 +130,8 @@ msgid "You or an administrator may be able to make it work by changing the group
 msgstr "Jūs arba administratorius galite padaryti jį dirbantį, keisdami įskiepio skriptų grupės savininką, kad atitiktų žiniatinklio serverio vartotoją. %s/cache/ katalogas  taip pat turi būti pakeistas. Žiūrėti <a href=\"http://php.net/features.safe-mode\">saugaus rėžimo puslapį</a> dėl papildomos informacijos."
 
 #: wp-cache.php:146
-msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a .htaccess file unfortunately. It must be done in the php.ini config file."
-msgstr "Jūs arba administratorius turite atjungti tai. Žiūrėkite <a href=\"http://php.net/features.safe-mode\">saugaus rėžimo puslapį</a> dėl papildomos informacijos. Dėja, tai negali būti atjungta .htaccess faile. Tam reikia papildyti php.ini konfiguracijos failą."
+msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a access.txt file unfortunately. It must be done in the php.ini config file."
+msgstr "Jūs arba administratorius turite atjungti tai. Žiūrėkite <a href=\"http://php.net/features.safe-mode\">saugaus rėžimo puslapį</a> dėl papildomos informacijos. Dėja, tai negali būti atjungta access.txt faile. Tam reikia papildyti php.ini konfiguracijos failą."
 
 #: wp-cache.php:152
 msgid "Permlink Structure Error"
@@ -217,8 +217,8 @@ msgid "Mobile rewrite rules detected"
 msgstr "Mobiliai perrašytų taisyklių pažeidimai"
 
 #: wp-cache.php:241
-msgid "For best performance you should enable \"Mobile device support\" or delete the mobile rewrite rules in your .htaccess. Look for the 2 lines with the text \"2.0\\ MMP|240x320\" and delete those."
-msgstr "Geriausiu atvėju turėtumėte įjungti \"Mobiliojo prietaiso parama\" arba ištrinti .htaccess mobiliojo perrašymo taisykles. Ieškoti 2 eilutę su tekstu \"2.0\\MMP|240x320\" ir ištrinti."
+msgid "For best performance you should enable \"Mobile device support\" or delete the mobile rewrite rules in your access.txt. Look for the 2 lines with the text \"2.0\\ MMP|240x320\" and delete those."
+msgstr "Geriausiu atvėju turėtumėte įjungti \"Mobiliojo prietaiso parama\" arba ištrinti access.txt mobiliojo perrašymo taisykles. Ieškoti 2 eilutę su tekstu \"2.0\\MMP|240x320\" ir ištrinti."
 
 #: wp-cache.php:241
 msgid "This will have no affect on ordinary users but mobile users will see uncached pages."
@@ -235,8 +235,8 @@ msgid "The rewrite rules required by this plugin have changed or are missing. "
 msgstr "Šis įskiepis reikalauja perrašomų taisyklių pasikeitimą arba jų nėra."
 
 #: wp-cache.php:249
-msgid "Mobile support requires extra rules in your .htaccess file, or you can set the plugin to legacy mode. Here are your options (in order of difficulty):"
-msgstr "Mobilusis palaikymas reikalauja papildomų taisyklių jūsų .htaccess faile arba galite nustatyti įjungtu režimą. Čia yra jūsų parinktys (sudėtingumo tvarka):"
+msgid "Mobile support requires extra rules in your access.txt file, or you can set the plugin to legacy mode. Here are your options (in order of difficulty):"
+msgstr "Mobilusis palaikymas reikalauja papildomų taisyklių jūsų access.txt faile arba galite nustatyti įjungtu režimą. Čia yra jūsų parinktys (sudėtingumo tvarka):"
 
 #: wp-cache.php:250
 msgid "Set the plugin to legacy mode and enable mobile support."
@@ -601,8 +601,8 @@ msgid "Note: enables PHP caching, cache rebuild, and mobile support"
 msgstr "Pastaba: leidžia įjungti PHP talpinimą ir judriojo ryšio palaikymą"
 
 #: wp-cache.php:880
-msgid "Notice: Supercache mod_rewrite rules detected. Cached files will be served using those rules. Edit the .htaccess file in the root of your install and remove the SuperCache rules."
-msgstr "Pastaba: Supercache mod_rewrite taisyklių aptikimas. Talpykliniai failai bus aptarnaujami naudojant šias taisykles. Redaguoti .htaccess failą jūsų pirminėje direktorijoje ir pašalinti SuperCache taisykles."
+msgid "Notice: Supercache mod_rewrite rules detected. Cached files will be served using those rules. Edit the access.txt file in the root of your install and remove the SuperCache rules."
+msgstr "Pastaba: Supercache mod_rewrite taisyklių aptikimas. Talpykliniai failai bus aptarnaujami naudojant šias taisykles. Redaguoti access.txt failą jūsų pirminėje direktorijoje ir pašalinti SuperCache taisykles."
 
 #: wp-cache.php:892
 msgid "Make WordPress Faster"
@@ -692,8 +692,8 @@ msgid "WordPress MU Detected"
 msgstr "WordPress MU aptiktas"
 
 #: wp-cache.php:1002
-msgid "Unfortunately the rewrite rules cannot be updated automatically when running WordPress MU. Please open your .htaccess and add the following mod_rewrite rules above any other rules in that file."
-msgstr "Dėja, mod_rewrite negalima atnaujinti auto režimu WordPress MU. Jums teks rankiniu būdu tai atlikti: atidarykite failą .htaccess ir įterpkite sekančią taisyklę."
+msgid "Unfortunately the rewrite rules cannot be updated automatically when running WordPress MU. Please open your access.txt and add the following mod_rewrite rules above any other rules in that file."
+msgstr "Dėja, mod_rewrite negalima atnaujinti auto režimu WordPress MU. Jums teks rankiniu būdu tai atlikti: atidarykite failą access.txt ir įterpkite sekančią taisyklę."
 
 #: wp-cache.php:1004
 msgid "Mod Rewrite rules cannot be updated!"
@@ -705,8 +705,8 @@ msgid "You must have <strong>BEGIN</strong> and <strong>END</strong> markers in 
 msgstr "Korektiškam darbui jūsų %s.htaccess faile turi būti įrašyti <strong>BEGIN</strong> ir <strong>END</strong>. Tarp jų randasi pagrindinės WordPress mod_rewrite taisyklės, pvz.:"
 
 #: wp-cache.php:1007
-msgid "Refresh this page when you have updated your .htaccess file."
-msgstr "Atnaujinkite puslapį po to, kai atredaguosite .htaccess failą."
+msgid "Refresh this page when you have updated your access.txt file."
+msgstr "Atnaujinkite puslapį po to, kai atredaguosite access.txt failą."
 
 #: wp-cache.php:1011
 msgid "Thank you for upgrading."
@@ -714,16 +714,16 @@ msgstr "Dėkojame už modernizaciją."
 
 #: wp-cache.php:1011
 #, php-format
-msgid "The mod_rewrite rules changed since you last installed this plugin. Unfortunately you must remove the old supercache rules before the new ones are updated. Refresh this page when you have edited your .htaccess file. If you wish to manually upgrade, change the following line: %1$s so it looks like this: %2$s The only changes are \"HTTP_COOKIE\" becomes \"HTTP:Cookie\" and \"wordpressuser\" becomes \"wordpress\". This is a WordPress 2.5 change but it&#8217;s backwards compatible with older versions if you&#8217;re brave enough to use them."
-msgstr "Po paskutinio įskiepio atnaujinimo mod_rewrite taisyklės buvo pakeistos. Dėja, jums teks rankiniu būdu pašalinti senas taisykles. Atnaujinkite puslapį, kai baigsite redagavimą .htaccess failo. Jeigu norite atnaujinti viską patys, tuomet pakeiskite sekančią eilutę: %1$s į šią: %2$s . Vienintelis skirtumas - tai pakeitimas \"HTTP_COOKIE\" į \"HTTP:Cookie\" ir \"wordpressuser\" į \"wordpress\". Šie pakeitimai susiję su nauja WordPress 2.5 versija. "
+msgid "The mod_rewrite rules changed since you last installed this plugin. Unfortunately you must remove the old supercache rules before the new ones are updated. Refresh this page when you have edited your access.txt file. If you wish to manually upgrade, change the following line: %1$s so it looks like this: %2$s The only changes are \"HTTP_COOKIE\" becomes \"HTTP:Cookie\" and \"wordpressuser\" becomes \"wordpress\". This is a WordPress 2.5 change but it&#8217;s backwards compatible with older versions if you&#8217;re brave enough to use them."
+msgstr "Po paskutinio įskiepio atnaujinimo mod_rewrite taisyklės buvo pakeistos. Dėja, jums teks rankiniu būdu pašalinti senas taisykles. Atnaujinkite puslapį, kai baigsite redagavimą access.txt failo. Jeigu norite atnaujinti viską patys, tuomet pakeiskite sekančią eilutę: %1$s į šią: %2$s . Vienintelis skirtumas - tai pakeitimas \"HTTP_COOKIE\" į \"HTTP:Cookie\" ir \"wordpressuser\" į \"wordpress\". Šie pakeitimai susiję su nauja WordPress 2.5 versija. "
 
 #: wp-cache.php:1015
 msgid "Trailing slash check required."
 msgstr "Reikalinga trailing slash patikra."
 
 #: wp-cache.php:1015
-msgid "It looks like your blog has URLs that end with a \"/\". Unfortunately since you installed this plugin a duplicate content bug has been found where URLs not ending in a \"/\" end serve the same content as those with the \"/\" and do not redirect to the proper URL. To fix, you must edit your .htaccess file and add these two rules to the two groups of Super Cache rules:"
-msgstr "Rodos, visos jūsų blogo nuorodos baigiasi simboliu \"/\". Dėja, kai tik jūs įdiegėte įskiepį, suveikė funkcija, radusi nuorodų kopijas be \"/\" gale, ir dabar negali perkelti teisingu adresu. Problemą pašalinti padėsfailo .htaccess redagavimas ir 2 naujų taisyklių įterpimas prie pagrindinių Supercache įskiepio taisyklių:"
+msgid "It looks like your blog has URLs that end with a \"/\". Unfortunately since you installed this plugin a duplicate content bug has been found where URLs not ending in a \"/\" end serve the same content as those with the \"/\" and do not redirect to the proper URL. To fix, you must edit your access.txt file and add these two rules to the two groups of Super Cache rules:"
+msgstr "Rodos, visos jūsų blogo nuorodos baigiasi simboliu \"/\". Dėja, kai tik jūs įdiegėte įskiepį, suveikė funkcija, radusi nuorodų kopijas be \"/\" gale, ir dabar negali perkelti teisingu adresu. Problemą pašalinti padėsfailo access.txt redagavimas ir 2 naujų taisyklių įterpimas prie pagrindinių Supercache įskiepio taisyklių:"
 
 #: wp-cache.php:1017
 msgid "You can see where the rules go and examine the complete rules by clicking the \"View mod_rewrite rules\" link below."
@@ -753,8 +753,8 @@ msgid "WP Super Cache mod rewrite rules were detected in your %s.htaccess file.<
 msgstr "Taisyklės mod_rewrite įskiepiui WP Super Cache buvo aptiktos faile %s.htaccess.<br /> Paspauskite mygtuką, kad peržiūrėti eilutes. Jeigu jūs ką tik atnaujinote įskiepį, patikrinkite visas taisykles."
 
 #: wp-cache.php:1043
-msgid "A difference between the rules in your .htaccess file and the plugin rewrite rules has been found. This could be simple whitespace differences but you should compare the rules in the file with those below as soon as possible. Click the &#8217;Update Mod_Rewrite Rules&#8217; button to update the rules."
-msgstr "Tarp taisyklių jūsų faile .htaccess ir taisyklių pačio įskiepio rasti nesutapimai. Tai gali būti papildomas simbolis eilutėje, bet jūs patys turite sulyginti originalias taisykles su savo kuo greičiau. Paspauskite mygtuką &#8217;Atnaujinti Mod_Rewrite taisykles&#8217;, kad padaryti tai ato režimu."
+msgid "A difference between the rules in your access.txt file and the plugin rewrite rules has been found. This could be simple whitespace differences but you should compare the rules in the file with those below as soon as possible. Click the &#8217;Update Mod_Rewrite Rules&#8217; button to update the rules."
+msgstr "Tarp taisyklių jūsų faile access.txt ir taisyklių pačio įskiepio rasti nesutapimai. Tai gali būti papildomas simbolis eilutėje, bet jūs patys turite sulyginti originalias taisykles su savo kuo greičiau. Paspauskite mygtuką &#8217;Atnaujinti Mod_Rewrite taisykles&#8217;, kad padaryti tai ato režimu."
 
 #: wp-cache.php:1046
 msgid "View Mod_Rewrite Rules"
@@ -1343,8 +1343,8 @@ msgid "WP Super Cache has checked the front page of your blog. Please visit %s i
 msgstr "WP Super Cache patikrino jūsų pradinį dienoraščio puslapį. Prašome aplankyti %s, jeigu norite atjungti tai."
 
 #: wp-cache.php:2279
-msgid "Cannot update .htaccess"
-msgstr "Negali atnaujinti .htaccess"
+msgid "Cannot update access.txt"
+msgstr "Negali atnaujinti access.txt"
 
 #: wp-cache.php:2279
 #, php-format

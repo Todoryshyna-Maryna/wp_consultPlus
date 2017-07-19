@@ -10,7 +10,7 @@
 /**
  * Core class used to implement a rewrite component API.
  *
- * The WordPress Rewrite class writes the rewrite module rules to the .htaccess
+ * The WordPress Rewrite class writes the rewrite module rules to the access.txt
  * file. It also handles parsing the request to get the correct setup for the
  * WordPress Query class.
  *
@@ -229,7 +229,7 @@ class WP_Rewrite {
 	/**
 	 * Rules that don't redirect to WordPress' index.php.
 	 *
-	 * These rules are written to the mod_rewrite portion of the .htaccess,
+	 * These rules are written to the mod_rewrite portion of the access.txt,
 	 * and are added by add_external_rule().
 	 *
 	 * @since 2.1.0
@@ -257,10 +257,10 @@ class WP_Rewrite {
 	var $endpoints;
 
 	/**
-	 * Whether to write every mod_rewrite rule for WordPress into the .htaccess file.
+	 * Whether to write every mod_rewrite rule for WordPress into the access.txt file.
 	 *
 	 * This is off by default, turning it on might print a lot of rewrite rules
-	 * to the .htaccess file.
+	 * to the access.txt file.
 	 *
 	 * @since 2.0.0
 	 * @access public
@@ -1486,12 +1486,12 @@ class WP_Rewrite {
 	}
 
 	/**
-	 * Retrieves mod_rewrite-formatted rewrite rules to write to .htaccess.
+	 * Retrieves mod_rewrite-formatted rewrite rules to write to access.txt.
 	 *
-	 * Does not actually write to the .htaccess file, but creates the rules for
+	 * Does not actually write to the access.txt file, but creates the rules for
 	 * the process that will.
 	 *
-	 * Will add the non_wp_rules property rules to the .htaccess file before
+	 * Will add the non_wp_rules property rules to the access.txt file before
 	 * the WordPress rewrite rules one.
 	 *
 	 * @since 1.5.0
@@ -1554,21 +1554,21 @@ class WP_Rewrite {
 		$rules .= "</IfModule>\n";
 
 		/**
-		 * Filters the list of rewrite rules formatted for output to an .htaccess file.
+		 * Filters the list of rewrite rules formatted for output to an access.txt file.
 		 *
 		 * @since 1.5.0
 		 *
-		 * @param string $rules mod_rewrite Rewrite rules formatted for .htaccess.
+		 * @param string $rules mod_rewrite Rewrite rules formatted for access.txt.
 		 */
 		$rules = apply_filters( 'mod_rewrite_rules', $rules );
 
 		/**
-		 * Filters the list of rewrite rules formatted for output to an .htaccess file.
+		 * Filters the list of rewrite rules formatted for output to an access.txt file.
 		 *
 		 * @since 1.5.0
 		 * @deprecated 1.5.0 Use the mod_rewrite_rules filter instead.
 		 *
-		 * @param string $rules mod_rewrite Rewrite rules formatted for .htaccess.
+		 * @param string $rules mod_rewrite Rewrite rules formatted for access.txt.
 		 */
 		return apply_filters( 'rewrite_rules', $rules );
 	}
@@ -1797,7 +1797,7 @@ class WP_Rewrite {
 	 *
 	 * @staticvar bool $do_hard_later
 	 *
-	 * @param bool $hard Whether to update .htaccess (hard flush) or just update rewrite_rules option (soft flush). Default is true (hard).
+	 * @param bool $hard Whether to update access.txt (hard flush) or just update rewrite_rules option (soft flush). Default is true (hard).
 	 */
 	public function flush_rules( $hard = true ) {
 		static $do_hard_later = null;
@@ -1820,7 +1820,7 @@ class WP_Rewrite {
 		/**
 		 * Filters whether a "hard" rewrite rule flush should be performed when requested.
 		 *
-		 * A "hard" flush updates .htaccess (Apache) or web.config (IIS).
+		 * A "hard" flush updates access.txt (Apache) or web.config (IIS).
 		 *
 		 * @since 3.7.0
 		 *

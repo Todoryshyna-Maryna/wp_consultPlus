@@ -255,13 +255,13 @@ wp_plugin_directory_constants();
 
 $GLOBALS['wp_plugin_paths'] = array();
 
-// Load must-use plugins.
+// Load must-use renameplugins.
 foreach ( wp_get_mu_plugins() as $mu_plugin ) {
 	include_once( $mu_plugin );
 }
 unset( $mu_plugin );
 
-// Load network activated plugins.
+// Load network activated renameplugins.
 if ( is_multisite() ) {
 	foreach ( wp_get_active_network_plugins() as $network_plugin ) {
 		wp_register_plugin_realpath( $network_plugin );
@@ -271,7 +271,7 @@ if ( is_multisite() ) {
 }
 
 /**
- * Fires once all must-use and network-activated plugins have loaded.
+ * Fires once all must-use and network-activated renameplugins have loaded.
  *
  * @since 2.8.0
  */
@@ -297,7 +297,7 @@ create_initial_post_types();
 // Register the default theme directory root
 register_theme_directory( get_theme_root() );
 
-// Load active plugins.
+// Load active renameplugins.
 foreach ( wp_get_active_and_valid_plugins() as $plugin ) {
 	wp_register_plugin_realpath( $plugin );
 	include_once( $plugin );
@@ -316,7 +316,7 @@ if ( WP_CACHE && function_exists( 'wp_cache_postload' ) )
 	wp_cache_postload();
 
 /**
- * Fires once activated plugins have loaded.
+ * Fires once activated renameplugins have loaded.
  *
  * Pluggable functions are also available at this point in the loading order.
  *
@@ -438,7 +438,7 @@ $GLOBALS['wp']->init();
  * Fires after WordPress has finished loading but before any headers are sent.
  *
  * Most of WP is loaded at this stage, and the user is authenticated. WP continues
- * to load on the {@see 'init'} hook that follows (e.g. widgets), and many plugins instantiate
+ * to load on the {@see 'init'} hook that follows (e.g. widgets), and many renameplugins instantiate
  * themselves on it for all sorts of reasons (e.g. they need a user, a taxonomy, etc.).
  *
  * If you wish to plug an action once WP is loaded, use the {@see 'wp_loaded'} hook below.
@@ -457,7 +457,7 @@ if ( is_multisite() ) {
 }
 
 /**
- * This hook is fired once WP, all plugins, and the theme are fully loaded and instantiated.
+ * This hook is fired once WP, all renameplugins, and the theme are fully loaded and instantiated.
  *
  * Ajax requests should use wp-admin/admin-ajax.php. admin-ajax.php can handle requests for
  * users not logged in.

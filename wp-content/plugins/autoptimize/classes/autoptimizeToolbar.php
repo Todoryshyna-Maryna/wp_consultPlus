@@ -8,7 +8,7 @@ class autoptimizeToolbar
         if( ! autoptimizeCache::cacheavail() ) {
             return;
         }
-        // Load admin toolbar feature once WordPress, all plugins, and the theme are fully loaded and instantiated.
+        // Load admin toolbar feature once WordPress, all renameplugins, and the theme are fully loaded and instantiated.
         add_action( 'wp_loaded', array( $this, 'load_toolbar' ) );
     }
 

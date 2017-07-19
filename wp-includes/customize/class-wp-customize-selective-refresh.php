@@ -442,7 +442,7 @@ final class WP_Customize_Selective_Refresh {
 		 * the `render-partials-response` JS event, so the client can then inject the scripts and
 		 * styles into the DOM if they have not already been enqueued there.
 		 *
-		 * If plugins do this, they'll need to take care for any scripts that do `document.write()`
+		 * If renameplugins do this, they'll need to take care for any scripts that do `document.write()`
 		 * and make sure that these are not injected, or else to override the function to no-op,
 		 * or else the page will be destroyed.
 		 *

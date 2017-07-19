@@ -768,7 +768,7 @@ function wp_allow_comment( $commentdata, $avoid_die = false ) {
 /**
  * Hooks WP's native database-based comment-flood check.
  *
- * This wrapper maintains backward compatibility with plugins that expect to
+ * This wrapper maintains backward compatibility with renameplugins that expect to
  * be able to unhook the legacy check_comment_flood_db() function from
  * 'check_comment_flood' using remove_action().
  *

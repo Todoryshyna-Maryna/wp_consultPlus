@@ -170,7 +170,7 @@ function wp_cache_serve_cache_file() {
 			return true;
 		}
 	} else {
-		// last chance, check if a supercache file exists. Just in case .htaccess rules don't work on this host
+		// last chance, check if a supercache file exists. Just in case access.txt rules don't work on this host
 		$filename = supercache_filename();
 		$file = get_current_url_supercache_dir() . $filename;
 		if ( false == file_exists( $file ) ) {
@@ -387,7 +387,7 @@ function wp_cache_get_cookies_values() {
 	}
 	reset($_COOKIE);
 
-	// If you use this hook, make sure you update your .htaccess rules with the same conditions
+	// If you use this hook, make sure you update your access.txt rules with the same conditions
 	$string = do_cacheaction( 'wp_cache_get_cookies_values', $string );
 	if ( $string != '' )
 		$string = md5( $string );

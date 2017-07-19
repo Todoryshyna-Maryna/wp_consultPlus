@@ -673,7 +673,7 @@ class WP_Upgrader {
 		 *         @type string $action               Type of action. Default 'update'.
 		 *         @type string $type                 Type of update process. Accepts 'plugin', 'theme', or 'core'.
 		 *         @type bool   $bulk                 Whether the update process is a bulk update. Default true.
-		 *         @type string $plugin               The base plugin path from the plugins directory.
+		 *         @type string $plugin               The base plugin path from the renameplugins directory.
 		 *         @type string $theme                The stylesheet or template name of the theme.
 		 *         @type string $language_update_type The language pack update type. Accepts 'plugin', 'theme',
 		 *                                            or 'core'.
@@ -775,7 +775,7 @@ class WP_Upgrader {
 			 *     @type string $action       Type of action. Default 'update'.
 			 *     @type string $type         Type of update process. Accepts 'plugin', 'theme', 'translation', or 'core'.
 			 *     @type bool   $bulk         Whether the update process is a bulk update. Default true.
-			 *     @type array  $plugins      Array of the basename paths of the plugins' main files.
+			 *     @type array  $plugins      Array of the basename paths of the renameplugins' main files.
 			 *     @type array  $themes       The theme slugs.
 			 *     @type array  $translations {
 			 *         Array of translations update data.

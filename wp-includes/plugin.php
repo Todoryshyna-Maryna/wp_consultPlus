@@ -42,7 +42,7 @@ if ( ! isset( $wp_current_filter ) )
 /**
  * Hook a function or method to a specific filter action.
  *
- * WordPress offers filter hooks to allow plugins to modify
+ * WordPress offers filter hooks to allow renameplugins to modify
  * various types of internal data at runtime.
  *
  * A plugin can modify data by binding a callback to a filter hook. When the filter
@@ -623,7 +623,7 @@ function do_action_deprecated( $tag, $args, $version, $replacement = false, $mes
 }
 
 //
-// Functions for handling plugins.
+// Functions for handling renameplugins.
 //
 
 /**
@@ -654,7 +654,7 @@ function plugin_basename( $file ) {
 	$plugin_dir = wp_normalize_path( WP_PLUGIN_DIR );
 	$mu_plugin_dir = wp_normalize_path( WPMU_PLUGIN_DIR );
 
-	$file = preg_replace('#^' . preg_quote($plugin_dir, '#') . '/|^' . preg_quote($mu_plugin_dir, '#') . '/#','',$file); // get relative path from plugins dir
+	$file = preg_replace('#^' . preg_quote($plugin_dir, '#') . '/|^' . preg_quote($mu_plugin_dir, '#') . '/#','',$file); // get relative path from renameplugins dir
 	$file = trim($file, '/');
 	return $file;
 }

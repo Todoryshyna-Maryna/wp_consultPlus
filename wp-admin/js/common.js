@@ -380,7 +380,7 @@ $document.ready( function() {
 	}
 
 	/*
-	 * The `.below-h2` class is here just for backward compatibility with plugins
+	 * The `.below-h2` class is here just for backward compatibility with renameplugins
 	 * that are (incorrectly) using it. Do not use. Use `.inline` instead. See #34570.
 	 * If '.wp-header-end' is found, append the notices after it otherwise
 	 * after the first h1 or h2 heading found within the main content.

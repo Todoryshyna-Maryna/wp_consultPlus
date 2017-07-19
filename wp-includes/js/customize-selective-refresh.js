@@ -762,7 +762,7 @@ wp.customize.selectiveRefresh = ( function( $, api ) {
 					 * Announce the data returned from a request to render partials.
 					 *
 					 * The data is filtered on the server via customize_render_partials_response
-					 * so plugins can inject data from the server to be utilized
+					 * so renameplugins can inject data from the server to be utilized
 					 * on the client via this event. Plugins may use this filter
 					 * to communicate script and style dependencies that need to get
 					 * injected into the page to support the rendered partials.

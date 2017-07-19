@@ -854,7 +854,7 @@ final class WP_Screen {
 		/**
 		 * Filters the array of screen layout columns.
 		 *
-		 * This hook provides back-compat for plugins using the back-compat
+		 * This hook provides back-compat for renameplugins using the back-compat
 		 * Filters instead of add_screen_option().
 		 *
 		 * @since 2.8.0

@@ -23,7 +23,7 @@
 define('DB_NAME', 'wp_consult_plus');
 
 /** MySQL database username */
-define('DB_USER', 'wpocnsultplus');
+define('DB_USER', 'root');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'asd123');
@@ -37,9 +37,9 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-define( 'WP_CACHE', true );
+define( 'WP_CACHE', false );
 
-define('WPCACHEHOME', '/var/www/html/consult_plus/wp-content/plugins/wp-super-cache/');
+define('WPCACHEHOME', '/var/www/html/wp_consultPlus/wp-content/plugins/wp-super-cache/');
 
 /**#@+
  * Authentication Unique Keys and Salts.

@@ -389,7 +389,7 @@ input[type=url]:invalid {color: red; border-color:red;} .form-table th{font-weig
         }
         ?>
         <li><?php _e("Need help? <a href='https://wordpress.org/plugins/autoptimize/faq/'>Check out the FAQ here</a>.","autoptimize"); ?></li>
-        <li><?php _e("Happy with Autoptimize?","autoptimize"); ?><br /><a href="<?php echo network_admin_url(); ?>plugin-install.php?tab=search&type=author&s=optimizingmatters"><?php _e("Try my other plugins!","autoptimize"); ?></a></li>
+        <li><?php _e("Happy with Autoptimize?","autoptimize"); ?><br /><a href="<?php echo network_admin_url(); ?>plugin-install.php?tab=search&type=author&s=optimizingmatters"><?php _e("Try my other renameplugins!","autoptimize"); ?></a></li>
         </ul>
     </div>
     <div style="margin-left:10px;margin-top:-5px;">

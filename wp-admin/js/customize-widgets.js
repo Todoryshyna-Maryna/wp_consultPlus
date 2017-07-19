@@ -554,7 +554,7 @@
 			control.container.find( '.widget-content:first' ).append( widgetContent );
 
 			/*
-			 * Trigger widget-added event so that plugins can attach any event
+			 * Trigger widget-added event so that renameplugins can attach any event
 			 * listeners and dynamic UI elements.
 			 */
 			$( document ).trigger( 'widget-added', [ control.container.find( '.widget:first' ) ] );

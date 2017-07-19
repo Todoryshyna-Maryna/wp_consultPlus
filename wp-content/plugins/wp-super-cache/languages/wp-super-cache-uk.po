@@ -94,8 +94,8 @@ msgid "You or an administrator may be able to make it work by changing the group
 msgstr "Ви або Адміністратор можете виправити роботу, змінивши власника групи скриптів плаґіну. Необхідно також змінити власника групи папки %s/cache/. Додаткові деталі Ви можете переглянути на <a href=\"http://php.net/features.safe-mode\">сторінці документації безпечного режиму</a>."
 
 #: wp-cache.php:178
-msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a .htaccess file unfortunately. It must be done in the php.ini config file."
-msgstr "Ви або Адміністратор повинні вимкнути це. Додаткові деталі Ви можете переглянути на <a href=\"http://php.net/features.safe-mode\">сторінці документації безпечного режиму</a>. На жаль, це не можна вимкнути у фалі .htaccess. Це можна поправити у файлі налаштувань php.ini."
+msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a access.txt file unfortunately. It must be done in the php.ini config file."
+msgstr "Ви або Адміністратор повинні вимкнути це. Додаткові деталі Ви можете переглянути на <a href=\"http://php.net/features.safe-mode\">сторінці документації безпечного режиму</a>. На жаль, це не можна вимкнути у фалі access.txt. Це можна поправити у файлі налаштувань php.ini."
 
 #: wp-cache.php:189
 msgid "Configuration file changed, some values might be wrong. Load the page again from the \"Settings\" menu to reset them."
@@ -233,16 +233,16 @@ msgid "Mobile rewrite rules detected"
 msgstr "Знайдено правила rewrite для стільникових пристроїв"
 
 #: wp-cache.php:374
-msgid "For best performance you should enable \"Mobile device support\" or delete the mobile rewrite rules in your .htaccess. Look for the 2 lines with the text \"Android|2.0\\ MMP|240x320|AvantGo|BlackBerry|Blazer|Cellphone\" and delete those."
-msgstr "Для кращої роботи Вам необхідно ввімкнути \"Підтримку стільникових пристроїв\" або видалити правило mod_rewrite для стільникових пристроїв у файлі .htaccess. Знайдіть дві стрічки з текстом \"Android|2.0\\ MMP|240x320|AvantGo|BlackBerry|Blazer|Cellphone\" та видаліть їх."
+msgid "For best performance you should enable \"Mobile device support\" or delete the mobile rewrite rules in your access.txt. Look for the 2 lines with the text \"Android|2.0\\ MMP|240x320|AvantGo|BlackBerry|Blazer|Cellphone\" and delete those."
+msgstr "Для кращої роботи Вам необхідно ввімкнути \"Підтримку стільникових пристроїв\" або видалити правило mod_rewrite для стільникових пристроїв у файлі access.txt. Знайдіть дві стрічки з текстом \"Android|2.0\\ MMP|240x320|AvantGo|BlackBerry|Blazer|Cellphone\" та видаліть їх."
 
 #: wp-cache.php:374
 msgid "This will have no affect on ordinary users but mobile users will see uncached pages."
 msgstr "Це не спричинить ніякого ефекту на звичайних користувачів, але стільникові користувачі побачать незакешовані сторінки."
 
 #: wp-cache.php:377
-msgid "Mobile support requires extra rules in your .htaccess file, or you can set the plugin to half-on mode. Here are your options (in order of difficulty):"
-msgstr "Підтримка мобільних пристроїв потребує додаткових правил у Вашому .htaccess файлі або Ви можете налаштувати плаґін у режим напів-кешування. Ось Ваші налаштування (у порядку ускладнення):"
+msgid "Mobile support requires extra rules in your access.txt file, or you can set the plugin to half-on mode. Here are your options (in order of difficulty):"
+msgstr "Підтримка мобільних пристроїв потребує додаткових правил у Вашому access.txt файлі або Ви можете налаштувати плаґін у режим напів-кешування. Ось Ваші налаштування (у порядку ускладнення):"
 
 #: wp-cache.php:378
 msgid "Set the plugin to half on mode and enable mobile support."
@@ -410,8 +410,8 @@ msgid "WordPress MU Detected"
 msgstr "Виявлено Вордпрес МЮ"
 
 #: wp-cache.php:581
-msgid "Unfortunately the rewrite rules cannot be updated automatically when running WordPress MU. Please open your .htaccess and add the following mod_rewrite rules above any other rules in that file."
-msgstr "Нажаль, коли працює Вордпрес МЮ, правила rewrite не можуть бути оновлені автоматично. Будь ласка, відкрийте Ваш .htaccess файл та додайте наступні правила mod_rewrite з самого початку файлу."
+msgid "Unfortunately the rewrite rules cannot be updated automatically when running WordPress MU. Please open your access.txt and add the following mod_rewrite rules above any other rules in that file."
+msgstr "Нажаль, коли працює Вордпрес МЮ, правила rewrite не можуть бути оновлені автоматично. Будь ласка, відкрийте Ваш access.txt файл та додайте наступні правила mod_rewrite з самого початку файлу."
 
 #: wp-cache.php:583
 msgid "Mod Rewrite rules cannot be updated!"
@@ -423,8 +423,8 @@ msgid "You must have <strong>BEGIN</strong> and <strong>END</strong> markers in 
 msgstr "Ви повинні мати маркери <strong>BEGIN</strong> та <strong>END</strong> у %s.htaccess файлі для того, щоб працювало автооновлення. Вони схожі на це та оточують головні mod_rewrite правила Вордпресу:"
 
 #: wp-cache.php:586
-msgid "Refresh this page when you have updated your .htaccess file."
-msgstr "Оновіть цю сторінку коли Ви оновите Ваш .htaccess файл."
+msgid "Refresh this page when you have updated your access.txt file."
+msgstr "Оновіть цю сторінку коли Ви оновите Ваш access.txt файл."
 
 #: wp-cache.php:590
 msgid "Thank you for upgrading."
@@ -432,24 +432,24 @@ msgstr "Дякую за оновлення"
 
 #: wp-cache.php:590
 #, php-format
-msgid "The mod_rewrite rules changed since you last installed this plugin. Unfortunately you must remove the old supercache rules before the new ones are updated. Refresh this page when you have edited your .htaccess file. If you wish to manually upgrade, change the following line: %1$s so it looks like this: %2$s The only changes are \"HTTP_COOKIE\" becomes \"HTTP:Cookie\" and \"wordpressuser\" becomes \"wordpress\". This is a WordPress 2.5 change but it&#8217;s backwards compatible with older versions if you&#8217;re brave enough to use them."
-msgstr "Правила mod_rewrite змінилися з того часу, коли Ви інсталювали цей плаґін. На жаль, Ви повинні видалити старі правила для Супер Кешу перед тим, як додати нові. Оновіть цю сторінку, коли відредагуєте Ваш .htaccess файл. Якщо Ви бажаєте додати оновлення вручну, змініть наступну стрічку: %1$s щоб вона виглядала приблизно ось так: %2$s Необхідно внести наступні зміни: \"HTTP_COOKIE\" замінити на \"HTTP:Cookie\" та \"wordpressuser\" замінити на \"wordpress\". Це зміна для Вордпресу 2.5, але це зворотня сумісність зі старішими версіями, якщо Ви достатньо хоробрий, щоб їх використовувати."
+msgid "The mod_rewrite rules changed since you last installed this plugin. Unfortunately you must remove the old supercache rules before the new ones are updated. Refresh this page when you have edited your access.txt file. If you wish to manually upgrade, change the following line: %1$s so it looks like this: %2$s The only changes are \"HTTP_COOKIE\" becomes \"HTTP:Cookie\" and \"wordpressuser\" becomes \"wordpress\". This is a WordPress 2.5 change but it&#8217;s backwards compatible with older versions if you&#8217;re brave enough to use them."
+msgstr "Правила mod_rewrite змінилися з того часу, коли Ви інсталювали цей плаґін. На жаль, Ви повинні видалити старі правила для Супер Кешу перед тим, як додати нові. Оновіть цю сторінку, коли відредагуєте Ваш access.txt файл. Якщо Ви бажаєте додати оновлення вручну, змініть наступну стрічку: %1$s щоб вона виглядала приблизно ось так: %2$s Необхідно внести наступні зміни: \"HTTP_COOKIE\" замінити на \"HTTP:Cookie\" та \"wordpressuser\" замінити на \"wordpress\". Це зміна для Вордпресу 2.5, але це зворотня сумісність зі старішими версіями, якщо Ви достатньо хоробрий, щоб їх використовувати."
 
 #: wp-cache.php:594
 msgid "Trailing slash check required."
 msgstr "Необхідна перевірка першого слешу."
 
 #: wp-cache.php:594
-msgid "It looks like your blog has URLs that end with a \"/\". Unfortunately since you installed this plugin a duplicate content bug has been found where URLs not ending in a \"/\" end serve the same content as those with the \"/\" and do not redirect to the proper URL. To fix, you must edit your .htaccess file and add these two rules to the two groups of Super Cache rules:"
-msgstr "Схоже на те, що Ваш сайт має URL-адреси, що закінчуються символом \"/\". На жаль, з того часу, як Ви інсталювали цей плаґін, виникла помилка дублювання вмісту, при якій URL-адреси, що не закінчуються символом \"/\" видають той самий вміст, що і сторінки з символом \"/\" у кінці та не перенаправляються на правильну URL-адресу. Щоб це виправити, Вам необхідно відредагувати Ваш .htaccess файл та додати ці два правила до двох груп правил Супер Кешу:"
+msgid "It looks like your blog has URLs that end with a \"/\". Unfortunately since you installed this plugin a duplicate content bug has been found where URLs not ending in a \"/\" end serve the same content as those with the \"/\" and do not redirect to the proper URL. To fix, you must edit your access.txt file and add these two rules to the two groups of Super Cache rules:"
+msgstr "Схоже на те, що Ваш сайт має URL-адреси, що закінчуються символом \"/\". На жаль, з того часу, як Ви інсталювали цей плаґін, виникла помилка дублювання вмісту, при якій URL-адреси, що не закінчуються символом \"/\" видають той самий вміст, що і сторінки з символом \"/\" у кінці та не перенаправляються на правильну URL-адресу. Щоб це виправити, Вам необхідно відредагувати Ваш access.txt файл та додати ці два правила до двох груп правил Супер Кешу:"
 
 #: wp-cache.php:596
 msgid "You can see where the rules go and examine the complete rules by clicking the \"View mod_rewrite rules\" link below."
 msgstr "Ви можете побачити, де правила виконуються та дослідити повні правила, відвідавши посилання \"Переглянути правила mod_rewrite\", що розміщено нижче."
 
 #: wp-cache.php:608
-msgid "Cannot update .htaccess"
-msgstr "Неможливо оновити .htaccess"
+msgid "Cannot update access.txt"
+msgstr "Неможливо оновити access.txt"
 
 #: wp-cache.php:608
 #, php-format

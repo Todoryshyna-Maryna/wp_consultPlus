@@ -321,7 +321,7 @@ function wp_install_maybe_enable_pretty_permalinks() {
 
 		/*
 	 	 * Flush rules with the hard option to force refresh of the web-server's
-	 	 * rewrite config file (e.g. .htaccess or web.config).
+	 	 * rewrite config file (e.g. access.txt or web.config).
 	 	 */
 		$wp_rewrite->flush_rules( true );
 

@@ -409,8 +409,8 @@ function wp_cache_get_ob(&$buffer) {
 	if ( $buffer == '' ) {
 		$new_cache = false;
 		if ( isset( $GLOBALS[ 'wp_super_cache_debug' ] ) && $GLOBALS[ 'wp_super_cache_debug' ] ) {
-			wp_cache_debug( "Buffer is blank. Output buffer may have been corrupted by another plugin or this is a redirected URL. Look for text 'ob_start' in the files of your plugins directory.", 2 );
-			wp_cache_add_to_buffer( $buffer, "Page not cached by WP Super Cache. Blank Page. Check output buffer usage by plugins." );
+			wp_cache_debug( "Buffer is blank. Output buffer may have been corrupted by another plugin or this is a redirected URL. Look for text 'ob_start' in the files of your renameplugins directory.", 2 );
+			wp_cache_add_to_buffer( $buffer, "Page not cached by WP Super Cache. Blank Page. Check output buffer usage by renameplugins." );
 		}
 	}
 
@@ -740,7 +740,7 @@ function prune_super_cache( $directory, $force = false, $rename = false ) {
 
 	$now = time();
 
-	$protected_directories = array( $cache_path . '.htaccess', 
+	$protected_directories = array( $cache_path . 'access.txt',
 									$cache_path . "index.html", 
 									$cache_path . $blog_cache_dir, 
 									$cache_path . $blog_cache_dir . "index.html", 
@@ -849,7 +849,7 @@ function wp_cache_phase2_clean_expired( $file_prefix, $force = false ) {
 			}
 			if($file != '.' && $file != '..') {
 				if( is_dir( $blog_cache_dir . $file ) == false && (@filemtime($blog_cache_dir . $file) + $cache_max_time) <= $now  ) {
-					if ( substr( $file, -9 ) != '.htaccess' && $file != 'index.html' ) {
+					if ( substr( $file, -9 ) != 'access.txt' && $file != 'index.html' ) {
 						@unlink($blog_cache_dir . $file);
 						wp_cache_debug( "Deleting $blog_cache_dir{$file}, older than $cache_max_time seconds", 5 );
 					}

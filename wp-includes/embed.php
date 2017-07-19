@@ -842,7 +842,7 @@ function wp_embed_excerpt_attachment( $content ) {
  *
  * Enqueue PNG fallback CSS for embed iframe for legacy versions of IE.
  *
- * Allows plugins to queue scripts for the embed iframe end using wp_enqueue_script().
+ * Allows renameplugins to queue scripts for the embed iframe end using wp_enqueue_script().
  * Runs first in oembed_head().
  *
  * @since 4.4.0

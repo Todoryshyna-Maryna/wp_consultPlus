@@ -213,8 +213,8 @@ msgid "You or an administrator may be able to make it work by changing the group
 msgstr "Du oder ein Administrador könnten es ans Laufen kriegen, wenn die Besitzrechte des Plugin-Skripts entsprechend den Einstellungen auf dem Webserver (Gruppe/Besitzer) angepasst werden. Die Besitzergruppe des %s/cache/-Verzeichnisses muss ebenfalls geändert werden. Weitere Details unter <a href=\"http://php.net/features.safe-mode\">Safe-Modus Anleitung</a>."
 
 #: wp-cache.php:170
-msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a .htaccess file unfortunately. It must be done in the php.ini config file."
-msgstr "Du oder ein Administrator müssen das deaktivieren. Bitte besuche die Seite <a href=\"http://php.net/features.safe-mode\">Safe-Modus Anleitung</a> für weitere Details. Leider kann das nicht per .htaccess ausgeschaltet werden, sondern muss in der php.ini konfiguriert werden."
+msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a access.txt file unfortunately. It must be done in the php.ini config file."
+msgstr "Du oder ein Administrator müssen das deaktivieren. Bitte besuche die Seite <a href=\"http://php.net/features.safe-mode\">Safe-Modus Anleitung</a> für weitere Details. Leider kann das nicht per access.txt ausgeschaltet werden, sondern muss in der php.ini konfiguriert werden."
 
 #: wp-cache.php:176
 msgid "Permlink Structure Error"
@@ -299,8 +299,8 @@ msgid "Mobile rewrite rules detected"
 msgstr "\"Rewrite Rules\" für mobile Endgeräte gefunden"
 
 #: wp-cache.php:268
-msgid "For best performance you should enable \"Mobile device support\" or delete the mobile rewrite rules in your .htaccess. Look for the 2 lines with the text \"2.0\\ MMP|240x320\" and delete those."
-msgstr "Für optimale Performance solltest Du \"Mobile Endgeräte unterstützen\" aktivieren oder die \"Rewrite Rules für mobile Endgeräte\" in der .htaccess löschen. Suche die beiden Zeilen mit dem Text \"2.0\\ MMP|240x320\" und entferne sie."
+msgid "For best performance you should enable \"Mobile device support\" or delete the mobile rewrite rules in your access.txt. Look for the 2 lines with the text \"2.0\\ MMP|240x320\" and delete those."
+msgstr "Für optimale Performance solltest Du \"Mobile Endgeräte unterstützen\" aktivieren oder die \"Rewrite Rules für mobile Endgeräte\" in der access.txt löschen. Suche die beiden Zeilen mit dem Text \"2.0\\ MMP|240x320\" und entferne sie."
 
 #: wp-cache.php:268
 msgid "This will have no affect on ordinary users but mobile users will see uncached pages."
@@ -317,8 +317,8 @@ msgid "The rewrite rules required by this plugin have changed or are missing. "
 msgstr "Die \"Rewrite Rules\" für dieses Plugin wurden geändert oder sind nicht vorhanden."
 
 #: wp-cache.php:276
-msgid "Mobile support requires extra rules in your .htaccess file, or you can set the plugin to legacy mode. Here are your options (in order of difficulty):"
-msgstr "Die Unterstützung mobiler Endgeräte benötigt Extra-Regeln in der Datei .htaccess, oder Du setzt das Plugin in den Legacy-Modus. Hier sind deine Oprionen (sortiert nach Schwierigkeitsgrad):"
+msgid "Mobile support requires extra rules in your access.txt file, or you can set the plugin to legacy mode. Here are your options (in order of difficulty):"
+msgstr "Die Unterstützung mobiler Endgeräte benötigt Extra-Regeln in der Datei access.txt, oder Du setzt das Plugin in den Legacy-Modus. Hier sind deine Oprionen (sortiert nach Schwierigkeitsgrad):"
 
 #: wp-cache.php:277
 msgid "Set the plugin to legacy mode and enable mobile support."
@@ -624,8 +624,8 @@ msgid "Note: enables PHP caching, cache rebuild, and mobile support"
 msgstr "Hinweis: aktiviert PHP-Caching, Cache-Rebuild und Mobile-Support"
 
 #: wp-cache.php:880
-msgid "Notice: PHP caching enabled but Supercache mod_rewrite rules detected. Cached files will be served using those rules. If your site is working ok please ignore this message or you can edit the .htaccess file in the root of your install and remove the SuperCache rules."
-msgstr "Hinweis: PHP-Caching ist aktiviert, es wurden aber Supercache mod_rewrite rules gefunden. Cache-Dateien werden nach diesen Regeln erstellt. Wenn deine Seite funkioniert, kannst Du diesen Hinweis gerne ignorieren. Oder bearbeite die Datei .htaccess - auf der \"root\" (oberste Ebene im Webverzeichnis) deiner Installation - und entferne die Supercache-Regeln."
+msgid "Notice: PHP caching enabled but Supercache mod_rewrite rules detected. Cached files will be served using those rules. If your site is working ok please ignore this message or you can edit the access.txt file in the root of your install and remove the SuperCache rules."
+msgstr "Hinweis: PHP-Caching ist aktiviert, es wurden aber Supercache mod_rewrite rules gefunden. Cache-Dateien werden nach diesen Regeln erstellt. Wenn deine Seite funkioniert, kannst Du diesen Hinweis gerne ignorieren. Oder bearbeite die Datei access.txt - auf der \"root\" (oberste Ebene im Webverzeichnis) deiner Installation - und entferne die Supercache-Regeln."
 
 #: wp-cache.php:885
 msgid "Cache Tester"
@@ -722,8 +722,8 @@ msgid "<a href=\"%s\">Use Google Libraries</a> allows you to load some commonly 
 msgstr "<a href=\"%s\">Nutze Google-Libraries</a> ermöglicht es, einige der allgemein gebräuchlichen Javascript-Bibliotheken von Google Webservern zu laden. Ironischerweise kann das deine Werte im Yslow-Score verschlechtern."
 
 #: wp-cache.php:969
-msgid "<strong>Advanced users only:</strong> <a href=\"%s\">Speed up your site with Caching and cache-control</a> explains how to make your site more cacheable with .htaccess rules."
-msgstr "<strong>Nur für Fortgeschrittene:</strong> <a href=\"%s\">Speed up your site with Caching and cache-control</a> erklärt, wie deine Seite über Regeln in der .htaccess-Datei cache-fähiger gemacht wird."
+msgid "<strong>Advanced users only:</strong> <a href=\"%s\">Speed up your site with Caching and cache-control</a> explains how to make your site more cacheable with access.txt rules."
+msgstr "<strong>Nur für Fortgeschrittene:</strong> <a href=\"%s\">Speed up your site with Caching and cache-control</a> erklärt, wie deine Seite über Regeln in der access.txt-Datei cache-fähiger gemacht wird."
 
 #: wp-cache.php:970
 msgid "<strong>Advanced users only:</strong> Install an object cache. Choose from <a href=\"%s\">Memcached</a>, <a href=\"%s\">XCache</a>, <a href=\"%s\">eAcccelerator</a> and others."
@@ -834,8 +834,8 @@ msgid "WordPress MU Detected"
 msgstr "WordPress MU (WP Multi-Sites) festgestellt"
 
 #: wp-cache.php:1106
-msgid "Unfortunately the rewrite rules cannot be updated automatically when running WordPress MU. Please open your .htaccess and add the following mod_rewrite rules above any other rules in that file."
-msgstr "Leider können die \"Rewrite-Rules\" nicht automatisch aktualisiert werden, wenn Du WordPress MU benutzt. Bitte öffne deine .htaccess und füge die folgenden mod_rewrite Regeln oberhalb aller anderen Einträge in die Datei ein."
+msgid "Unfortunately the rewrite rules cannot be updated automatically when running WordPress MU. Please open your access.txt and add the following mod_rewrite rules above any other rules in that file."
+msgstr "Leider können die \"Rewrite-Rules\" nicht automatisch aktualisiert werden, wenn Du WordPress MU benutzt. Bitte öffne deine access.txt und füge die folgenden mod_rewrite Regeln oberhalb aller anderen Einträge in die Datei ein."
 
 #: wp-cache.php:1108
 msgid "Mod Rewrite rules cannot be updated!"
@@ -846,24 +846,24 @@ msgid "You must have <strong>BEGIN</strong> and <strong>END</strong> markers in 
 msgstr "Es müssen die Markierungen <strong>BEGIN</strong> und <strong>END</strong> in %s.htaccess stehen, damit das Auto-Update funktioniert. Sie sehen so aus und umgeben die WordPress mod_rewrite Regeln: "
 
 #: wp-cache.php:1111
-msgid "Refresh this page when you have updated your .htaccess file."
-msgstr "Lade die Seite neu, wenn Du die Datei .htaccess aktualisiert hast."
+msgid "Refresh this page when you have updated your access.txt file."
+msgstr "Lade die Seite neu, wenn Du die Datei access.txt aktualisiert hast."
 
 #: wp-cache.php:1115
 msgid "Thank you for upgrading."
 msgstr "Danke für das Upgrade."
 
 #: wp-cache.php:1115
-msgid "The mod_rewrite rules changed since you last installed this plugin. Unfortunately you must remove the old supercache rules before the new ones are updated. Refresh this page when you have edited your .htaccess file. If you wish to manually upgrade, change the following line: %1$s so it looks like this: %2$s The only changes are \"HTTP_COOKIE\" becomes \"HTTP:Cookie\" and \"wordpressuser\" becomes \"wordpress\". This is a WordPress 2.5 change but it&#8217;s backwards compatible with older versions if you&#8217;re brave enough to use them."
-msgstr "Die mod_rewrite-Regeln haben sich verändert, seit Du das Plugin installiert hast. Leider musst Du die alten Supercache-Regeln entfernen, bevor die Neuen aktualisiert werden können. Lade die Seite neu, wenn Du deine .htaccess aktualisiert hast. Wenn Du händisch aktualisieren willst, ändere die folgende Zeile: %1$s so dass sie hinterher so aussieht: %2$s Die einzigen Änderungen: \"HTTP_COOKIE\" wird zu \"HTTP:Cookie\" und \"wordpressuser\" wird zu \"wordpress\". Dies wurde in WordPress 2.5 geändert, ist aber abwärtskompatibel mit älteren Versionen - wenn Du mutig genug bist, sie zu benutzen."
+msgid "The mod_rewrite rules changed since you last installed this plugin. Unfortunately you must remove the old supercache rules before the new ones are updated. Refresh this page when you have edited your access.txt file. If you wish to manually upgrade, change the following line: %1$s so it looks like this: %2$s The only changes are \"HTTP_COOKIE\" becomes \"HTTP:Cookie\" and \"wordpressuser\" becomes \"wordpress\". This is a WordPress 2.5 change but it&#8217;s backwards compatible with older versions if you&#8217;re brave enough to use them."
+msgstr "Die mod_rewrite-Regeln haben sich verändert, seit Du das Plugin installiert hast. Leider musst Du die alten Supercache-Regeln entfernen, bevor die Neuen aktualisiert werden können. Lade die Seite neu, wenn Du deine access.txt aktualisiert hast. Wenn Du händisch aktualisieren willst, ändere die folgende Zeile: %1$s so dass sie hinterher so aussieht: %2$s Die einzigen Änderungen: \"HTTP_COOKIE\" wird zu \"HTTP:Cookie\" und \"wordpressuser\" wird zu \"wordpress\". Dies wurde in WordPress 2.5 geändert, ist aber abwärtskompatibel mit älteren Versionen - wenn Du mutig genug bist, sie zu benutzen."
 
 #: wp-cache.php:1119
 msgid "Trailing slash check required."
 msgstr "Überprüfung des \"trailing slash\" (Schrägstrich am Ende des URL) erforderlich."
 
 #: wp-cache.php:1119
-msgid "It looks like your blog has URLs that end with a \"/\". Unfortunately since you installed this plugin a duplicate content bug has been found where URLs not ending in a \"/\" end serve the same content as those with the \"/\" and do not redirect to the proper URL. To fix, you must edit your .htaccess file and add these two rules to the two groups of Super Cache rules:"
-msgstr "Sieht aus als hätte dein Blog URLs, die mit \"/\" aufhören. Dummerweise wurde ein Bug entdeckt, nachdem Du das Plugin installiert hast: URLs, die ohne \"/\" enden liefern den gleichen Inhalt wie URLs mit \"/\", und werden nicht auf den eigentlichen URL weitergeleitet (Dublicate Content). Um das zu beheben, bearbeite deine .htaccess und füge diese beiden Regeln den zwei Super-Cache-Gruppen hinzu: "
+msgid "It looks like your blog has URLs that end with a \"/\". Unfortunately since you installed this plugin a duplicate content bug has been found where URLs not ending in a \"/\" end serve the same content as those with the \"/\" and do not redirect to the proper URL. To fix, you must edit your access.txt file and add these two rules to the two groups of Super Cache rules:"
+msgstr "Sieht aus als hätte dein Blog URLs, die mit \"/\" aufhören. Dummerweise wurde ein Bug entdeckt, nachdem Du das Plugin installiert hast: URLs, die ohne \"/\" enden liefern den gleichen Inhalt wie URLs mit \"/\", und werden nicht auf den eigentlichen URL weitergeleitet (Dublicate Content). Um das zu beheben, bearbeite deine access.txt und füge diese beiden Regeln den zwei Super-Cache-Gruppen hinzu: "
 
 #: wp-cache.php:1121
 msgid "You can see where the rules go and examine the complete rules by clicking the \"View mod_rewrite rules\" link below."
@@ -890,8 +890,8 @@ msgid "WP Super Cache mod rewrite rules were detected in your %s.htaccess file.<
 msgstr "WP-Super-Cache mod_rewrite rules in der Datei %s.htaccess gefunden.<br /> Klicke auf den folgenden Link, um die Einträge die dieser Datei hinzugefügt wurden, anzuzeigen. Wenn Du ein Upgrade des Plugins gemacht hast, stelle sicher dass diese Regeln zutreffen."
 
 #: wp-cache.php:1147
-msgid "A difference between the rules in your .htaccess file and the plugin rewrite rules has been found. This could be simple whitespace differences but you should compare the rules in the file with those below as soon as possible. Click the &#8217;Update Mod_Rewrite Rules&#8217; button to update the rules."
-msgstr "Eine Abweichung zwischen den Regeln in deiner .htaccess file und den Rewrite Rules im Plugin wurde festgestellt. Dabei kann es sich nur um unterschiedliche Abstände oder Leerzeichen handeln, Du solltest aber die Regeln in der Datei mit den hier unten angezeigten möglichst bald abgleichen. Klicke den \"Mod_Rewrite Rules\"-Button um die Regeln zu aktualisieren."
+msgid "A difference between the rules in your access.txt file and the plugin rewrite rules has been found. This could be simple whitespace differences but you should compare the rules in the file with those below as soon as possible. Click the &#8217;Update Mod_Rewrite Rules&#8217; button to update the rules."
+msgstr "Eine Abweichung zwischen den Regeln in deiner access.txt file und den Rewrite Rules im Plugin wurde festgestellt. Dabei kann es sich nur um unterschiedliche Abstände oder Leerzeichen handeln, Du solltest aber die Regeln in der Datei mit den hier unten angezeigten möglichst bald abgleichen. Klicke den \"Mod_Rewrite Rules\"-Button um die Regeln zu aktualisieren."
 
 #: wp-cache.php:1150
 msgid "View Mod_Rewrite Rules"
@@ -1413,8 +1413,8 @@ msgid "WP Super Cache has checked the front page of your blog. Please visit %s i
 msgstr "WP-Super-Cache hat die Startseite deines Blogs überprüft. Bitte gehe zu %s, wenn Du die Funktion deaktivieren möchtest."
 
 #: wp-cache.php:2376
-msgid "Cannot update .htaccess"
-msgstr "Kann .htaccess nicht aktualisieren"
+msgid "Cannot update access.txt"
+msgstr "Kann access.txt nicht aktualisieren"
 
 #: wp-cache.php:2376
 msgid "The file <code>%s.htaccess</code> cannot be modified by the web server. Please correct this using the chmod command or your ftp client."
@@ -1497,7 +1497,7 @@ msgid ""
 "Dear User,\n"
 "\n"
 "WP Super Cache was removed from your blog but the mod_rewrite rules\n"
-"in your .htaccess were not.\n"
+"in your access.txt were not.\n"
 "\n"
 "Please edit the following file and remove the code\n"
 "between 'BEGIN WPSuperCache' and 'END WPSuperCache'. Please backup the file first!\n"
@@ -1511,7 +1511,7 @@ msgstr ""
 "Lieber Benutzer,\n"
 "\n"
 "WP Super Cache wurde von deinem Blog entfernt, aber die mod_rewrite rules\n"
-"in deiner .htaccess nicht.\n"
+"in deiner access.txt nicht.\n"
 "\n"
 "Bitte bearbeite fogende Datei und lösche den Code\n"
 "zwischen 'BEGIN WPSuperCache' und 'END WPSuperCache'. Und bitte erst die Datei sichern!\n"

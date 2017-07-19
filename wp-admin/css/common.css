@@ -2214,7 +2214,7 @@ h1.nav-tab-wrapper, /* Back-compat for pre-4.4 */
 	line-height: inherit;
 }
 
-/* Back-compat for plugins. Deprecated. Use .wp-clearfix instead. */
+/* Back-compat for renameplugins. Deprecated. Use .wp-clearfix instead. */
 .nav-tab-wrapper:not(.wp-clearfix):after {
  	content: "";
  	display: table;

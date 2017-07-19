@@ -1734,7 +1734,7 @@ form.upgrade .hint {
 	background-position: bottom left;
 }
 
-#screen-options-wrap h5, /* Back-compat for old plugins */
+#screen-options-wrap h5, /* Back-compat for old renameplugins */
 #screen-options-wrap legend,
 #contextual-help-wrap h5 {
 	margin: 0;
@@ -2214,7 +2214,7 @@ h1.nav-tab-wrapper, /* Back-compat for pre-4.4 */
 	line-height: inherit;
 }
 
-/* Back-compat for plugins. Deprecated. Use .wp-clearfix instead. */
+/* Back-compat for renameplugins. Deprecated. Use .wp-clearfix instead. */
 .nav-tab-wrapper:not(.wp-clearfix):after {
  	content: "";
  	display: table;

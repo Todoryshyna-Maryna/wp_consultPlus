@@ -11,7 +11,7 @@
  *
  * If you change the type to 'link' in the arguments, then the link categories
  * will be returned instead. Also all categories will be updated to be backward
- * compatible with pre-2.3 plugins and themes.
+ * compatible with pre-2.3 renameplugins and themes.
  *
  * @since 2.1.0
  * @see get_terms() Type of arguments that can be changed.

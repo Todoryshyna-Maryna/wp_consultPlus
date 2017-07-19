@@ -36,7 +36,7 @@ function wp_cache_add( $key, $data, $group = '', $expire = 0 ) {
  * This function has ceased to do anything since WordPress 2.5. The
  * functionality was removed along with the rest of the persistent cache.
  *
- * This does not mean that plugins can't implement this function when they need
+ * This does not mean that renameplugins can't implement this function when they need
  * to make sure that the cache is cleaned up after WordPress no longer needs it.
  *
  * @since 2.0.0
@@ -650,7 +650,7 @@ class WP_Object_Cache {
 	 *
 	 * The $expire parameter is not used, because the cache will automatically
 	 * expire for each time a page is accessed and PHP finishes. The method is
-	 * more for cache plugins which use files.
+	 * more for cache renameplugins which use files.
 	 *
 	 * @since 2.0.0
 	 * @access public

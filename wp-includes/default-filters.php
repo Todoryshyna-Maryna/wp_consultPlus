@@ -352,7 +352,7 @@ add_action( 'admin_color_scheme_picker', 'admin_color_scheme_picker' );
 // If the upgrade hasn't run yet, assume link manager is used.
 add_filter( 'default_option_link_manager_enabled', '__return_true' );
 
-// This option no longer exists; tell plugins we always support auto-embedding.
+// This option no longer exists; tell renameplugins we always support auto-embedding.
 add_filter( 'pre_option_embed_autourls', '__return_true' );
 
 // Default settings for heartbeat

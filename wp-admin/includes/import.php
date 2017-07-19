@@ -116,7 +116,7 @@ function wp_import_handle_upload() {
 }
 
 /**
- * Returns a list from WordPress.org of popular importer plugins.
+ * Returns a list from WordPress.org of popular importer renameplugins.
  *
  * @since 3.5.0
  *

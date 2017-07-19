@@ -2,7 +2,7 @@
 /**
  * WordPress Generic Request (POST/GET) Handler
  *
- * Intended for form submission handling in themes and plugins.
+ * Intended for form submission handling in themes and renameplugins.
  *
  * @package WordPress
  * @subpackage Administration

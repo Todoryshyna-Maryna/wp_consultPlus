@@ -310,7 +310,7 @@ msgstr ""
 msgid ""
 "You or an administrator must disable this. See the <a href=\"http://php.net/"
 "features.safe-mode\">safe mode manual page</a> for further details. This "
-"cannot be disabled in a .htaccess file unfortunately. It must be done in the "
+"cannot be disabled in a access.txt file unfortunately. It must be done in the "
 "php.ini config file."
 msgstr ""
 
@@ -441,7 +441,7 @@ msgstr ""
 #: wp-cache.php:350
 msgid ""
 "For best performance you should enable \"Mobile device support\" or delete "
-"the mobile rewrite rules in your .htaccess. Look for the 2 lines with the "
+"the mobile rewrite rules in your access.txt. Look for the 2 lines with the "
 "text \"2.0\\ MMP|240x320\" and delete those."
 msgstr ""
 
@@ -461,7 +461,7 @@ msgstr ""
 
 #: wp-cache.php:358
 msgid ""
-"Mobile support requires extra rules in your .htaccess file, or you can set "
+"Mobile support requires extra rules in your access.txt file, or you can set "
 "the plugin to legacy mode. Here are your options (in order of difficulty):"
 msgstr ""
 
@@ -519,14 +519,14 @@ msgid ""
 msgstr ""
 
 #: wp-cache.php:403
-msgid ".htaccess file may need to be moved"
+msgid "access.txt file may need to be moved"
 msgstr ""
 
 #: wp-cache.php:404
 msgid ""
 "It appears you have WordPress installed in a sub directory as described <a "
 "href=\"http://codex.wordpress.org/Giving_WordPress_Its_Own_Directory\">here</"
-"a>. Unfortunately, WordPress writes to the .htaccess in the install "
+"a>. Unfortunately, WordPress writes to the access.txt in the install "
 "directory, not where your site is served from.<br />When you update the "
 "rewrite rules in this plugin you will have to copy the file to where your "
 "site is hosted. This will be fixed in the future."
@@ -799,7 +799,7 @@ msgstr ""
 
 #: wp-cache.php:1063
 msgid ""
-"Remove UTF8/blog charset support from .htaccess file. Only necessary if you "
+"Remove UTF8/blog charset support from access.txt file. Only necessary if you "
 "see odd characters or punctuation looks incorrect. Requires rewrite rules "
 "update."
 msgstr ""
@@ -887,7 +887,7 @@ msgstr ""
 #: wp-cache.php:1093
 msgid ""
 "You are using mod_rewrite to serve cache files so the plugin has added "
-"<q>Options -Indexes</q> to the .htaccess file in the cache directory to "
+"<q>Options -Indexes</q> to the access.txt file in the cache directory to "
 "disable indexes. However, if that does not work, you should contact your "
 "system administrator or support and ask for them to be disabled, or use PHP "
 "mode and move the cache outside of the web root."
@@ -904,7 +904,7 @@ msgstr ""
 msgid ""
 "Since you are using mod_rewrite to serve cache files, you must choose a "
 "directory in your web root which is <q>%s</q> and update the mod_rewrite "
-"rules in the .htaccess file."
+"rules in the access.txt file."
 msgstr ""
 
 #: wp-cache.php:1110
@@ -953,7 +953,7 @@ msgstr ""
 msgid ""
 "Notice: PHP caching enabled but Supercache mod_rewrite rules detected. "
 "Cached files will be served using those rules. If your site is working ok, "
-"please ignore this message. Otherwise, you can edit the .htaccess file in "
+"please ignore this message. Otherwise, you can edit the access.txt file in "
 "the root of your install and remove the SuperCache rules."
 msgstr ""
 
@@ -1218,7 +1218,7 @@ msgstr ""
 #: wp-cache.php:1404
 msgid ""
 "Unfortunately, the rewrite rules cannot be updated automatically when "
-"running WordPress MU. Please open your .htaccess and add the following "
+"running WordPress MU. Please open your access.txt and add the following "
 "mod_rewrite rules above any other rules in that file."
 msgstr ""
 
@@ -1234,7 +1234,7 @@ msgid ""
 msgstr ""
 
 #: wp-cache.php:1409
-msgid "Refresh this page when you have updated your .htaccess file."
+msgid "Refresh this page when you have updated your access.txt file."
 msgstr ""
 
 #: wp-cache.php:1413
@@ -1245,7 +1245,7 @@ msgstr ""
 msgid ""
 "The mod_rewrite rules changed since you last installed this plugin. "
 "Unfortunately, you must remove the old supercache rules before the new ones "
-"are updated. Refresh this page when you have edited your .htaccess file. If "
+"are updated. Refresh this page when you have edited your access.txt file. If "
 "you wish to manually upgrade, change the following line: %1$s so it looks "
 "like this: %2$s The only changes are \"HTTP_COOKIE\" becomes \"HTTP:Cookie\" "
 "and \"wordpressuser\" becomes \"wordpress\". This is a WordPress 2.5 change "
@@ -1262,7 +1262,7 @@ msgid ""
 "It looks like your blog has URLs that end with a \"/\". Unfortunately since "
 "you installed this plugin a duplicate content bug has been found where URLs "
 "not ending in a \"/\" end serve the same content as those with the \"/\" and "
-"do not redirect to the proper URL. To fix, you must edit your .htaccess file "
+"do not redirect to the proper URL. To fix, you must edit your access.txt file "
 "and add these two rules to the two groups of Super Cache rules:"
 msgstr ""
 
@@ -1302,7 +1302,7 @@ msgstr ""
 
 #: wp-cache.php:1445
 msgid ""
-"A difference between the rules in your .htaccess file and the plugin rewrite "
+"A difference between the rules in your access.txt file and the plugin rewrite "
 "rules has been found. This could be simple whitespace differences, but you "
 "should compare the rules in the file with those below as soon as possible. "
 "Click the &#8217;Update Mod_Rewrite Rules&#8217; button to update the rules."
@@ -2112,7 +2112,7 @@ msgid ""
 msgstr ""
 
 #: wp-cache.php:3013
-msgid "Cannot update .htaccess"
+msgid "Cannot update access.txt"
 msgstr ""
 
 #: wp-cache.php:3013
@@ -2204,7 +2204,7 @@ msgid ""
 "Dear User,\n"
 "\n"
 "WP Super Cache was removed from your blog but the mod_rewrite rules\n"
-"in your .htaccess were not.\n"
+"in your access.txt were not.\n"
 "\n"
 "Please edit the following file and remove the code\n"
 "between 'BEGIN WPSuperCache' and 'END WPSuperCache'. Please backup the file "

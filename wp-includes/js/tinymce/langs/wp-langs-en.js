@@ -309,7 +309,7 @@
 		about_plugin: "Plugin",
 		about_author: "Author",
 		about_version: "Version",
-		about_loaded: "Loaded plugins",
+		about_loaded: "Loaded renameplugins",
 		anchor_title: "Insert/edit anchor",
 		anchor_name: "Anchor name",
 		code_title: "HTML Source Editor",

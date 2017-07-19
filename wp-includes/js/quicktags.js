@@ -30,7 +30,7 @@ var QTags, edCanvas,
 /**
  * Back-compat
  *
- * Define all former global functions so plugins that hack quicktags.js directly don't cause fatal errors.
+ * Define all former global functions so renameplugins that hack quicktags.js directly don't cause fatal errors.
  */
 var edAddTag = function(){},
 edCheckOpenTags = function(){},

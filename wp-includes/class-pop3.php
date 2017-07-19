@@ -12,7 +12,7 @@
  *
  * @copyright 1999-2011 The SquirrelMail Project Team
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
- * @package plugins
+ * @package renameplugins
  * @subpackage mail_fetch
  */
 

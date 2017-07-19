@@ -385,13 +385,13 @@ function network_step2( $errors = false ) {
 		<h3><?php esc_html_e( 'Enabling the Network' ); ?></h3>
 		<p><?php _e( 'Complete the following steps to enable the features for creating a network of sites.' ); ?></p>
 		<div class="updated inline"><p><?php
-			if ( file_exists( $home_path . '.htaccess' ) ) {
+			if ( file_exists( $home_path . 'access.txt' ) ) {
 				echo '<strong>' . __( 'Caution:' ) . '</strong> ';
 				printf(
-					/* translators: 1: wp-config.php 2: .htaccess */
+					/* translators: 1: wp-config.php 2: access.txt */
 					__( 'We recommend you back up your existing %1$s and %2$s files.' ),
 					'<code>wp-config.php</code>',
-					'<code>.htaccess</code>'
+					'<code>access.txt</code>'
 				);
 			} elseif ( file_exists( $home_path . 'web.config' ) ) {
 				echo '<strong>' . __( 'Caution:' ) . '</strong> ';
@@ -535,7 +535,7 @@ define('BLOG_ID_CURRENT_SITE', 1);
 
 		echo '<li><p>';
 		printf(
-			/* translators: 1: a filename like .htaccess. 2: a file path. */
+			/* translators: 1: a filename like access.txt. 2: a file path. */
 			__( 'Add the following to your %1$s file in %2$s, <strong>replacing</strong> other WordPress rules:' ),
 			'<code>web.config</code>',
 			'<code>' . $home_path . '</code>'
@@ -575,9 +575,9 @@ EOF;
 
 		echo '<li><p>';
 		printf(
-			/* translators: 1: a filename like .htaccess. 2: a file path. */
+			/* translators: 1: a filename like access.txt. 2: a file path. */
 			__( 'Add the following to your %1$s file in %2$s, <strong>replacing</strong> other WordPress rules:' ),
-			'<code>.htaccess</code>',
+			'<code>access.txt</code>',
 			'<code>' . $home_path . '</code>'
 		);
 		echo '</p>';

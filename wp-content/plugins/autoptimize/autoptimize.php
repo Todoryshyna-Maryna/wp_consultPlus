@@ -317,5 +317,5 @@ register_activation_hook( __FILE__, 'autoptimize_activate' );
 
 include_once('classlesses/autoptimizeCacheChecker.php');
 
-// Do not pollute other plugins
+// Do not pollute other renameplugins
 unset($conf);

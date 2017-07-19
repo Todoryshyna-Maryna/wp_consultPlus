@@ -1272,7 +1272,7 @@ function wp_print_community_events_templates() {
  * WordPress News dashboard widget.
  *
  * @since 2.7.0
- * @since 4.8.0 Removed popular plugins feed.
+ * @since 4.8.0 Removed popular renameplugins feed.
  */
 function wp_dashboard_primary() {
 	$feeds = array(
@@ -1359,7 +1359,7 @@ function wp_dashboard_primary() {
  * Display the WordPress news feeds.
  *
  * @since 3.8.0
- * @since 4.8.0 Removed popular plugins feed.
+ * @since 4.8.0 Removed popular renameplugins feed.
  *
  * @param string $widget_id Widget ID.
  * @param array  $feeds     Array of RSS feeds.
@@ -1543,7 +1543,7 @@ function wp_check_browser_version() {
 }
 
 /**
- * Empty function usable by plugins to output empty dashboard widget (to be populated later by JS).
+ * Empty function usable by renameplugins to output empty dashboard widget (to be populated later by JS).
  */
 function wp_dashboard_empty() {}
 

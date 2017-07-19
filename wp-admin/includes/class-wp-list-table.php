@@ -956,7 +956,7 @@ class WP_List_Table {
 		 * @since 4.3.0
 		 *
 		 * @param string $default Column name default for the specific list table, e.g. 'name'.
-		 * @param string $context Screen ID for specific list table, e.g. 'plugins'.
+		 * @param string $context Screen ID for specific list table, e.g. 'renameplugins'.
 		 */
 		$column  = apply_filters( 'list_table_primary_column', $default, $this->screen->id );
 

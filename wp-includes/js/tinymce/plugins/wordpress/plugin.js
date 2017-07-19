@@ -669,7 +669,7 @@ tinymce.PluginManager.add( 'wordpress', function( editor ) {
 
 	/**
 	 * Experimental: create a floating toolbar.
-	 * This functionality will change in the next releases. Not recommended for use by plugins.
+	 * This functionality will change in the next releases. Not recommended for use by renameplugins.
 	 */
 	editor.on( 'preinit', function() {
 		var Factory = tinymce.ui.Factory,

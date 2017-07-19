@@ -209,7 +209,7 @@ class WP_Http_Curl {
 		 * Fires before the cURL request is executed.
 		 *
 		 * Cookies are not currently handled by the HTTP API. This action allows
-		 * plugins to handle cookies themselves.
+		 * renameplugins to handle cookies themselves.
 		 *
 		 * @since 2.8.0
 		 *

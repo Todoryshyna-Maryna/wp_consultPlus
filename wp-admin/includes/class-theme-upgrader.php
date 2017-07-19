@@ -392,7 +392,7 @@ class Theme_Upgrader extends WP_Upgrader {
 			// Prevent credentials auth screen from displaying multiple times
 			if ( false === $result )
 				break;
-		} //end foreach $plugins
+		} //end foreach $renameplugins
 
 		$this->maintenance_mode(false);
 

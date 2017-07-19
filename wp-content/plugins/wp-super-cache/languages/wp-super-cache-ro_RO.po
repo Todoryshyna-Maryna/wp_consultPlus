@@ -130,7 +130,7 @@ msgid "You or an administrator may be able to make it work by changing the group
 msgstr "Ai sau un administrator ar putea să facem să funcţioneze prin schimbarea proprietar al grupului de plugin-ul script-uri pentru a se potrivi cel al utilizatorului server de web. Proprietar al grupului de %s/cache/ dosar trebuie să fie, de asemenea, schimbat. Se vedea <a href=\"http://php.net/features.safe-mode\">modul de siguranţă pagina de manual</a> pentru detalii suplimentare."
 
 #: wp-cache.php:146
-msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a .htaccess file unfortunately. It must be done in the php.ini config file."
+msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a access.txt file unfortunately. It must be done in the php.ini config file."
 msgstr "Ai sau un administrator trebuie să dezactivaţi această. Consultaţi <a href=\"http://php.net/features.safe-mode\">pagina de siguranţă modul manual</a> pentru detalii suplimentare. Acest lucru nu poate fi dezactivat într-un fişier. htaccess, din păcate. Aceasta trebuie să fie în fişierul de configurare php.ini. "
 
 #: wp-cache.php:152
@@ -217,7 +217,7 @@ msgid "Mobile rewrite rules detected"
 msgstr "Mobile regulile de rescriere detectat"
 
 #: wp-cache.php:241
-msgid "For best performance you should enable \"Mobile device support\" or delete the mobile rewrite rules in your .htaccess. Look for the 2 lines with the text \"2.0\\ MMP|240x320\" and delete those."
+msgid "For best performance you should enable \"Mobile device support\" or delete the mobile rewrite rules in your access.txt. Look for the 2 lines with the text \"2.0\\ MMP|240x320\" and delete those."
 msgstr "Pentru cele mai bune performanţe ar trebui să permită \"Mobile sprijin dispozitiv de\" sau şterge mobil rescrie regulile în dumneavoastră htaccess Uita-te pentru cele 2 linii cu textul \" 2.0\\MMP|240x320\" şi ştergeţi-le."
 
 #: wp-cache.php:241
@@ -235,7 +235,7 @@ msgid "The rewrite rules required by this plugin have changed or are missing. "
 msgstr "Rescriere normele impuse de acest plugin-au schimbat sau lipsesc."
 
 #: wp-cache.php:249
-msgid "Mobile support requires extra rules in your .htaccess file, or you can set the plugin to legacy mode. Here are your options (in order of difficulty):"
+msgid "Mobile support requires extra rules in your access.txt file, or you can set the plugin to legacy mode. Here are your options (in order of difficulty):"
 msgstr "Suport pentru dispozitive mobile necesită norme suplimentare în fişierul htaccess, sau puteţi seta modul de plug-in pentru moştenirea Aici sunt opţiunile dumneavoastră (în ordine de dificultate):"
 
 #: wp-cache.php:250
@@ -601,7 +601,7 @@ msgid "Note: enables PHP caching, cache rebuild, and mobile support"
 msgstr "Notă: PHP permite caching, reconstrui cache, şi suport mobil"
 
 #: wp-cache.php:880
-msgid "Notice: Supercache mod_rewrite rules detected. Cached files will be served using those rules. Edit the .htaccess file in the root of your install and remove the SuperCache rules."
+msgid "Notice: Supercache mod_rewrite rules detected. Cached files will be served using those rules. Edit the access.txt file in the root of your install and remove the SuperCache rules."
 msgstr "Nota: Supercache mod_rewrite normele detectate fişierele din cache va fi servite cu aceste norme. Editaţi fişierul htaccess în rădăcina dvs. de a instala şi de a elimina normele SuperCache."
 
 #: wp-cache.php:892
@@ -692,7 +692,7 @@ msgid "WordPress MU Detected"
 msgstr "WordPress MU Detected"
 
 #: wp-cache.php:1002
-msgid "Unfortunately the rewrite rules cannot be updated automatically when running WordPress MU. Please open your .htaccess and add the following mod_rewrite rules above any other rules in that file."
+msgid "Unfortunately the rewrite rules cannot be updated automatically when running WordPress MU. Please open your access.txt and add the following mod_rewrite rules above any other rules in that file."
 msgstr "Din păcate, rescrie regulile nu pot fi actualizate automat atunci când rulează WordPress UM. Vă rugăm să vă deschide htaccess şi. Se adaugă următoarele mod_rewrite regulile de mai sus a oricăror alte norme în acel fişier."
 
 #: wp-cache.php:1004
@@ -705,7 +705,7 @@ msgid "You must have <strong>BEGIN</strong> and <strong>END</strong> markers in 
 msgstr "Trebuie să aveţi şi <strong>END</strong> markeri <strong>incepe</strong> in %s.htaccess pentru auto update la locul de muncă. Acestea arata ca acest lucru şi surround principal WordPress mod_rewrite normele:"
 
 #: wp-cache.php:1007
-msgid "Refresh this page when you have updated your .htaccess file."
+msgid "Refresh this page when you have updated your access.txt file."
 msgstr "Reîmprospătare această pagină atunci când aţi actualizat fişierul htaccess."
 
 #: wp-cache.php:1011
@@ -714,15 +714,15 @@ msgstr "Vă mulţumim pentru upgrade."
 
 #: wp-cache.php:1011
 #, php-format
-msgid "The mod_rewrite rules changed since you last installed this plugin. Unfortunately you must remove the old supercache rules before the new ones are updated. Refresh this page when you have edited your .htaccess file. If you wish to manually upgrade, change the following line: %1$s so it looks like this: %2$s The only changes are \"HTTP_COOKIE\" becomes \"HTTP:Cookie\" and \"wordpressuser\" becomes \"wordpress\". This is a WordPress 2.5 change but it&#8217;s backwards compatible with older versions if you&#8217;re brave enough to use them."
-msgstr "Mod_rewrite normele modificate de la ultima ta instalat acest plug-in. Din păcate, trebuie să eliminaţi vechile reguli supercache înainte de cele noi sunt actualizate reîmprospăta această pagină. După ce aţi editat fişierul .htaccess. Dacă doriţi să faceţi upgrade manual, modificaţi următoarea linie:  %1$s  astfel se pare ca aceasta: %2$s. Singurele modificări sunt \"HTTP_COOKIE\"devine\"HTTP:Cookie\" şi \"wordpressuser\"devine\"WordPress\". Acesta este un WordPress 2.5. schimbare, dar este compatibil cu versiunile mai vechi daca esti destul de curajos să le folosească."
+msgid "The mod_rewrite rules changed since you last installed this plugin. Unfortunately you must remove the old supercache rules before the new ones are updated. Refresh this page when you have edited your access.txt file. If you wish to manually upgrade, change the following line: %1$s so it looks like this: %2$s The only changes are \"HTTP_COOKIE\" becomes \"HTTP:Cookie\" and \"wordpressuser\" becomes \"wordpress\". This is a WordPress 2.5 change but it&#8217;s backwards compatible with older versions if you&#8217;re brave enough to use them."
+msgstr "Mod_rewrite normele modificate de la ultima ta instalat acest plug-in. Din păcate, trebuie să eliminaţi vechile reguli supercache înainte de cele noi sunt actualizate reîmprospăta această pagină. După ce aţi editat fişierul access.txt. Dacă doriţi să faceţi upgrade manual, modificaţi următoarea linie:  %1$s  astfel se pare ca aceasta: %2$s. Singurele modificări sunt \"HTTP_COOKIE\"devine\"HTTP:Cookie\" şi \"wordpressuser\"devine\"WordPress\". Acesta este un WordPress 2.5. schimbare, dar este compatibil cu versiunile mai vechi daca esti destul de curajos să le folosească."
 
 #: wp-cache.php:1015
 msgid "Trailing slash check required."
 msgstr "Trailing slash verifica necesare."
 
 #: wp-cache.php:1015
-msgid "It looks like your blog has URLs that end with a \"/\". Unfortunately since you installed this plugin a duplicate content bug has been found where URLs not ending in a \"/\" end serve the same content as those with the \"/\" and do not redirect to the proper URL. To fix, you must edit your .htaccess file and add these two rules to the two groups of Super Cache rules:"
+msgid "It looks like your blog has URLs that end with a \"/\". Unfortunately since you installed this plugin a duplicate content bug has been found where URLs not ending in a \"/\" end serve the same content as those with the \"/\" and do not redirect to the proper URL. To fix, you must edit your access.txt file and add these two rules to the two groups of Super Cache rules:"
 msgstr "Se pare ca blog-ul dvs. are adresele URL care se termină cu o \"/\". Din păcate, din moment ce ai instalat acest plug-un duplicat bug conţinut a fost găsit în cazul în care nu adresele URL se termină într-o \"/\" sfârşitul servesc acelaşi conţinut ca şi cele cu  \"/\" şi nu redirecţionare a URL-ul propriu Pentru a repara, trebuie să editaţi fişierul htaccess şi adăugaţi aceste două reguli pentru cele două grupe de reguli Super Cache:"
 
 #: wp-cache.php:1017
@@ -753,7 +753,7 @@ msgid "WP Super Cache mod rewrite rules were detected in your %s.htaccess file.<
 msgstr "WP Super Cache mod regulile de rescriere au fost detectate în fişierul% s.htaccess. <br /> Faceţi clic pe link-ul următor pentru a vedea liniile de adăugat la acel fişier. Dacă aţi actualizat plugin-ul asiguraţi-vă că aceste reguli se potrivesc."
 
 #: wp-cache.php:1043
-msgid "A difference between the rules in your .htaccess file and the plugin rewrite rules has been found. This could be simple whitespace differences but you should compare the rules in the file with those below as soon as possible. Click the &#8217;Update Mod_Rewrite Rules&#8217; button to update the rules."
+msgid "A difference between the rules in your access.txt file and the plugin rewrite rules has been found. This could be simple whitespace differences but you should compare the rules in the file with those below as soon as possible. Click the &#8217;Update Mod_Rewrite Rules&#8217; button to update the rules."
 msgstr "O diferenţă între normele în fişierul htaccess. Şi plugin-ul regulile de rescriere a fost găsit Acest lucru ar putea fi diferenţele de simplu, dar spaţiu. Ar trebui să comparaţi normele în dosarul cu cele de mai jos cât mai curând posibil. Faceţi clic pe &#8217;Update normele Mod_Rewrite&#8217;, pentru a face acest lucru în mod automat."
 
 #: wp-cache.php:1046
@@ -1343,7 +1343,7 @@ msgid "WP Super Cache has checked the front page of your blog. Please visit %s i
 msgstr "WP Super Cache a verificat prima pagină a blog-ul dvs. Vă rugăm să vizitaţi %s dacă doriţi să dezactivaţi acest lucru."
 
 #: wp-cache.php:2279
-msgid "Cannot update .htaccess"
+msgid "Cannot update access.txt"
 msgstr "Nu se poate actualiza. Htaccess"
 
 #: wp-cache.php:2279

@@ -115,8 +115,8 @@ msgstr "Vous ou un administrateur pouvez être en mesure de le faire fonctionner
 
 #@ wp-super-cache
 #: wp-cache.php:146
-msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a .htaccess file unfortunately. It must be done in the php.ini config file."
-msgstr "Vous ou un administrateur devez désactiver ceci. Voir la <a href=\"http://fr.php.net/features.safe-mode\">page du manuel du Mode Sécurité</a> pour plus de détails. Ça ne peut malheureusement pas être désactivé dans un fichier .htaccess. Ça doit l'être dans le fichier de configuration php.ini."
+msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a access.txt file unfortunately. It must be done in the php.ini config file."
+msgstr "Vous ou un administrateur devez désactiver ceci. Voir la <a href=\"http://fr.php.net/features.safe-mode\">page du manuel du Mode Sécurité</a> pour plus de détails. Ça ne peut malheureusement pas être désactivé dans un fichier access.txt. Ça doit l'être dans le fichier de configuration php.ini."
 
 #@ wp-super-cache
 #: wp-cache.php:152
@@ -242,8 +242,8 @@ msgstr "Règles de réécriture pour mobiles détectées"
 
 #@ wp-super-cache
 #: wp-cache.php:241
-msgid "For best performance you should enable \"Mobile device support\" or delete the mobile rewrite rules in your .htaccess. Look for the 2 lines with the text \"2.0\\ MMP|240x320\" and delete those."
-msgstr "Pour des performances optimales, vous devriez activer le \"Support des systèmes de mobiles\" ou supprimer les règles de réécriture pour mobiles dans votre .htaccess. Localisez les 2 lignes avec le texte \"2.0\\ MMP|240x320\" et supprimez-les."
+msgid "For best performance you should enable \"Mobile device support\" or delete the mobile rewrite rules in your access.txt. Look for the 2 lines with the text \"2.0\\ MMP|240x320\" and delete those."
+msgstr "Pour des performances optimales, vous devriez activer le \"Support des systèmes de mobiles\" ou supprimer les règles de réécriture pour mobiles dans votre access.txt. Localisez les 2 lignes avec le texte \"2.0\\ MMP|240x320\" et supprimez-les."
 
 #@ wp-super-cache
 #: wp-cache.php:241
@@ -557,8 +557,8 @@ msgstr "WordPress MU Détecté"
 
 #@ wp-super-cache
 #: wp-cache.php:991
-msgid "Unfortunately the rewrite rules cannot be updated automatically when running WordPress MU. Please open your .htaccess and add the following mod_rewrite rules above any other rules in that file."
-msgstr "Malheureusement, les règles de réécriture ne peuvent pas être mises à jour automatiquement lorsque WordPress MU s'exécute. Merci d'ouvrir votre fichier .htaccess et d'y ajouter les règles de Mode Réécriture suivantes, au-dessus de toutes les autres règles de ce fichier."
+msgid "Unfortunately the rewrite rules cannot be updated automatically when running WordPress MU. Please open your access.txt and add the following mod_rewrite rules above any other rules in that file."
+msgstr "Malheureusement, les règles de réécriture ne peuvent pas être mises à jour automatiquement lorsque WordPress MU s'exécute. Merci d'ouvrir votre fichier access.txt et d'y ajouter les règles de Mode Réécriture suivantes, au-dessus de toutes les autres règles de ce fichier."
 
 #@ wp-super-cache
 #: wp-cache.php:993
@@ -573,8 +573,8 @@ msgstr "Vous devez avoir les marqueurs <strong>BEGIN</strong> et <strong>END</st
 
 #@ wp-super-cache
 #: wp-cache.php:996
-msgid "Refresh this page when you have updated your .htaccess file."
-msgstr "Rafraichissez cette page après avoir mis à jour votre fichier .htaccess."
+msgid "Refresh this page when you have updated your access.txt file."
+msgstr "Rafraichissez cette page après avoir mis à jour votre fichier access.txt."
 
 #@ wp-super-cache
 #: wp-cache.php:1000
@@ -584,8 +584,8 @@ msgstr "Merci d'avoir effectué la mise à jour."
 #@ wp-super-cache
 #: wp-cache.php:1000
 #, php-format
-msgid "The mod_rewrite rules changed since you last installed this plugin. Unfortunately you must remove the old supercache rules before the new ones are updated. Refresh this page when you have edited your .htaccess file. If you wish to manually upgrade, change the following line: %1$s so it looks like this: %2$s The only changes are \"HTTP_COOKIE\" becomes \"HTTP:Cookie\" and \"wordpressuser\" becomes \"wordpress\". This is a WordPress 2.5 change but it&#8217;s backwards compatible with older versions if you&#8217;re brave enough to use them."
-msgstr "Les règles du Mode Réécriture ont changé depuis votre dernère installation de cette extension. Malheureusement, vous devez supprimer les anciennes règles de SuperCache avant que les nouvelles soient mises à jour. Rafraîchissez cette page après avoir édité votre fichier .htaccess. Si vous souhaitez mettre à jour manuellement, modifiez la ligne suivante : %1$s de façon qu'elle ressemble à ceci : %2$s. Les seuls changements sont \"HTTP_COOKIE\", devenant \"HTTP:Cookie\", et \"wordpressuser \", devenant \"wordpress\". C'est une modification de WordPress 2.5, mais il est rétrocompatible avec les anciennes versions, si vous êtes assez courageux pour utiliser celles-ci."
+msgid "The mod_rewrite rules changed since you last installed this plugin. Unfortunately you must remove the old supercache rules before the new ones are updated. Refresh this page when you have edited your access.txt file. If you wish to manually upgrade, change the following line: %1$s so it looks like this: %2$s The only changes are \"HTTP_COOKIE\" becomes \"HTTP:Cookie\" and \"wordpressuser\" becomes \"wordpress\". This is a WordPress 2.5 change but it&#8217;s backwards compatible with older versions if you&#8217;re brave enough to use them."
+msgstr "Les règles du Mode Réécriture ont changé depuis votre dernère installation de cette extension. Malheureusement, vous devez supprimer les anciennes règles de SuperCache avant que les nouvelles soient mises à jour. Rafraîchissez cette page après avoir édité votre fichier access.txt. Si vous souhaitez mettre à jour manuellement, modifiez la ligne suivante : %1$s de façon qu'elle ressemble à ceci : %2$s. Les seuls changements sont \"HTTP_COOKIE\", devenant \"HTTP:Cookie\", et \"wordpressuser \", devenant \"wordpress\". C'est une modification de WordPress 2.5, mais il est rétrocompatible avec les anciennes versions, si vous êtes assez courageux pour utiliser celles-ci."
 
 #@ wp-super-cache
 #: wp-cache.php:1004
@@ -594,8 +594,8 @@ msgstr "Le slash final est requis."
 
 #@ wp-super-cache
 #: wp-cache.php:1004
-msgid "It looks like your blog has URLs that end with a \"/\". Unfortunately since you installed this plugin a duplicate content bug has been found where URLs not ending in a \"/\" end serve the same content as those with the \"/\" and do not redirect to the proper URL. To fix, you must edit your .htaccess file and add these two rules to the two groups of Super Cache rules:"
-msgstr "Il semble que votre blog possède des URLs qui se terminent par un \"/\". Malheureusement, depuis que vous avez installé cette extension, un bug de duplicate content a été découvert, dans lequel les URLs ne se terminant pas par un \"/\" servent le même contenu que celles finissant par le \"/\", et ne redirigent pas vers la bonne URL. Pour le résoudre, vous devez éditer votre fichier .htaccess et ajouter ces deux règles aux deux groupes de règles de Super Cache :"
+msgid "It looks like your blog has URLs that end with a \"/\". Unfortunately since you installed this plugin a duplicate content bug has been found where URLs not ending in a \"/\" end serve the same content as those with the \"/\" and do not redirect to the proper URL. To fix, you must edit your access.txt file and add these two rules to the two groups of Super Cache rules:"
+msgstr "Il semble que votre blog possède des URLs qui se terminent par un \"/\". Malheureusement, depuis que vous avez installé cette extension, un bug de duplicate content a été découvert, dans lequel les URLs ne se terminant pas par un \"/\" servent le même contenu que celles finissant par le \"/\", et ne redirigent pas vers la bonne URL. Pour le résoudre, vous devez éditer votre fichier access.txt et ajouter ces deux règles aux deux groupes de règles de Super Cache :"
 
 #@ wp-super-cache
 #: wp-cache.php:1006
@@ -632,8 +632,8 @@ msgstr "Les règles du Mode Réécriture de WP Super Cache ont été détectées
 
 #@ wp-super-cache
 #: wp-cache.php:1032
-msgid "A difference between the rules in your .htaccess file and the plugin rewrite rules has been found. This could be simple whitespace differences but you should compare the rules in the file with those below as soon as possible. Click the &#8217;Update Mod_Rewrite Rules&#8217; button to update the rules."
-msgstr "Une différence entre les règles dans votre fichier .htaccess et celles de réécriture dans l'extension a été découverte. Il peut ne s'agir que d'une différence d'espace blanc, mais vous devriez comparer les règles du fichier avec celles ci-dessous aussi vite que possible. Cliquez sur le bouton &#8217;Actualiser les Règles du Mode Réécriture&#8217; pour mettre à jour les règles."
+msgid "A difference between the rules in your access.txt file and the plugin rewrite rules has been found. This could be simple whitespace differences but you should compare the rules in the file with those below as soon as possible. Click the &#8217;Update Mod_Rewrite Rules&#8217; button to update the rules."
+msgstr "Une différence entre les règles dans votre fichier access.txt et celles de réécriture dans l'extension a été découverte. Il peut ne s'agir que d'une différence d'espace blanc, mais vous devriez comparer les règles du fichier avec celles ci-dessous aussi vite que possible. Cliquez sur le bouton &#8217;Actualiser les Règles du Mode Réécriture&#8217; pour mettre à jour les règles."
 
 #@ wp-super-cache
 #: wp-cache.php:1035
@@ -1327,8 +1327,8 @@ msgstr "WP Super Cache a vérifié la page de garde de votre blog. Merci de visi
 
 #@ wp-super-cache
 #: wp-cache.php:2268
-msgid "Cannot update .htaccess"
-msgstr "Impossible de mettre à jour le fichier .htaccess"
+msgid "Cannot update access.txt"
+msgstr "Impossible de mettre à jour le fichier access.txt"
 
 #@ wp-super-cache
 #: wp-cache.php:2268
@@ -1453,8 +1453,8 @@ msgstr "Il semble que le Mode Réécriture ne soit pas installé. Parfois, cette
 
 #@ wp-super-cache
 #: wp-cache.php:249
-msgid "Mobile support requires extra rules in your .htaccess file, or you can set the plugin to legacy mode. Here are your options (in order of difficulty):"
-msgstr "Le support de mobiles requiert des règles supplémentaires dans votre fichier .htaccess, ou vous pouvez régler l'extension en Mode Héritage. Voici vos options (par ordre de difficulté) :"
+msgid "Mobile support requires extra rules in your access.txt file, or you can set the plugin to legacy mode. Here are your options (in order of difficulty):"
+msgstr "Le support de mobiles requiert des règles supplémentaires dans votre fichier access.txt, ou vous pouvez régler l'extension en Mode Héritage. Voici vos options (par ordre de difficulté) :"
 
 #@ wp-super-cache
 #: wp-cache.php:250
@@ -1613,8 +1613,8 @@ msgstr "Note : active la mise en cache PHP, la reconstruction du cache, et le su
 
 #@ wp-super-cache
 #: wp-cache.php:869
-msgid "Notice: Supercache mod_rewrite rules detected. Cached files will be served using those rules. Edit the .htaccess file in the root of your install and remove the SuperCache rules."
-msgstr "Avis : règles du mode réécriture SuperCache détectées. Les fichiers mis en cache seront servis à l'aide de ces règles. Editer le fichier .htaccess à la racine de votre installation et supprimer les règles SuperCache."
+msgid "Notice: Supercache mod_rewrite rules detected. Cached files will be served using those rules. Edit the access.txt file in the root of your install and remove the SuperCache rules."
+msgstr "Avis : règles du mode réécriture SuperCache détectées. Les fichiers mis en cache seront servis à l'aide de ces règles. Editer le fichier access.txt à la racine de votre installation et supprimer les règles SuperCache."
 
 #@ wp-super-cache
 #: wp-cache.php:883

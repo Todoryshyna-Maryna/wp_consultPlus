@@ -256,8 +256,8 @@ msgid "You or an administrator may be able to make it work by changing the group
 msgstr "你或管理員可以透過變更外掛程式群組的所有者使其與伺服器使用者一致，進而讓其運作。%s/cache/ 目錄的所有者也必須變更。查看<a href=\"http://php.net/features.safe-mode\">安全模式使用手冊</a>以取得更多說明。"
 
 #: wp-cache.php:170
-msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a .htaccess file unfortunately. It must be done in the php.ini config file."
-msgstr "你或管理員必須先停用此項目。查看<a href=\"http://php.net/features.safe-mode\">安全模式使用手冊</a>以取得更多說明。很抱歉，這無法在 .htaccess 檔案裡停用。它必須在 php.ini 設定檔中完成。"
+msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a access.txt file unfortunately. It must be done in the php.ini config file."
+msgstr "你或管理員必須先停用此項目。查看<a href=\"http://php.net/features.safe-mode\">安全模式使用手冊</a>以取得更多說明。很抱歉，這無法在 access.txt 檔案裡停用。它必須在 php.ini 設定檔中完成。"
 
 #: wp-cache.php:176
 msgid "Permlink Structure Error"
@@ -342,8 +342,8 @@ msgid "Mobile rewrite rules detected"
 msgstr "偵測到行動裝置重寫規則"
 
 #: wp-cache.php:268
-msgid "For best performance you should enable \"Mobile device support\" or delete the mobile rewrite rules in your .htaccess. Look for the 2 lines with the text \"2.0\\ MMP|240x320\" and delete those."
-msgstr "為了獲得最好的效能，你應該啟用\"行動裝置支援\"，或從你的 .htaccess 刪除行動裝置重寫規則。尋找包含  \"2.0\\ MMP|240x320\" 字串的兩行並刪除它們。"
+msgid "For best performance you should enable \"Mobile device support\" or delete the mobile rewrite rules in your access.txt. Look for the 2 lines with the text \"2.0\\ MMP|240x320\" and delete those."
+msgstr "為了獲得最好的效能，你應該啟用\"行動裝置支援\"，或從你的 access.txt 刪除行動裝置重寫規則。尋找包含  \"2.0\\ MMP|240x320\" 字串的兩行並刪除它們。"
 
 #: wp-cache.php:268
 msgid "This will have no affect on ordinary users but mobile users will see uncached pages."
@@ -360,8 +360,8 @@ msgid "The rewrite rules required by this plugin have changed or are missing. "
 msgstr "這個外掛所需的重寫規則已被變更或不存在。"
 
 #: wp-cache.php:276
-msgid "Mobile support requires extra rules in your .htaccess file, or you can set the plugin to legacy mode. Here are your options (in order of difficulty):"
-msgstr "行動裝置支援必須在你的 .htaccess 檔案裡新增額外規則，或是你可以將外掛設定為傳統模式。這是你的選擇（依難易度排列）："
+msgid "Mobile support requires extra rules in your access.txt file, or you can set the plugin to legacy mode. Here are your options (in order of difficulty):"
+msgstr "行動裝置支援必須在你的 access.txt 檔案裡新增額外規則，或是你可以將外掛設定為傳統模式。這是你的選擇（依難易度排列）："
 
 #: wp-cache.php:277
 msgid "Set the plugin to legacy mode and enable mobile support."
@@ -621,8 +621,8 @@ msgid "Mobile Prefixes"
 msgstr "行動前置字串"
 
 #: wp-cache.php:892
-msgid "Remove UTF8/blog charset support from .htaccess file. Only necessary if you see odd characters or punctuation looks incorrect. Requires rewrite rules update."
-msgstr "從 .htaccess 中移除 UTF8 字元集支援。只在你看到奇怪的字元或錯誤的標點時才需要。必須更新重寫規則。"
+msgid "Remove UTF8/blog charset support from access.txt file. Only necessary if you see odd characters or punctuation looks incorrect. Requires rewrite rules update."
+msgstr "從 access.txt 中移除 UTF8 字元集支援。只在你看到奇怪的字元或錯誤的標點時才需要。必須更新重寫規則。"
 
 #: wp-cache.php:893
 msgid "Clear all cache files when a post or page is published or updated."
@@ -702,8 +702,8 @@ msgid "Note: enables PHP caching, cache rebuild, and mobile support"
 msgstr "說明：啟用 PHP 快取，重建快取，以及行動裝置支援"
 
 #: wp-cache.php:962
-msgid "Notice: PHP caching enabled but Supercache mod_rewrite rules detected. Cached files will be served using those rules. If your site is working ok please ignore this message or you can edit the .htaccess file in the root of your install and remove the SuperCache rules."
-msgstr "注意：PHP 快取已被啟用，但偵測到 Supercache mod_rewrite 規則。快取檔案會用這些規則來服務。如果你的網站動作正常，你可以忽略這個訊息，否則請編輯站台安裝根目錄下的 .htaccess 檔以移除 SuperCache 規則。"
+msgid "Notice: PHP caching enabled but Supercache mod_rewrite rules detected. Cached files will be served using those rules. If your site is working ok please ignore this message or you can edit the access.txt file in the root of your install and remove the SuperCache rules."
+msgstr "注意：PHP 快取已被啟用，但偵測到 Supercache mod_rewrite 規則。快取檔案會用這些規則來服務。如果你的網站動作正常，你可以忽略這個訊息，否則請編輯站台安裝根目錄下的 access.txt 檔以移除 SuperCache 規則。"
 
 #: wp-cache.php:967
 msgid "Cache Tester"
@@ -827,8 +827,8 @@ msgid "<a href=\"%s\">Use Google Libraries</a> allows you to load some commonly 
 msgstr "<a href=\"%s\">Use Google Libraries</a>可以讓你從 Google 的伺服器上載入一些常用的 Javascript 函式庫。很諷刺的是它會降低你的 Yslow 分數。"
 
 #: wp-cache.php:1072
-msgid "<strong>Advanced users only:</strong> <a href=\"%s\">Speed up your site with Caching and cache-control</a> explains how to make your site more cacheable with .htaccess rules."
-msgstr "<strong>進階使用者專用：</strong> <a href=\"%s\">使用快取及快取控制加速你的網站</a>，解釋怎麼讓你的網站更適用 .htaccess 規則來進行快取。"
+msgid "<strong>Advanced users only:</strong> <a href=\"%s\">Speed up your site with Caching and cache-control</a> explains how to make your site more cacheable with access.txt rules."
+msgstr "<strong>進階使用者專用：</strong> <a href=\"%s\">使用快取及快取控制加速你的網站</a>，解釋怎麼讓你的網站更適用 access.txt 規則來進行快取。"
 
 #: wp-cache.php:1073
 msgid "<strong>Advanced users only:</strong> Install an object cache. Choose from <a href=\"%s\">Memcached</a>, <a href=\"%s\">XCache</a>, <a href=\"%s\">eAcccelerator</a> and others."
@@ -951,8 +951,8 @@ msgid "WordPress MU Detected"
 msgstr "偵測到 WordPress MU"
 
 #: wp-cache.php:1212
-msgid "Unfortunately the rewrite rules cannot be updated automatically when running WordPress MU. Please open your .htaccess and add the following mod_rewrite rules above any other rules in that file."
-msgstr "抱歉，當執行 WordPress MU 時重寫規則無法自動更新。請開啟你的 .htaccess，並在上述檔案中任何位置加入下方的 mod_rewrite 規則。"
+msgid "Unfortunately the rewrite rules cannot be updated automatically when running WordPress MU. Please open your access.txt and add the following mod_rewrite rules above any other rules in that file."
+msgstr "抱歉，當執行 WordPress MU 時重寫規則無法自動更新。請開啟你的 access.txt，並在上述檔案中任何位置加入下方的 mod_rewrite 規則。"
 
 #: wp-cache.php:1214
 msgid "Mod Rewrite rules cannot be updated!"
@@ -963,24 +963,24 @@ msgid "You must have <strong>BEGIN</strong> and <strong>END</strong> markers in 
 msgstr "要讓它自動工作，你必須在 %s.htaccess 上有 <strong>BEGIN</strong> 和 <strong>END</strong> 標記，它們看起來像這樣，圍繞 WordPress 的主要 mod_rewrite 規則："
 
 #: wp-cache.php:1217
-msgid "Refresh this page when you have updated your .htaccess file."
-msgstr "當你已更新你的 .htaccess 檔案後重新整理此頁。"
+msgid "Refresh this page when you have updated your access.txt file."
+msgstr "當你已更新你的 access.txt 檔案後重新整理此頁。"
 
 #: wp-cache.php:1221
 msgid "Thank you for upgrading."
 msgstr "感謝升級。"
 
 #: wp-cache.php:1221
-msgid "The mod_rewrite rules changed since you last installed this plugin. Unfortunately you must remove the old supercache rules before the new ones are updated. Refresh this page when you have edited your .htaccess file. If you wish to manually upgrade, change the following line: %1$s so it looks like this: %2$s The only changes are \"HTTP_COOKIE\" becomes \"HTTP:Cookie\" and \"wordpressuser\" becomes \"wordpress\". This is a WordPress 2.5 change but it&#8217;s backwards compatible with older versions if you&#8217;re brave enough to use them."
-msgstr "從你上次安裝此外掛，mod_rewrite 規則已經變更。在新的 supercache 規則更新前，你必須先刪除舊的 supercache 規則。在你修改你的 .htaccess 檔案後重新整理此頁。如果你希望手動更新，更改以下幾行：%1$s 使它看起來像這樣：%2$s ，唯一改變的地方是 \"HTTP_COOKIE\" 變成 \"HTTP:Cookie\" 以及 \"wordpressuser\" 變成 \"wordpress\"。這是 WordPress 2.5 的改變，但如果你敢使用，它與舊版本相容。"
+msgid "The mod_rewrite rules changed since you last installed this plugin. Unfortunately you must remove the old supercache rules before the new ones are updated. Refresh this page when you have edited your access.txt file. If you wish to manually upgrade, change the following line: %1$s so it looks like this: %2$s The only changes are \"HTTP_COOKIE\" becomes \"HTTP:Cookie\" and \"wordpressuser\" becomes \"wordpress\". This is a WordPress 2.5 change but it&#8217;s backwards compatible with older versions if you&#8217;re brave enough to use them."
+msgstr "從你上次安裝此外掛，mod_rewrite 規則已經變更。在新的 supercache 規則更新前，你必須先刪除舊的 supercache 規則。在你修改你的 access.txt 檔案後重新整理此頁。如果你希望手動更新，更改以下幾行：%1$s 使它看起來像這樣：%2$s ，唯一改變的地方是 \"HTTP_COOKIE\" 變成 \"HTTP:Cookie\" 以及 \"wordpressuser\" 變成 \"wordpress\"。這是 WordPress 2.5 的改變，但如果你敢使用，它與舊版本相容。"
 
 #: wp-cache.php:1225
 msgid "Trailing slash check required."
 msgstr "尾端斜線的檢查是必須的。"
 
 #: wp-cache.php:1225
-msgid "It looks like your blog has URLs that end with a \"/\". Unfortunately since you installed this plugin a duplicate content bug has been found where URLs not ending in a \"/\" end serve the same content as those with the \"/\" and do not redirect to the proper URL. To fix, you must edit your .htaccess file and add these two rules to the two groups of Super Cache rules:"
-msgstr "看起來你的部落格有以\"/\"結束的 URL。不幸地在你安裝這個外掛後，在URL不是以\"/\"結束的頁面，發現了一個重複內容的 bug，也就是相同的內容卻不是被指向正確的 URL。你必須修改你的 .htaccess 檔案以修復這個問題，在兩個 Super Cache 規則區段內新增下面兩個規則："
+msgid "It looks like your blog has URLs that end with a \"/\". Unfortunately since you installed this plugin a duplicate content bug has been found where URLs not ending in a \"/\" end serve the same content as those with the \"/\" and do not redirect to the proper URL. To fix, you must edit your access.txt file and add these two rules to the two groups of Super Cache rules:"
+msgstr "看起來你的部落格有以\"/\"結束的 URL。不幸地在你安裝這個外掛後，在URL不是以\"/\"結束的頁面，發現了一個重複內容的 bug，也就是相同的內容卻不是被指向正確的 URL。你必須修改你的 access.txt 檔案以修復這個問題，在兩個 Super Cache 規則區段內新增下面兩個規則："
 
 #: wp-cache.php:1227
 msgid "You can see where the rules go and examine the complete rules by clicking the \"View mod_rewrite rules\" link below."
@@ -1007,8 +1007,8 @@ msgid "WP Super Cache mod rewrite rules were detected in your %s.htaccess file.<
 msgstr "在你的 %s.htaccess 檔案中已經檢測到 WP Super Cache 重寫規則。<br />點選以下連結，查看新增到該檔案的內容。如果你已經升級外掛，請確保與這些規則相同。"
 
 #: wp-cache.php:1253
-msgid "A difference between the rules in your .htaccess file and the plugin rewrite rules has been found. This could be simple whitespace differences but you should compare the rules in the file with those below as soon as possible. Click the &#8217;Update Mod_Rewrite Rules&#8217; button to update the rules."
-msgstr "發現 .htaccess 的 rewrite 規則和外掛 rewrite 規則的不一致。有可能只是單純空白字元的差別，但是你應該立即比較以下的規則。 點擊「更新 Mod_Rewrite 規則」按鈕以更新規則。"
+msgid "A difference between the rules in your access.txt file and the plugin rewrite rules has been found. This could be simple whitespace differences but you should compare the rules in the file with those below as soon as possible. Click the &#8217;Update Mod_Rewrite Rules&#8217; button to update the rules."
+msgstr "發現 access.txt 的 rewrite 規則和外掛 rewrite 規則的不一致。有可能只是單純空白字元的差別，但是你應該立即比較以下的規則。 點擊「更新 Mod_Rewrite 規則」按鈕以更新規則。"
 
 #: wp-cache.php:1255
 msgid "View Mod_Rewrite Rules"
@@ -1633,8 +1633,8 @@ msgid "WP Super Cache has checked the front page of your blog. Please visit %s i
 msgstr "WP Super Cache 已檢查過你部落格的首頁。如果你想停用這項功能，請前往 %s 。"
 
 #: wp-cache.php:2614
-msgid "Cannot update .htaccess"
-msgstr "無法更新 .htaccess"
+msgid "Cannot update access.txt"
+msgstr "無法更新 access.txt"
 
 #: wp-cache.php:2614
 msgid "The file <code>%s.htaccess</code> cannot be modified by the web server. Please correct this using the chmod command or your ftp client."
@@ -1721,7 +1721,7 @@ msgid ""
 "Dear User,\n"
 "\n"
 "WP Super Cache was removed from your blog but the mod_rewrite rules\n"
-"in your .htaccess were not.\n"
+"in your access.txt were not.\n"
 "\n"
 "Please edit the following file and remove the code\n"
 "between 'BEGIN WPSuperCache' and 'END WPSuperCache'. Please backup the file first!\n"
@@ -1734,7 +1734,7 @@ msgid ""
 msgstr ""
 "親愛的使用者，\n"
 "\n"
-"WP Super Cache 已從你的部落格被移除，但是 .htaccess 中的\n"
+"WP Super Cache 已從你的部落格被移除，但是 access.txt 中的\n"
 "mod_rewrite規則仍然存在。\n"
 "\n"
 "請編輯下列檔案並移除 'BEGIN WPSuperCache' 及 'END WPSupercache' 之間的原始碼。\n"

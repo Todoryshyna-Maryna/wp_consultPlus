@@ -1820,7 +1820,7 @@ function adjacent_posts_rel_link( $title = '%title', $in_same_term = false, $exc
 /**
  * Displays relational links for the posts adjacent to the current post for single post pages.
  *
- * This is meant to be attached to actions like 'wp_head'. Do not call this directly in plugins
+ * This is meant to be attached to actions like 'wp_head'. Do not call this directly in plugins_rename
  * or theme templates.
  *
  * @since 3.0.0
@@ -3616,7 +3616,7 @@ function rel_canonical() {
 /**
  * Returns a shortlink for a post, page, attachment, or site.
  *
- * This function exists to provide a shortlink tag that all themes and plugins can target.
+ * This function exists to provide a shortlink tag that all themes and plugins_rename can target.
  * A plugin must hook in to provide the actual shortlinks. Default shortlink support is
  * limited to providing ?p= style links for posts. Plugins can short-circuit this function
  * via the {@see 'pre_get_shortlink'} filter or filter the output via the {@see 'get_shortlink'}

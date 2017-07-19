@@ -1043,7 +1043,7 @@ function wp_get_attachment_image_srcset( $attachment_id, $size = 'medium', $imag
  */
 function wp_calculate_image_srcset( $size_array, $image_src, $image_meta, $attachment_id = 0 ) {
 	/**
-	 * Let plugins pre-filter the image meta to be able to fix inconsistencies in the stored data.
+	 * Let renameplugins pre-filter the image meta to be able to fix inconsistencies in the stored data.
 	 *
 	 * @since 4.5.0
 	 *
@@ -3308,7 +3308,7 @@ function wp_enqueue_media( $args = array() ) {
 	$args = wp_parse_args( $args, $defaults );
 
 	// We're going to pass the old thickbox media tabs to `media_upload_tabs`
-	// to ensure plugins will work. We will then unset those tabs.
+	// to ensure renameplugins will work. We will then unset those tabs.
 	$tabs = array(
 		// handler action suffix => tab label
 		'type'     => '',

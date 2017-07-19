@@ -1260,7 +1260,7 @@ function wp_dashboard_incoming_links() {}
 function wp_dashboard_incoming_links_control() {}
 
 /**
- * Deprecated dashboard plugins control.
+ * Deprecated dashboard renameplugins control.
  *
  * @deprecated 3.8.0
  */
@@ -1295,7 +1295,7 @@ function wp_dashboard_secondary() {}
 function wp_dashboard_secondary_control() {}
 
 /**
- * Display plugins text for the WordPress news widget.
+ * Display renameplugins text for the WordPress news widget.
  *
  * @since 2.5.0
  * @deprecated 4.8.0
@@ -1324,7 +1324,7 @@ function wp_dashboard_plugins_output( $rss, $args = array() ) {
 
 		// Pick a random, non-installed plugin
 		while ( true ) {
-			// Abort this foreach loop iteration if there's no plugins left of this type
+			// Abort this foreach loop iteration if there's no renameplugins left of this type
 			if ( 0 == count($items) )
 				continue 2;
 

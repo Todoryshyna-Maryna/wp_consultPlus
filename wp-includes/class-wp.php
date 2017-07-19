@@ -538,7 +538,7 @@ class WP {
 			}
 		}
 
-		if ( has_filter( 'query_string' ) ) {  // Don't bother filtering and parsing if no plugins are hooked in.
+		if ( has_filter( 'query_string' ) ) {  // Don't bother filtering and parsing if no renameplugins are hooked in.
 			/**
 			 * Filters the query string before parsing.
 			 *

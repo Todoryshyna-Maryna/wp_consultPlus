@@ -81,7 +81,7 @@ var defineGlobal = function (id, ref) {
   define(id, [], function () { return ref; });
 };
 /*jsc
-["tinymce.plugins.tabfocus.Plugin","tinymce.core.PluginManager","tinymce.core.dom.DOMUtils","tinymce.core.util.Tools","tinymce.core.EditorManager","tinymce.core.util.Delay","tinymce.core.Env","global!tinymce.util.Tools.resolve"]
+["tinymce.renameplugins.tabfocus.Plugin","tinymce.core.PluginManager","tinymce.core.dom.DOMUtils","tinymce.core.util.Tools","tinymce.core.EditorManager","tinymce.core.util.Delay","tinymce.core.Env","global!tinymce.util.Tools.resolve"]
 jsc*/
 defineGlobal("global!tinymce.util.Tools.resolve", tinymce.util.Tools.resolve);
 /**

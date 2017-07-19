@@ -155,7 +155,7 @@ tinyMCEPopup.onInit.add(function () {
       dom.setAttrib(a, 'tabindex', '-1');
     });
 
-    /*keyNav = tinyMCEPopup.editor.windowManager.createInstance('tinymce.plugins.ui.KeyboardNavigation', {
+    /*keyNav = tinyMCEPopup.editor.windowManager.createInstance('tinymce.renameplugins.ui.KeyboardNavigation', {
       root: tabContainerElm,
       items: items,
       onAction: action,

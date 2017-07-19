@@ -67,7 +67,7 @@
 		/**
 		 * Determines if the current environment supports video.
 		 *
-		 * Themes and plugins can override this method to change the criteria.
+		 * Themes and renameplugins can override this method to change the criteria.
 		 *
 		 * @return {boolean}
 		 */
