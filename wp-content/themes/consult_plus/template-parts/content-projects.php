@@ -8,47 +8,76 @@
  */
 
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+	<?php
+	$args = array( 'post_type' => 'archive-acme_project', 'posts_per_page' => 10 );
+	$loop = new WP_Query( $args );
 
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php consult_plus_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
-	</header><!-- .entry-header -->
+	while ( $loop->have_posts() ) : $loop->the_post();?>
+        <header class="entry-header">
+            <div class="col-lg-1 col-md-2 green-label item-label"><?php
 
-	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'consult_plus' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			) );
+				$categories_list = get_the_category_list( esc_html__( ', ', 'consult_plus' ) );
+				if ( $categories_list ) {
+					/* translators: 1: list of categories. */
+					printf( '<span class="cat-links">' . esc_html__( '%1$s', 'consult_plus' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				}?><i class="fa fa-quote-right"></i>
+            </div>
+			<?php
+			if ( has_post_thumbnail() ) :
+				?><div class="item-bg"><?php  the_post_thumbnail('full'); set_post_thumbnail_size('9999') ?></div>
+			<?php endif; ?>
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'consult_plus' ),
-				'after'  => '</div>',
-			) );
+
+			<?php
+			    the_title( '<h2 class="item_heading"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			 ?>
+        </header><!-- .entry-header -->
+
+    <div class="entry-content">
+		<?php
+		the_content( sprintf(
+			wp_kses(
+			/* translators: %s: Name of current post. Only visible to screen readers */
+				__( 'Continue reading<p class="item_p"> "%s"</p>', 'consult_plus' ),
+				array(
+					'span' => array(
+						'class' => array(),
+					),
+				)
+			),
+			get_the_title()
+		) );
+
+		wp_link_pages( array(
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'consult_plus' ),
+			'after'  => '</div>',
+		) );
 		?>
-	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php consult_plus_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+
+    </div><!-- .entry-content -->
+
+
+
+    <footer class="entry-footer">
+        <!--			    --><?php //consult_plus_entry_footer(); ?>
+
+		<?php if ( 'post' === get_post_type() ) : ?>
+
+            <span class="item_date">
+						 <?php consult_plus_posted_on(); ?>
+                    </span>
+
+            <div class="col-lg-offset-7 item_share">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </div>
+			<?php
+		endif;
+		?>
+
+    </footer><!-- .entry-footer -->
+		<?php
+	endwhile;
+	?>
 </article><!-- #post-<?php the_ID(); ?> -->
