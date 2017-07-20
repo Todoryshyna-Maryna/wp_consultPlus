@@ -7,20 +7,19 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     notify = require('gulp-notify');
 
-    var path = {
+var path = {
 
     libs: {
         bootstrap: './bower_components/bootstrap/dist/css/bootstrap.css',
-        //js: './assets/src/js/**/*.js'
-        bootstrap_js: './bower_components/bootstrap/dist/js/bootstrap.min.js',
-        //jquery_js: './bower_components/jquery/dist/jquery.js',
+        bootstrap_js: './bower_components/bootstrap/dist/js/bootstrap.js',
         underscores_js: './js/*.js',
-        js_isotope: './bower-components/isotope/dist/*.js'
+        js_isotope: './bower_components/isotope/dist/*.js',
+        font_awesome: './bower-components/font-awesome/scss/font-awesome.scss'
     },
 
-    src: { 
+    src: {
         main_sass: './assets/src/sass/main.scss',
-        js: './assets/src/js/'
+        js: './assets/src/js/*.js'
     },
 
     public: {
@@ -29,7 +28,7 @@ var gulp = require('gulp'),
     },
 
     watch: {
-        stylesheets: './assets/src/scss/layouts/*.scss'
+        stylesheets: './assets/src/sass/layouts/*.scss'
     },
 
     build: {
@@ -38,42 +37,48 @@ var gulp = require('gulp'),
     }
 };
 
+// Fonts
+gulp.task('fonts', function() {
+    return gulp.src(['./bower_components/font-awesome/fonts/*'])
+        .pipe(gulp.dest('./assets/public/fonts/'));
+});
+
 gulp.task('compile-sass', function(){
-	gulp.src(path.src.main_sass)
-	.pipe(sass())
-    .pipe(gulp.dest(path.public.css))
+    gulp.src([path.src.main_sass, path.libs.font_awesome])
+        .pipe(sass())
+        .pipe(gulp.dest(path.public.css))
         .pipe(notify("Sass compiled!"));
 });// sealed компиляция сборка и минификация всех стилей
 
 gulp.task ('concatenate-and-minify-css', function () {
     return gulp.src([path.libs.bootstrap, path.public.css + "*.css"])
-    .pipe(sourcemaps.init())
-    .pipe(concat('main.css'))
-    .pipe(sourcemaps.write({includeContent: false, sourceRoot: '.'}))
+        .pipe(sourcemaps.init())
+        .pipe(concat('main.css'))
+        .pipe(sourcemaps.write({includeContent: false, sourceRoot: '.'}))
         .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(rename({
-    suffix: ".min"}))
-    .pipe(gulp.dest(path.build.mincss))
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(rename({
+            suffix: ".min"}))
+        .pipe(gulp.dest(path.build.mincss))
         .pipe(notify("css built!"))
-    .pipe(sourcemaps.write('.'))
+        .pipe(sourcemaps.write('.'))
 });
 
 gulp.task('concatenate-and-minify-js', function(){
-    gulp.src([path.libs.bootstrap_js, path.libs.js_isotope])
+    return gulp.src([path.libs.js_isotope, path.src.js, path.libs.bootstrap_js])
         .pipe(sourcemaps.init())
-    .pipe(concat('main.js'))
+        .pipe(concat('main.js'))
         //gulp.src(path.public.js + "main.js")
-            .pipe(uglify())
+        .pipe(uglify())
         .pipe(rename({
             suffix: ".min"}))
-            .pipe(sourcemaps.write())
-    .pipe(gulp.dest(path.public.js))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(path.public.js))
 });
 
 gulp.task('get-fonts', function(){
     gulp.src(path.out.carousel_fonts)
-    .pipe(gulp.dest(path.build.car_fonts));
+        .pipe(gulp.dest(path.build.car_fonts));
 })
 
 

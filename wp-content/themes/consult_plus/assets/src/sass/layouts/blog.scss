@@ -1,0 +1,180 @@
+@import "normalize";
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0;
+  display: block;
+  margin: auto;
+}
+
+.site-header {
+  background-color: black;
+  background-image: url("./assets/public/images/header-bg.png");
+  background-position: 40% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 435px;
+  padding-top: 50px;
+  &_branding {
+    display: inline-block;
+    float: left;
+  }
+  &_navigation {
+    display: inline-block;
+    clear: none;
+    padding: 0 40px;
+    width: auto;
+  }
+  &_contacts {
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px 0;
+    float: left;
+    &_phone {
+      margin: 0 15px 0 10px;
+      color: white;
+    }
+  }
+}
+.main-navigation li {
+  font-size: 14px;
+  margin: 10px 15px;
+  a {
+    color: white;
+    &:hover {
+      color: #ffac55;
+      text-decoration: none;
+    }
+  }
+}
+
+.blog-heading {
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.site-title {
+  display: inline-block;
+}
+
+.green-label{
+  background-color: #16d428;
+  margin-bottom: 36px;
+}
+
+.blog-content{
+  &_content-heading{
+    margin: 95px 0 36px 0;
+  }
+}
+
+.item {
+  max-width: 358px;
+  padding: 30px 30px 60px 30px;
+  display: inline-block;
+  border: 1px solid #ededef;
+  cursor: pointer;
+  font-size: 15px;
+  &:hover{
+    box-shadow: 0px 0px 53px 0px #ebebee;
+  }
+  &_p {
+    margin-bottom: 79px;
+    font-size: 15px;
+    color: #838b8c;
+  }
+  &_share {
+    display: inline-block;
+  }
+  &-label {
+    min-width: 124px;
+    height: 31px;
+    padding: 4px 15px;
+    width: auto;
+    &_icon {
+      background-image: url("/assets/public/images/quote-icon.png");
+      height: 13px;
+      width: 15px;
+    }
+  }
+  &_heading {
+    margin-bottom: 37px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    a{
+      color: #343a3b;
+    }
+  }
+}
+
+.cat-links {
+  margin-right: 15px;
+  text-transform: uppercase;
+  a{
+    color: #ffffff;
+    font-weight: 400;
+  }
+}
+
+.entry-date {
+  margin-left: 10px;
+  font-size: 15px;
+  color: #343a3b;
+}
+
+.main-navigation li {
+  text-transform: uppercase;
+}
+
+.grid-item, .item {
+  width: 358px;
+  margin-bottom: 29px;
+}
+
+.wp-post-image{
+  margin-left: -31px;
+  margin-top: -97px;
+  width: 100%;
+}
+
+.item-bg {
+  width: 121%;
+}
+
+.blue-bg {
+  background-color: #03b6e7;
+}
+
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  color: #343a3b;
+  font-weight: 700;
+  text-decoration:none;
+  font-size: 18px;
+}
+
+.navigation li {
+  display: inline;
+  border: 2px solid #97aaaf;
+  border-radius: 50%;
+  padding: 20px;
+}
+.navigation li.active {
+  border-color: #ffac55;
+}
+
+.pagination-container {
+  margin: 78px auto;
+  .navigation {
+    display: inline;
+    text-align: center;
+  }
+}

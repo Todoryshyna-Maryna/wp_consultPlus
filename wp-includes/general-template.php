@@ -2365,7 +2365,7 @@ function get_the_time( $d = '', $post = null ) {
 		$the_time = get_post_time($d, false, $post, true);
 
 	/**
-	 * Filters the time a post was written.
+	 * Filters the time ac post was written.
 	 *
 	 * @since 1.5.0
 	 *

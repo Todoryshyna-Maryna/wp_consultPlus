@@ -1,14 +1,10 @@
 <?php
-/**
- * The template for displaying archive pages
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package consult_plus
- */
+/*
+ * Template Name: Archives
+ * */
 
 get_header(); ?>
-
+    var_dump('test');die();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -31,7 +27,7 @@ get_header(); ?>
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+				get_template_part( 'template-parts/content-projects', get_post_format() );
 
 			endwhile;
 
@@ -39,7 +35,7 @@ get_header(); ?>
 
 		else :
 
-			get_template_part( 'template-parts/content', 'none' );
+			get_template_part( 'template-parts/content-projects', 'projects' );
 
 		endif; ?>
 

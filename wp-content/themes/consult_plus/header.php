@@ -17,22 +17,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="profile" href="http://gmpg.org/xfn/11">
 
+
+	    <?php wp_enqueue_script("jquery"); ?>
 		<?php wp_head(); ?>
     </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'consult_plus' ); ?></a>
+    <a class="skip-link screen-reader-text" href="#content">
+        <?php esc_html_e( 'Skip to content', 'consult_plus' ); ?>
+    </a>
 
     <header id="masthead" class="site-header">
         <div class="container">
-            <div class="site-branding col-lg-2">
+            <div class="site-branding col-lg-2 site-header_branding">
 				<?php
 				the_custom_logo();?>
             </div><!-- .site-branding -->
 
-            <nav id="site-navigation" class="col-lg-7 main-navigation">
-                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'consult_plus' ); ?></button>
+            <nav id="site-navigation" class="main-navigation col-lg-7 site-header_navigation">
+                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                    <?php esc_html_e( 'Primary Menu', 'consult_plus' ); ?>
+                </button>
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
@@ -41,9 +47,9 @@
 				?>
             </nav><!-- #site-navigation -->
 
-            <div class="contacts">
+            <div class="site-header_contacts">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/public/images/phone-icon.png"></img>
-                <span class="phone">+91 5685 6664 555</span>
+                <span class="site-header_contacts_phone">+91 5685 6664 555</span>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/public/images/icon-envelope.png"></img>
             </div>
 

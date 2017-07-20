@@ -1,63 +1,6 @@
+@import "variables";
 @import "normalize";
+@import "layouts/blog.scss";
+@import "mixins";
 
-.container {
-  max-width: 1140px;
-  width: 100%;
-  padding: 0;
-}
-
-.site-header {
-  background-color: black;
-  background-image: url("./assets/public/images/header-bg.png");
-  background-position: 40% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 435px;
-  padding-top: 50px;
-}
-
-.main-navigation {
-  display: inline-block;
-  clear: none;
-  padding: 0 40px;
-  width: auto;
-}
-
-.main-navigation li {
-  font-size: 14px;
-  margin: 10px 15px;
-  a {
-    color: white;
-    &:hover {
-      color: #ffac55;
-      text-decoration: none;
-    }
-  }
-}
-
-.contacts {
-  display: inline-block;
-  font-size: 15px;
-  margin: 10px 0;
-  float: left;
-  color: white;
-}
-.phone {
-  margin: 0 15px 0 10px;
-}
-
-.blog-heading {
-  font-size: 48px;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 120px;
-}
-
-.site-branding {
-  display: inline-block;
-}
-
-.site-title {
-  display: inline-block;
-}
+@import "../../../bower_components/font-awesome/scss/font-awesome";

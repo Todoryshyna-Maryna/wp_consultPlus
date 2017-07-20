@@ -118,15 +118,20 @@ add_action( 'widgets_init', 'consult_plus_widgets_init' );
  */
 function consult_plus_scripts() {
 	wp_enqueue_style( 'consult_plus-style', get_stylesheet_uri() );
-	
+
+	wp_enqueue_script('jquery');
+
 	wp_enqueue_script( 'consult_plus-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'consult_plus-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+	wp_enqueue_script( 'consult_plus-script', get_template_directory_uri() . '/assets/public/js/main.min.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'consult_plus_scripts' );
 
 /**
@@ -137,7 +142,7 @@ require get_template_directory() . '/inc/custom-header.php';
 /**
  * Custom template tags for this theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
+require get_template_directory() . '/inc/template-tags-cons_plus.php';
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
