@@ -18,10 +18,14 @@
                 <div class="col-lg-1 col-md-2 green-label item-label"><?php
 
 					$categories_list = get_the_category_list( esc_html__( ', ', 'consult_plus' ) );
-					if ( $categories_list ) {
+					if ( $categories_list ) :
 						/* translators: 1: list of categories. */
 						printf( '<span class="cat-links">' . esc_html__( '%1$s', 'consult_plus' ) . '</span>', $categories_list ); // WPCS: XSS OK.
-					}?><i class="fa fa-quote-right"></i>
+					?>
+                        <i class="fa fa-quote-right"></i>
+                    <?php
+                    endif;
+					?>
                 </div>
 
 	            <?php

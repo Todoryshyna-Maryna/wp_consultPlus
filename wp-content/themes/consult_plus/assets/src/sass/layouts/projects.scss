@@ -1,0 +1,52 @@
+.projects-page{
+  &_item-bg {
+    width: 555px;
+    height: 265px;
+    overflow: hidden;
+    .wp-post-image {
+      margin-left: 0;
+      margin-top: -72px;
+      width: 100%;
+    }
+  }
+
+  &_item-label {
+    @extend .item-label;
+    min-width: 110px;
+    border-radius: 100px;
+    color: white;
+    margin: 20px;
+  }
+
+  &_post {
+    display: block;
+    margin: -180px auto 100px auto;
+    font-size: 15px;
+    color: #cccccc;
+    width: 450px;
+  }
+}
+
+.orange-label {
+  background-color: #ffac55;
+}
+
+.grid-projects-item {
+  width: 555px;
+  height: 265px;
+  display: inline-block;
+  margin-bottom: 100px;
+}
+
+.project-ref {
+  width: 38px;
+  height: 38px;
+  color: white;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  float: right;
+  margin: -50px 20px 0 0;
+  position: relative;
+}

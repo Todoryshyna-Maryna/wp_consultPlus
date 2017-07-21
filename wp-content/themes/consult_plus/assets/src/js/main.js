@@ -14,4 +14,15 @@ $j(document).ready(function () {
             columnWidth: '.item'
         }
     });
-});
+})
+
+$j(document).ready(function () {
+    $j('.grid-projects').isotope({
+        itemSelector: '.grid-projects-item',
+        layoutMode: 'masonry',
+        masonry: {
+            gutter: 30
+            // columnWidth: '.grid-projects-item'
+        }
+    })
+})

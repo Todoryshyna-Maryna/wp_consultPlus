@@ -17,7 +17,7 @@ get_header(); ?>
 
         </div>
 
-        <div class="grid container">
+        <div class="grid-projects container">
 
 			<?php
 			if ( have_posts() ) :
@@ -35,7 +35,7 @@ get_header(); ?>
 
 			else :
 
-				get_template_part( 'template-parts/content-projects', 'projects' );
+				get_template_part( 'template-parts/content-projects', 'none' );
 
 			endif;?>
 
