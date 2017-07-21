@@ -41,7 +41,7 @@
   line-height:28px;
   &__about-eg{
     text-align: center;
-    width:679px;
+    max-width:679px;
     display: block;
     margin: 0 auto;
   }
@@ -50,13 +50,12 @@
   }
   &__features-stripe-eg{
     display: inline-block;
-    width:460px;
     font-size:20px;
     color: #fff;
-    margin: 28px 0 0 36px;
+    margin: 4% 0 1% 36px;
   }
   &__testim{
-    width:894px;
+    max-width:894px;
     display: block;
     margin:0 auto 25px auto;
     text-align: center;
@@ -107,17 +106,15 @@
     }
   }
   &__projects-eg{
-    margin: 0 auto 94px auto;
-    position: relative;
-    top: 45px;
+    margin: 5% auto;
   }
   &__features-eg{
-    margin-top:10px;
-    margin-right:25px;
+    margin: 10px 2% 10px 0;
     float: right;
+
   }
-  &__blog-eg{
-    margin:94px auto 94px auto;
+  &__services-eg{
+    margin: 5% auto 5% auto;
   }
 }
 
@@ -145,9 +142,6 @@
     padding-bottom:23px;
     color: inherit;
   }
-  &__services-eg{
-    margin-top: 80px;
-  }
   &__testim-eg{
     color: #fff;
     margin-top:34px;
@@ -157,9 +151,25 @@
     margin-bottom: 33px;
   }
 
+  &__services-eg{
+    margin-top:32px;
+  }
+
   &__contact-eg{
     margin: 0;
   }
+
+  &__footer-eg{
+    margin-top: 0;
+    margin-bottom:36px;
+    color: $footer-nav-h-color;
+  }
+  &__footer__extra-m{
+    margin-top: 0;
+    line-height:2.5;
+    color: $footer-nav-h-color;
+  }
+
 }
 
 

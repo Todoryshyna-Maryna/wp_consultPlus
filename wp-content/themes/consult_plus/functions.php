@@ -79,6 +79,8 @@ function consult_plus_setup() {
 		'flex-width'  => true,
 		'flex-height' => true,
 	) );
+
+	add_theme_support('custom-header');
 }
 endif;
 add_action( 'after_setup_theme', 'consult_plus_setup' );
@@ -136,8 +138,7 @@ add_action( 'wp_enqueue_scripts', 'consult_plus_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/custom-header.php';
-
+require get_template_directory() . '/inc/custom-header.php';
 /**
  * Custom template tags for this theme.
  */

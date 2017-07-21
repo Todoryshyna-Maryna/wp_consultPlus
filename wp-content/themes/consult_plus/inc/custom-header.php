@@ -1,72 +1,139 @@
 <?php
 /**
- * Sample implementation of the Custom Header feature
+ * The header for our theme
  *
- * You can add an optional custom header image to header.php like so ...
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
-	<?php the_header_image_tag(); ?>
- *
- * @link https://developer.wordpress.org/themes/functionality/custom-headers/
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package consult_plus
  */
 
-/**
- * Set up the WordPress core custom header feature.
- *
- * @uses consult_plus_header_style()
- */
-function consult_plus_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'consult_plus_custom_header_args', array(
-		'default-image'          => '',
-		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
-		'flex-height'            => true,
-		'wp-head-callback'       => 'consult_plus_header_style',
-	) ) );
-}
-add_action( 'after_setup_theme', 'consult_plus_custom_header_setup' );
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
 
-if ( ! function_exists( 'consult_plus_header_style' ) ) :
-/**
- * Styles the header image and text displayed on the blog.
- *
- * @see consult_plus_custom_header_setup().
- */
-function consult_plus_header_style() {
-	$header_text_color = get_header_textcolor();
+    <?php wp_head(); ?>
+</head>
 
-	/*
-	 * If no custom options for text are set, let's bail.
-	 * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: add_theme_support( 'custom-header' ).
-	 */
-	if ( get_theme_support( 'custom-header', 'default-text-color' ) === $header_text_color ) {
-		return;
-	}
-
-	// If we get this far, we have custom styles. Let's do this.
-	?>
-	<style type="text/css">
-	<?php
-		// Has the text been hidden?
-		if ( ! display_header_text() ) :
-	?>
-		.site-title,
-		.site-description {
-			position: absolute;
-			clip: rect(1px, 1px, 1px, 1px);
-		}
-	<?php
-		// If the user has set a custom color for the text use that.
-		else :
-	?>
-		.site-title a,
-		.site-description {
-			color: #<?php echo esc_attr( $header_text_color ); ?>;
-		}
-	<?php endif; ?>
-	</style>
-	<?php
-}
-endif;
+<body <?php body_class(); ?>>
+<div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#content">
+        <?php esc_html_e('Skip to content', 'consult_plus'); ?>
+    </a>
+    <div class="bg-overlay">
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-2 col-md-2 col-sm-3">-->
+<!--                    <a href="#" class="site-logo"></a>-->
+<!--                </div>-->
+<!--                <div class="col-lg-7 col-md-8 col-sm-6">-->
+<!--                    <ul class="nav-menu nav-menu__header-eg">-->
+<!--                        <li class="nav-menu_li"><a href="#" class="nav-menu_item">home</a></li>-->
+<!--                        <li class="nav-menu_li"><a href="#" class="nav-menu_item">about us</a></li>-->
+<!--                        <li class="nav-menu_li"><a href="#" class="nav-menu_item">industry</a></li>-->
+<!--                        <li class="nav-menu_li"><a href="#" class="nav-menu_item">services</a></li>-->
+<!--                        <li class="nav-menu_li"><a href="#" class="nav-menu_item">pages</a></li>-->
+<!--                        <li class="nav-menu_li"><a href="#" class="nav-menu_item">contact us</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-md-2 col-sm-3">-->
+<!--                    <div class="phone__wr">-->
+<!--                        <a class="contact_top" href="tel:+1234567890">+91 5685 6664 555</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div id="header-carousel" class="carousel slide carousel_positioning" data-ride="carousel">
+            <!-- Indicators -->
+            <div class="container">
+                <div class="carousel-inner carousel-inner_header_position">
+                    <div class="item active">
+                        <p class="carousel_message">we are leading consulting company</p>
+                        <h1 class="carousel_header">choose your industry</h1>
+                        <div class="industry__wr">
+                            <a href="#" class="industry-block">
+                                <div class="icon_wr icon_wr_education"></div>
+                                <p class="option_desc">education</p>
+                            </a>
+                            <a href="#" class="industry-block">
+                                <div class="icon_wr icon_wr_business">
+                                </div>
+                                <p class="option_desc">business</p>
+                            </a>
+                            <a href="#" class="industry-block">
+                                <div class="icon_wr icon_wr_technology">
+                                </div>
+                                <p class="option_desc">technology</p>
+                            </a>
+                            <a href="#" class="industry-block">
+                                <div class="icon_wr icon_wr_banking">
+                                </div>
+                                <p class="option_desc">banking</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="carousel_message">we are leading consulting company</p>
+                        <h1 class="carousel_header">choose your industry</h1>
+                        <div class="industry__wr">
+                            <a href="#" class="industry-block">
+                                <div class="icon_wr icon_wr_education">
+                                </div>
+                                <p class="option_desc">education</p>
+                            </a>
+                            <a href="#" class="industry-block">
+                                <div class="icon_wr icon_wr_business">
+                                </div>
+                                <p class="option_desc">business</p>
+                            </a>
+                            <a href="#" class="industry-block">
+                                <div class="icon_wr icon_wr_technology">
+                                </div>
+                                <p class="option_desc">technology</p>
+                            </a>
+                            <a href="#" class="industry-block">
+                                <div class="icon_wr icon_wr_banking">
+                                </div>
+                                <p class="option_desc">banking</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="carousel_message">we are leading consulting company</p>
+                        <h1 class="carousel_header">choose your industry</h1>
+                        <div class="industry__wr">
+                            <a href="#" class="industry-block">
+                                <div class="icon_wr icon_wr_education">
+                                </div>
+                                <p class="option_desc">education</p>
+                            </a>
+                            <a href="#" class="industry-block">
+                                <div class="icon_wr icon_wr_business">
+                                </div>
+                                <p class="option_desc">business</p>
+                            </a>
+                            <a href="#" class="industry-block">
+                                <div class="icon_wr icon_wr_technology">
+                                </div>
+                                <p class="option_desc">technology</p>
+                            </a>
+                            <a href="#" class="industry-block">
+                                <div class="icon_wr icon_wr_banking">
+                                </div>
+                                <p class="option_desc">banking</p>
+                            </a>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators header_slider">
+                        <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#header-carousell" data-slide-to="1"></li>
+                        <li data-target="#header-carousel" data-slide-to="2"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>

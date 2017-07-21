@@ -1,0 +1,19 @@
+.site-footer{
+  background-color: $footer-color;
+  padding-top:4%;
+}
+
+.footer-nav, .industry-nav, .h-nav_li, .newsletter_wr{
+  display: inline-block;
+}
+
+.footer-nav_li, .industry-nav_li{
+  margin-bottom:4%;
+}
+
+.footer-nav_item, .industry-nav_item{
+  font-size:13px;
+  font-family:$mont-font;
+  color: $blog-font-color;
+  text-transform: uppercase;
+}

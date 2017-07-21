@@ -8,17 +8,4 @@
  */
 
 ?>
-<main>
-	<div class="container">
-
-		<div class="content-heading">
-			<h2>
-				<b>BLOG PAGE</b>
-<script>
-
-</script>
-			</h2>
-		</div>
-
-	</div>
-</main>
+<?php the_content(); ?>

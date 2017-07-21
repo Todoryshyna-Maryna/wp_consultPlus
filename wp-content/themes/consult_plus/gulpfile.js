@@ -12,8 +12,7 @@ var gulp = require('gulp'),
     libs: {
         bootstrap: './bower_components/bootstrap/dist/css/bootstrap.css',
         bootstrap_js: './bower_components/bootstrap/dist/js/bootstrap.js',
-        //underscores_js: './js/*.js',
-        js_isotope: './bower-components/isotope/isotope.js'
+        js_isotope: './bower-components/isotope/dist/isotope.pkgd.js'
     },
 
     src: { 
@@ -59,10 +58,9 @@ gulp.task ('concatenate-and-minify-css', function () {
 });
 
 gulp.task('concatenate-and-minify-js', function(){
-    gulp.src([path.libs.bootstrap_js, path.libs.js_isotope])
+    return gulp.src([path.libs.bootstrap_js, path.libs.js_isotope])
         .pipe(sourcemaps.init())
     .pipe(concat('main.js'))
-        //gulp.src(path.public.js + "main.js")
             .pipe(uglify())
         .pipe(rename({
             suffix: ".min"}))

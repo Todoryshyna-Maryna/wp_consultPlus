@@ -16,6 +16,9 @@ a:visited {
   color: white;
 }//костыляка дичь из нормалайза
 
+body{ overflow-x: hidden;}
 
 @import "./common/common";
 @import "./layouts/homepage";
+@import "./layouts/footer";
+@import "./media";
