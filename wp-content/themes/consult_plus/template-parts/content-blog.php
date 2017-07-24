@@ -10,7 +10,7 @@
 ?>
 
        <?php if($count==2) :
-       echo ' <article class="grid-item item blue-bg"> ';
+       echo ' <article class="grid-item item m-blue-bg"> ';
        else :
             echo '<article class="grid-item item">';
        endif; ?>
@@ -20,7 +20,7 @@
 					$categories_list = get_the_category_list( esc_html__( ', ', 'consult_plus' ) );
 					if ( $categories_list ) :
 						/* translators: 1: list of categories. */
-						printf( '<span class="cat-links">' . esc_html__( '%1$s', 'consult_plus' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+						printf( '<span class="cat-links m-cat-links">' . esc_html__( '%1$s', 'consult_plus' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 					?>
                         <i class="fa fa-quote-right"></i>
                     <?php

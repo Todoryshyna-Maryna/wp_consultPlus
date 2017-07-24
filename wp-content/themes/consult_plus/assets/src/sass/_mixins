@@ -1,1 +1,19 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
 
+@mixin border($b-color){
+  border: 1px solid $b-color;
+}
+
+@mixin d-inline-b() {
+  display: inline-block;
+}
+
+@mixin color_f-size($color, $f-size) {
+  color: $color;
+  font-size: $f-size;
+}

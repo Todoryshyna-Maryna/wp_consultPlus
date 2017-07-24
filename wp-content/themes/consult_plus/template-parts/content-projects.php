@@ -15,12 +15,12 @@
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
     <article class="grid-projects-item">
         <header class="entry-header">
-        <div class="col-lg-1 col-md-2 orange-label projects-page_item-label"><?php
+        <div class="col-lg-1 col-md-2 m-orange-label projects-page_item-label"><?php
 
 			$categories_list = get_the_category_list( esc_html__( ', ', 'consult_plus' ) );
 			if ( $categories_list ) :
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( '%1$s', 'consult_plus' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				printf( '<span class="cat-links m-cat-links">' . esc_html__( '%1$s', 'consult_plus' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 
 			endif;
 			?>

@@ -7,7 +7,7 @@ get_header(); ?>
 
 
     <main class="blog-content">
-        <div class="container">
+        <div class="m-container">
 
             <div class="blog-content_content-heading">
                 <h2>
@@ -17,7 +17,7 @@ get_header(); ?>
 
         </div>
 
-        <div class="grid-projects container">
+        <div class="grid-projects m-container">
 
 			<?php
 			if ( have_posts() ) :

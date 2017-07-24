@@ -29,7 +29,7 @@
     </a>
 
     <header id="masthead" class="site-header">
-        <div class="container">
+        <div class="m-container">
             <div class="site-branding col-lg-2 site-header_branding">
 				<?php
 				the_custom_logo();?>
@@ -58,8 +58,12 @@
             </div>
         </div>
 
-        <div class="col-lg-12 blog-heading">
-            BLOG
+        <div class="col-lg-12 m-heading">
+            <?php if (is_home()):
+	            _e('Blog');
+            else:
+	            wp_title('',true);
+            endif;?>
         </div>
 
     </header><!-- #masthead -->

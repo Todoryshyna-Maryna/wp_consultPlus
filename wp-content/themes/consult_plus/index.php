@@ -16,7 +16,7 @@ get_header(); ?>
 
 
     <main class="blog-content">
-        <div class="container">
+        <div class="m-container">
 
             <div class="blog-content_content-heading">
                 <h2>
@@ -26,7 +26,7 @@ get_header(); ?>
 
         </div>
 
-        <div class="grid container">
+        <div class="grid m-container">
 
 			<?php
 			$count = 0;
@@ -65,7 +65,7 @@ get_header(); ?>
         </div>
     </main>
 
-    <div class="pagination-container">
+    <div class="m-pagination-container">
 		<?php consultPlus_numeric_pagination(); ?>
     </div>
 

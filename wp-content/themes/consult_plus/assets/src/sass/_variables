@@ -1,1 +1,3 @@
 $fa-font-path: "./assets/public/fonts";
+$c-orange: #ffac55;
+$c-gray: #343a3b;

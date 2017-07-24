@@ -1,6 +1,6 @@
 @import "normalize";
 
-.container {
+.m-container {
   max-width: 1140px;
   width: 100%;
   padding: 0;
@@ -17,48 +17,45 @@
   height: 435px;
   padding-top: 50px;
   &_branding {
-    display: inline-block;
+    @include d-inline-b();
     float: left;
   }
   &_navigation {
-    display: inline-block;
+    @include d-inline-b();
     clear: none;
     padding: 0 40px;
     width: auto;
   }
   &_contacts {
-    display: inline-block;
-    font-size: 15px;
+    @include d-inline-b();
+    @include color_f-size(white, 15px);
     margin: 10px 0;
     float: left;
     &_phone {
       margin: 0 15px 0 10px;
-      color: white;
     }
   }
 }
 .main-navigation li {
-  font-size: 14px;
   margin: 10px 15px;
   a {
-    color: white;
+    @include color_f-size(white, 14px);
     &:hover {
-      color: #ffac55;
+      color: $c-orange;
       text-decoration: none;
     }
   }
 }
 
-.blog-heading {
-  font-size: 48px;
-  color: white;
+.m-heading {
+  @include color_f-size(white, 48px);
   font-weight: bold;
   text-align: center;
   margin-top: 120px;
 }
 
 .site-title {
-  display: inline-block;
+  @include d-inline-b();
 }
 
 .green-label{
@@ -75,8 +72,8 @@
 .item {
   max-width: 358px;
   padding: 30px 30px 60px 30px;
-  display: inline-block;
-  border: 1px solid #ededef;
+  @include d-inline-b();
+  @include border(#ededef);
   cursor: pointer;
   font-size: 15px;
   &:hover{
@@ -84,11 +81,10 @@
   }
   &_p {
     margin-bottom: 79px;
-    font-size: 15px;
-    color: #838b8c;
+    @include color_f-size(#838b8c, 15px);
   }
   &_share {
-    display: inline-block;
+    @include d-inline-b();
   }
   &-label {
     min-width: 124px;
@@ -107,24 +103,23 @@
     font-weight: 700;
     text-transform: uppercase;
     a{
-      color: #343a3b;
+      color: $c-gray;
     }
   }
 }
 
-.cat-links {
+.m-cat-links {
   margin-right: 15px;
   text-transform: uppercase;
   a{
-    color: #ffffff;
+    color: white;
     font-weight: 400;
   }
 }
 
 .entry-date {
   margin-left: 10px;
-  font-size: 15px;
-  color: #343a3b;
+  @include color_f-size($c-gray, 15px);
 }
 
 .main-navigation li {
@@ -146,7 +141,7 @@
   width: 121%;
 }
 
-.blue-bg {
+.m-blue-bg {
   background-color: #03b6e7;
 }
 
@@ -155,23 +150,22 @@
 .navigation li a:hover,
 .navigation li.active a,
 .navigation li.disabled {
-  color: #343a3b;
+  @include color_f-size($c-gray, 18px);
   font-weight: 700;
   text-decoration:none;
-  font-size: 18px;
 }
 
 .navigation li {
   display: inline;
   border: 2px solid #97aaaf;
-  border-radius: 50%;
+  @include border-radius(50%);
   padding: 20px;
 }
 .navigation li.active {
-  border-color: #ffac55;
+  border-color: $c-orange;
 }
 
-.pagination-container {
+.m-pagination-container {
   margin: 78px auto;
   .navigation {
     display: inline;
