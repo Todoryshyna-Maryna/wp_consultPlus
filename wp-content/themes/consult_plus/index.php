@@ -63,11 +63,11 @@ get_header(); ?>
 
 
         </div>
+        <div class="m-pagination-container">
+		    <?php consultPlus_numeric_pagination(); ?>
+        </div>
     </main>
 
-    <div class="m-pagination-container">
-		<?php consultPlus_numeric_pagination(); ?>
-    </div>
 
 <?php
 get_footer();

@@ -117,6 +117,9 @@ add_action( 'widgets_init', 'consult_plus_widgets_init' );
  * Enqueue scripts and styles.
  */
 function consult_plus_scripts() {
+
+    wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . "/bower_components/bootstrap/dist/css/bootstrap.min.css");
+
 	wp_enqueue_style( 'consult_plus-style', get_stylesheet_uri() );
 
 	wp_enqueue_script('jquery');
