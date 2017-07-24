@@ -1,7 +1,6 @@
 .projects-page{
   &_item-bg {
-    width: 555px;
-    height: 265px;
+    @include width-height(555px, 265px);
     .wp-post-image {
       margin-left: 0;
       margin-top: -72px;
@@ -20,8 +19,7 @@
   &_post {
     display: block;
     margin: -180px auto 100px auto;
-    font-size: 15px;
-    color: #cccccc;
+    @include color_f-size(#cccccc, 15px);
     width: 450px;
   }
 }
@@ -31,18 +29,15 @@
 }
 
 .grid-projects-item {
-  width: 555px;
-  height: 265px;
+  @extend .projects-page_item-bg;
   display: inline-block;
   margin-bottom: 100px;
 }
 
 .project-ref {
-  width: 38px;
-  height: 38px;
-  color: white;
+  @include width-height(38px, 38px);
+  @include color_f-size(white, 25px);
   display: inline-block;
-  font-size: 25px;
   font-weight: 700;
   text-align: center;
   float: right;

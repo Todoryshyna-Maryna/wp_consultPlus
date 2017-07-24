@@ -17,3 +17,8 @@
   color: $color;
   font-size: $f-size;
 }
+
+@mixin width-height($width, $height){
+  width: $width;
+  height: $height;
+}
