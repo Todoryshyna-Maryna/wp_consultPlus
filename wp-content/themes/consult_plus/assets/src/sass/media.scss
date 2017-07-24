@@ -1,0 +1,146 @@
+@media screen and (max-width: 2560px){
+  .carousel-inner_header_position{
+    top:25vh;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .project-column_left, .project-column_right{
+    margin: 20px auto;
+  }
+
+  .big_quote{
+    left:10%;
+    width:10%;
+    height:10%;
+  }
+
+  .newsletter_wr{
+    display: block;
+  }
+
+  .footer_input{
+    margin-bottom:8%;
+  }
+
+  .c-text__copy{
+    text-align: center;
+  }
+  .social_nav{
+    margin:0 auto;
+  }
+}
+
+@media screen and(max-width: 1024px){
+  .carousel_header{
+    font-size:3em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav-menu{
+    width:100%;
+    display: none;
+  }
+
+  .carousel-inner_header_position{
+    margin: 0;
+  }
+
+  .carousel_header{
+    margin:1% 0;
+  }
+
+  .nav-menu_li{
+    display: block;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom:5%;
+  }
+  .industry-block{
+    width:35%;
+    margin-bottom:2%;
+  }
+
+  .header_slider{
+    margin-top:10%;
+  }
+
+  .service-feature-block{
+    display: block;
+    width:50%;
+    margin:0 auto 5% auto;
+    text-align: center;
+  }
+
+  .feature-icon__wr{
+    margin:0 auto;
+  }
+
+  .small_quote{
+    bottom: 24%;
+    right: 10%;
+  }
+
+  .contact-block{
+    margin: 0 auto 4% auto;
+  }
+
+  .site-logo__footer-logo-eg{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer-nav__wr{
+    display: block;
+    margin: 4% auto 0 auto;
+  }
+
+  .newsletter_wr{
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px){
+  //.c-button__features-eg {
+  //  float: none;
+  //  margin: 0 auto 10px auto;
+  //}
+  //
+  //.c-text__features-stripe-eg{
+  //  width:100%;
+  //  margin-left:0;
+  //  text-align: center;
+  //}
+
+  .carousel-inner_header_position{
+    top: 25vh;
+  }
+
+  .carousel_message{
+    font-size:1.2em;
+  }
+}
+
+@media screen and (max-width: 766px){
+  .industry-block{
+    height:240px;
+  }
+
+  .site-logo{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .option_desc{
+    font-size:12px;
+  }
+
+  .carousel_message{
+    margin:0 0 1% 0;
+  }
+
+  .nav-menu_item{
+    font-size:22px;
+  }
+}

@@ -28,7 +28,7 @@ var path = {
     },
 
     watch: {
-        stylesheets: './assets/src/sass/layouts/*.scss'
+        stylesheets: './assets/src/sass/**/*.scss'
     },
 
     build: {
@@ -51,6 +51,20 @@ gulp.task('compile-sass', function(){
 });// sealed компиляция сборка и минификация всех стилей
 
 gulp.task ('concatenate-and-minify-css', function () {
+    return gulp.src(path.public.css + "*.css")
+        .pipe(sourcemaps.init())
+        .pipe(concat('main.css'))
+        .pipe(sourcemaps.write({includeContent: false, sourceRoot: '.'}))
+        .pipe(sourcemaps.init({loadMaps: true}))
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(rename({
+            suffix: ".min"}))
+        .pipe(gulp.dest(path.build.mincss))
+        .pipe(notify("css built!"))
+        .pipe(sourcemaps.write('.'))
+});
+
+gulp.task ('concatenate-and-minify-css-wbt', function () {
     return gulp.src([path.libs.bootstrap, path.public.css + "*.css"])
         .pipe(sourcemaps.init())
         .pipe(concat('main.css'))
@@ -83,8 +97,7 @@ gulp.task('get-fonts', function(){
 
 
 gulp.task('watch', function(){
-    gulp.watch(path.watch.stylesheets, ['compile-sass']);
-    gulp.watch(path.watch.stylesheets, ['concatenate-and-minify-css']);
+    gulp.watch(path.watch.stylesheets, ['compile-sass','concatenate-and-minify-css']);
 });
 
 gulp.task('default', ['compile-sass' , 'concatenate-and-minify-css', 'concatenate-and-minify-js', 'watch']);
