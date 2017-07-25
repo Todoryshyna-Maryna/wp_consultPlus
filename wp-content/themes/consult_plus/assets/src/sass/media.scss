@@ -31,9 +31,39 @@
   }
 }
 
-@media screen and(max-width: 1024px){
-  .carousel_header{
-    font-size:3em;
+@media screen and(max-width: 1024px) {
+  .carousel_header {
+    font-size: 3em;
+  }
+  .m-container {
+    padding: 0 15px;
+  }
+  .site-header {
+    &_contacts {
+      width: 100%;
+      text-align: center;
+    }
+    &_branding {
+      display: block;
+      width: 179px;
+      margin: auto;
+      float: none;
+      margin-bottom: 20px;
+    }
+    &_navigation {
+      width: 653px;
+      display: block;
+      margin: 0 auto;
+      float: none;
+    }
+  }
+  .menu-main_nav-menu-container {
+    display: block;
+    margin: auto;
+  }
+
+  .m-heading {
+    margin: 0;
   }
 }
 
@@ -41,6 +71,13 @@
   .nav-menu{
     width:100%;
     display: none;
+  }
+
+  .site-header_navigation {
+    width: 653px;
+    display: block;
+    margin: 0 auto;
+    float: none;
   }
 
   .carousel-inner_header_position{
@@ -119,6 +156,29 @@
 
   .carousel_message{
     font-size:1.2em;
+  }
+
+  .site-header_navigation {
+    padding: 0;
+    width: 298px;
+    display: block;
+    float: none;
+    margin: auto;
+  }
+
+  .m-heading {
+    margin-top: 120px;
+  }
+
+  .item-bg {
+    width: 120%;
+    margin: -31px;
+  }
+
+  .wp-post-image {
+    margin-left: 1px;
+    margin-top: -66px;
+    width: 100%;
   }
 }
 

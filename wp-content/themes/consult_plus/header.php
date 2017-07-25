@@ -30,12 +30,12 @@
 
     <header id="masthead" class="site-header">
         <div class="m-container">
-            <div class="site-branding col-lg-2 site-header_branding">
+            <div class="site-branding col-lg-2 col-lg-offset-0 col-md-2 col-md-offset-5 site-header_branding">
 				<?php
 				the_custom_logo();?>
             </div><!-- .site-branding -->
 
-            <nav id="site-navigation" class="main-navigation col-lg-7 site-header_navigation">
+            <nav id="site-navigation" class="main-navigation col-lg-7 col-lg-offset-0 col-md-offset-1 site-header_navigation">
                 <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
                     <?php esc_html_e( 'Primary Menu', 'consult_plus' ); ?>
                 </button>
@@ -58,7 +58,7 @@
             </div>
         </div>
 
-        <div class="col-lg-12 m-heading">
+        <div class="col-lg-12 col-md-12 m-heading">
             <?php if (is_home()):
 	            _e('Blog');
             else:
