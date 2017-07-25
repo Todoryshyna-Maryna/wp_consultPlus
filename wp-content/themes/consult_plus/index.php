@@ -26,11 +26,11 @@ get_header(); ?>
 
         </div>
 
+
         <div class="grid m-container">
 
-			<?php
-			$count = 0;
-			if ( have_posts() ) :
+            <?php $counter=2; ?>
+			<?php if ( have_posts() ) :
 
 				if ( is_home() && ! is_front_page() ) : ?>
                     <header>
@@ -39,9 +39,10 @@ get_header(); ?>
 
 					<?php
 				endif;
-
 				/* Start the Loop */
 				while ( have_posts() ) : the_post();
+
+
 					/*
 					 * Include the Post-Format-specific template for the content.
 					 * If you want to override this in a child theme, then include a file
@@ -50,21 +51,19 @@ get_header(); ?>
 					get_template_part( 'template-parts/content-blog', get_post_format() );
 
 
-					$count++;
-
 				endwhile;
+
 
 			else :
 
 				get_template_part( 'template-parts/content-blog', 'none' );
 
 			endif;?>
-
-
+<?php //wp_reset_postdata(); ?>
 
         </div>
         <div class="m-pagination-container">
-		    <?php consultPlus_numeric_pagination(); ?>
+			<?php consultPlus_numeric_pagination(); ?>
         </div>
     </main>
 
