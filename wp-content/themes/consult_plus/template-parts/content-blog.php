@@ -11,7 +11,7 @@
 
 <article class="grid-item item">
 <header class="entry-header">
-    <div class="col-lg-1 col-md-2 green-label item-label"><?php
+    <div class="col-lg-1 col-md-2 col-xs-2 green-label item-label"><?php
 
 		$categories_list = get_the_category_list( esc_html__( ', ', 'consult_plus' ) );
 		if ( $categories_list ) :

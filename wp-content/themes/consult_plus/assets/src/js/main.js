@@ -21,8 +21,8 @@ $j(document).ready(function () {
         itemSelector: '.grid-projects-item',
         layoutMode: 'masonry',
         masonry: {
-            gutter: 30
-            // columnWidth: '.grid-projects-item'
+            gutter: 25,
+            columnWidth: '.projects-page_post'
         }
     })
 })

@@ -1951,10 +1951,13 @@ embed, iframe, object {
   display: block; }
 
 .m-container {
-  max-width: 1140px;
+  max-width: 1115px;
   width: 100%;
   padding: 0;
   display: block;
+  margin: auto; }
+
+.menu-toggle {
   margin: auto; }
 
 .site-header {
@@ -2062,12 +2065,13 @@ embed, iframe, object {
   margin-bottom: 29px; }
 
 .wp-post-image {
-  margin-left: -31px;
-  margin-top: -97px;
+  margin-left: 0;
+  margin-top: -98px;
   width: 100%; }
 
 .item-bg {
-  width: 121%; }
+  width: 121%;
+  margin-left: -31px; }
 
 .m-blue-bg {
   background-color: #03b6e7; }
@@ -2100,7 +2104,7 @@ embed, iframe, object {
     text-align: center; }
 
 .projects-page_item-bg, .grid-projects-item {
-  width: 555px;
+  width: 545px;
   height: 265px; }
   .projects-page_item-bg .wp-post-image, .grid-projects-item .wp-post-image {
     margin-left: 0;
@@ -4488,11 +4492,16 @@ embed, iframe, object {
   .social_nav {
     margin: 0 auto; } }
 
+@media screen and (max-width: 1114px) {
+  .blog-content_content-heading {
+    text-align: center; }
+  .grid {
+    max-width: 737px;
+    width: 100%; } }
+
 @media screen and (max-width: 1024px) {
   .carousel_header {
     font-size: 3em; }
-  .m-container {
-    padding: 0 15px; }
   .site-header_contacts {
     width: 100%;
     text-align: center; }
@@ -4555,7 +4564,9 @@ embed, iframe, object {
     display: block;
     margin: 4% auto 0 auto; }
   .newsletter_wr {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .entry-content {
+    margin: -70px 0 20px 0; } }
 
 @media screen and (max-width: 768px) {
   .carousel-inner_header_position {
@@ -4572,7 +4583,8 @@ embed, iframe, object {
     margin-top: 120px; }
   .item-bg {
     width: 120%;
-    margin: -31px; }
+    margin: -31px;
+    margin-bottom: 31px; }
   .wp-post-image {
     margin-left: 1px;
     margin-top: -66px;
@@ -4589,4 +4601,20 @@ embed, iframe, object {
   .carousel_message {
     margin: 0 0 1% 0; }
   .nav-menu_item {
-    font-size: 22px; } }
+    font-size: 22px; }
+  .grid {
+    width: 358px; } }
+
+@media screen and (max-width: 600px) {
+  .m-container {
+    overflow-x: hidden; }
+  .m-heading {
+    margin-top: 70px; }
+  .grid, .grid-item, .item {
+    width: 100%; }
+  .grid-projects-item {
+    width: 100%; }
+  .projects-page_post {
+    width: 59%;
+    padding: 0 10px;
+    margin-left: 0px; } }
