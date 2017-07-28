@@ -2103,63 +2103,49 @@ embed, iframe, object {
     display: inline;
     text-align: center; }
 
-#pagination-loader {
-  width: 40px;
-  height: 40px;
-  margin: 1.5em auto;
-  background: #ccc;
-  border-radius: 50%;
-  -webkit-animation: pulse 1s infinite alternate;
-  animation: pulse 1s infinite alternate;
-  display: none; }
-
-@-webkit-keyframes pulse {
-  from {
-    opacity: 1;
-    width: 40px;
-    height: 40px; }
-  to {
-    opacity: 0.5;
-    width: 35px;
-    height: 35px; } }
-
-@keyframes pulse {
-  from {
-    opacity: 1;
-    width: 40px;
-    height: 40px; }
-  to {
-    opacity: 0.5;
-    width: 35px;
-    height: 35px; } }
-
 .projects-page_item-bg, .grid-projects-item {
   width: 545px;
-  height: 265px; }
+  height: 265px;
+  overflow: hidden;
+  margin-top: -10px; }
   .projects-page_item-bg .wp-post-image, .grid-projects-item .wp-post-image {
     margin-left: 0;
-    margin-top: -72px;
+    margin-top: 0;
     width: 100%; }
 
 .projects-page_item-label {
   min-width: 110px;
   border-radius: 100px;
   color: white;
-  margin: 20px; }
+  margin: 20px;
+  padding: 9px 0 9px 15px;
+  position: absolute;
+  z-index: 20; }
 
 .projects-page_post {
   display: block;
-  margin: -180px auto 100px auto;
+  opacity: 0;
+  margin: -390px auto 100px auto;
+  padding: 80px 60px;
   color: #cccccc;
   font-size: 15px;
-  width: 450px; }
+  width: 100%;
+  height: 265px;
+  z-index: 10;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 1s; }
+  .projects-page_post:hover {
+    opacity: 1;
+    transition: 1s; }
 
 .m-orange-label {
   background-color: #ffac55; }
 
 .grid-projects-item {
   display: inline-block;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  height: auto; }
 
 .project-ref {
   width: 38px;
@@ -2169,6 +2155,7 @@ embed, iframe, object {
   display: inline-block;
   font-weight: 700;
   text-align: center;
+  z-index: 20;
   float: right;
   margin: -50px 20px 0 0;
   position: relative; }
@@ -4596,7 +4583,9 @@ embed, iframe, object {
   .newsletter_wr {
     margin: 0 auto; }
   .entry-content {
-    margin: -70px 0 20px 0; } }
+    margin: -70px 0 20px 0; }
+  .grid-projects-item .entry-content {
+    margin: 10px 0 20px 0; } }
 
 @media screen and (max-width: 768px) {
   .carousel-inner_header_position {

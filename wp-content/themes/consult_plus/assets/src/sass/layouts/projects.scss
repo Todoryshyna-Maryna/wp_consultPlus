@@ -1,9 +1,11 @@
 .projects-page{
   &_item-bg {
     @include width-height(545px, 265px);
+    overflow: hidden;
+    margin-top: -10px;
     .wp-post-image {
       margin-left: 0;
-      margin-top: -72px;
+      margin-top: 0;
       width: 100%;
     }
   }
@@ -14,13 +16,26 @@
     border-radius: 100px;
     color: white;
     margin: 20px;
+    padding: 9px 0 9px 15px;
+    position: absolute;
+    z-index: 20;
   }
 
   &_post {
     display: block;
-    margin: -180px auto 100px auto;
+    opacity: 0;
+    margin: -390px auto 100px auto;
+    padding: 80px 60px;
     @include color_f-size(#cccccc, 15px);
-    width: 450px;
+    @include width-height(100%, 265px);
+    z-index: 10;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 1s;
+    &:hover{
+      opacity: 1;
+      transition: 1s;
+    }
   }
 }
 
@@ -32,6 +47,7 @@
   @extend .projects-page_item-bg;
   display: inline-block;
   margin-bottom: 100px;
+  height: auto;
 }
 
 .project-ref {
@@ -40,6 +56,7 @@
   display: inline-block;
   font-weight: 700;
   text-align: center;
+  z-index: 20;
   float: right;
   margin: -50px 20px 0 0;
   position: relative;
