@@ -2,9 +2,10 @@
  * Created by im on 7/13/17.
  */
 
-var $j = jQuery.noConflict();
-$j(document).ready(function () {
-    $j('.grid').isotope({
+var $grid;
+var $ = jQuery.noConflict();
+$(document).ready(function () {
+   $grid = $('.grid').isotope({
         // options
         itemSelector: '.grid-item',
         layoutMode: 'masonry',
@@ -16,8 +17,8 @@ $j(document).ready(function () {
     });
 })
 
-$j(document).ready(function () {
-    $j('.grid-projects').isotope({
+$(document).ready(function () {
+    $('.grid-projects').isotope({
         itemSelector: '.grid-projects-item',
         layoutMode: 'masonry',
         masonry: {
@@ -25,4 +26,4 @@ $j(document).ready(function () {
             columnWidth: '.projects-page_post'
         }
     })
-})
+});

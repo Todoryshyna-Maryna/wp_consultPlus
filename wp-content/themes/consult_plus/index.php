@@ -29,8 +29,16 @@ get_header(); ?>
 
         <div class="grid m-container">
 
-            <?php $counter=2; ?>
-			<?php if ( have_posts() ) :
+            <?php
+            $query_args = array(
+	            'posts_per_page' => 9,
+	            'paged' => get_query_var( 'paged' )
+            );
+            $wp_query = new WP_Query($query_args);
+            ?>
+
+
+			<?php if ( $wp_query->have_posts() ) :
 
 				if ( is_home() && ! is_front_page() ) : ?>
                     <header>
@@ -40,7 +48,7 @@ get_header(); ?>
 					<?php
 				endif;
 				/* Start the Loop */
-				while ( have_posts() ) : the_post();
+				while ( $wp_query->have_posts() ) : $wp_query->the_post();
 
 
 					/*
@@ -59,11 +67,19 @@ get_header(); ?>
 				get_template_part( 'template-parts/content-blog', 'none' );
 
 			endif;?>
-<?php //wp_reset_postdata(); ?>
+<?php wp_reset_query(); ?>
 
         </div>
         <div class="m-pagination-container">
-			<?php consultPlus_numeric_pagination(); ?>
+<!--			--><?php //consultPlus_numeric_pagination(); ?>
+<!--			--><?php //consultPlus_ajax_pagination(); ?>
+	        <?php
+	        global $wp_query; // you can remove this line if everything works for you
+
+	        // don't display the button if there are not enough posts
+	        if (  $wp_query->max_num_pages > 1 )
+		        echo '<div class="misha_loadmore">More posts</div>'; // you can use <a> as well
+	        ?>
         </div>
     </main>
 
