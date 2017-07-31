@@ -170,3 +170,19 @@
     }
   }
 }
+
+//------------slider--------------
+
+#gallery-1 .gallery-slider .gallery-item {
+  width: 799px !important;
+  height: 350px;
+}
+
+#gallery-1 .gallery-slider img {
+  width: 100%;
+}
+
+.gallery-slider {
+  display: block;
+  margin: auto;
+}
