@@ -10,10 +10,10 @@
 get_header(); ?>
 
     <div id="primary" class="content-area">
-        <main id="main" class="site-main m-container single-post">
-
-			<?php
-			while ( have_posts() ) : the_post();
+        <main id="main" class="site-main  single-post">
+            <div class="m-container">
+				<?php
+				while ( have_posts() ) : the_post();
 
 				get_template_part( 'template-parts/content-single', get_post_format() );
 
@@ -41,17 +41,18 @@ get_header(); ?>
 					wp_reset_postdata();
 					?>
                 </div>
-
-                <!--                 If comments are open or we have at least one comment, load up the comment template.-->
-
+            </div>
+            <!--                 If comments are open or we have at least one comment, load up the comment template.-->
+            <div class="comments-bg">
 				<?php
 				if ( comments_open() || get_comments_number() ) :
 					comments_template(   '/comments-singlePost.php',  false );
 				endif;
 				?>
 				<?php
-			endwhile; // End of the loop.
-			?>
+				endwhile; // End of the loop.
+				?>
+            </div>
         </main><!-- #main -->
     </div><!-- #primary -->
 

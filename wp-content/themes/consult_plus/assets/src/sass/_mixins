@@ -22,3 +22,11 @@
   width: $width;
   height: $height;
 }
+
+@mixin comments-gradient {
+  background: #fbf5ef; /* Old browsers */
+  background: -moz-linear-gradient(left, #fbf5ef 49%, #e7eff1 49%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #fbf5ef 49%, #e7eff1 49%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #fbf5ef 49%, #e7eff1 49%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbf5ef', endColorstr='#e7eff1', GradientType=1); /* IE6-9 */
+}

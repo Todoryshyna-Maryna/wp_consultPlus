@@ -27,3 +27,11 @@ $(document).ready(function () {
         }
     })
 });
+
+$(document).ready(function () {
+    var currentWidth = $('.m-single-post_content_text>p').width();
+    if ($('.gallery-1')) {
+        $('.m-single-post_content_text>p').css("marginLeft", 90 + 'px');
+        $('.m-single-post_content_text>p').css("width", currentWidth - 50 + 'px');
+    }
+})

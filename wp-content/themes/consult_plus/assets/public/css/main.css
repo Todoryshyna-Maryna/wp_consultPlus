@@ -2004,7 +2004,7 @@ embed, iframe, object {
 .site-title {
   display: inline-block; }
 
-.green-label, .single-post_comments .reply {
+.green-label, .single-post .reply, .form-submit > input[type=submit] {
   background-color: #16d428;
   margin-bottom: 36px; }
 
@@ -2252,42 +2252,54 @@ embed, iframe, object {
       color: #ffac55; }
 
 .single-post_comments {
-  position: relative;
-  width: 50%;
-  background-color: #fbf5ef;
-  padding: 90px 30px 0 30px; }
+  display: flex; }
+  .single-post_comments-respond {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    padding: 0 40px 0 0; }
   .single-post_comments img {
     height: auto;
     width: 98px;
     border-radius: 50%;
     display: inline-block;
     position: absolute; }
+  .single-post_comments-form {
+    width: 49%;
+    display: inline-block;
+    padding: 0 20px; }
   .single-post_comments-title {
+    margin: 90px 0 45px 0;
     font-size: 32px;
     font-weight: 700;
-    text-transform: uppercase;
-    margin: 0 0 45px 0; }
-  .single-post_comments .comment-metadata {
-    display: none; }
-  .single-post_comments .reply {
-    position: absolute;
-    top: 50px;
-    right: 10px;
-    background-color: #16d428;
-    padding: 6px 25px;
-    border-radius: 210px; }
-    .single-post_comments .reply a {
-      color: white; }
-  .single-post_comments .comment-content {
-    max-width: 399px;
-    display: inline-block;
-    float: right;
-    margin-top: 20px;
-    margin-left: 110px; }
-  .single-post_comments .fn {
-    margin-left: 110px;
-    font-size: 14px;
     text-transform: uppercase; }
+
+.single-post-title {
+  margin: 0 0 45px 0; }
+
+.single-post .comment-metadata {
+  display: none; }
+
+.single-post .reply {
+  padding: 6px 25px;
+  border-radius: 210px;
+  width: 75px;
+  float: right;
+  margin: 0;
+  margin-top: -27px; }
+  .single-post .reply a {
+    color: white; }
+
+.single-post .comment-content {
+  max-width: 399px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 110px; }
+
+.single-post .fn {
+  margin-left: 110px;
+  font-size: 14px;
+  text-transform: uppercase; }
 
 #gallery-1 .gallery-slider .gallery-item {
   width: 799px !important;
@@ -2299,6 +2311,64 @@ embed, iframe, object {
 .gallery-slider {
   display: block;
   margin: auto; }
+
+.comment-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px; }
+  .comment-list li {
+    display: block;
+    padding: 20px 0; }
+
+.m-single-post_content_text > p {
+  max-width: 800px;
+  min-width: 320px; }
+
+.comments-bg {
+  background: #fbf5ef;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #fbf5ef 49%, #e7eff1 49%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #fbf5ef 49%, #e7eff1 49%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #fbf5ef 49%, #e7eff1 49%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbf5ef', endColorstr='#e7eff1', GradientType=1);
+  /* IE6-9 */ }
+
+.form-submit > input[type=submit] {
+  color: white;
+  width: 182px;
+  height: 44px;
+  border-radius: 210px;
+  font-size: 13px;
+  text-transform: uppercase; }
+
+.comment-form-comment textarea, .comment-form-comment input, .comment-form-author textarea, .comment-form-author input,
+.comment-form-email textarea,
+.comment-form-email input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: none; }
+
+.comment-form-comment {
+  display: block;
+  margin-top: 70px;
+  float: left; }
+
+.comment-form-author,
+.comment-form-email {
+  display: inline-block;
+  width: 32%;
+  float: right; }
+
+.comment-form-author {
+  float: left;
+  margin-left: -343px; }
+
+.comment-notes {
+  display: none; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
