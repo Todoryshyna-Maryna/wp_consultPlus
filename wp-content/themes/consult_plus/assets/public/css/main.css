@@ -2103,6 +2103,10 @@ embed, iframe, object {
     display: inline;
     text-align: center; }
 
+.grid-item .gallery {
+  overflow: hidden;
+  display: none; }
+
 .projects-page_item-bg, .grid-projects-item {
   width: 545px;
   height: 265px;
