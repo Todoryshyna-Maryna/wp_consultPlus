@@ -28,6 +28,8 @@
 					?>
                 </div>
 
+
+
 	            <?php
 	            if ( has_post_thumbnail() ) :
 		            ?><div class="item-bg"><?php  the_post_thumbnail('full'); set_post_thumbnail_size('9999') ?></div>

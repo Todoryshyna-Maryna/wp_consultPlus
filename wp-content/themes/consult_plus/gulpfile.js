@@ -11,6 +11,7 @@ var path = {
 
     libs: {
         bootstrap: './bower_components/bootstrap/dist/css/bootstrap.css',
+        slick_js: './node_modules/slick-carousel/slick/slick.js',
         bootstrap_js: './bower_components/bootstrap/dist/js/bootstrap.js',
         underscores_js: './js/*.js',
         js_isotope: './bower_components/isotope/dist/*.js',
@@ -79,7 +80,7 @@ gulp.task ('concatenate-and-minify-css-wbt', function () {
 });
 
 gulp.task('concatenate-and-minify-js', function(){
-    return gulp.src([path.libs.js_isotope, path.src.js, path.libs.bootstrap_js])
+    return gulp.src(path.src.js)
         .pipe(sourcemaps.init())
         .pipe(concat('main.js'))
         //gulp.src(path.public.js + "main.js")
@@ -87,7 +88,7 @@ gulp.task('concatenate-and-minify-js', function(){
         .pipe(rename({
             suffix: ".min"}))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(path.public.js))
+        .pipe(gulp.dest(path.public.js));
 });
 
 gulp.task('get-fonts', function(){

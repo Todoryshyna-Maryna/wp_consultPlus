@@ -5,9 +5,10 @@
   text-transform: uppercase;
   font-weight:700;
   margin: 0;
+  color: $def-header-color;
   &__about-eg{
-    margin-top:94px;
-    margin-bottom:39px;
+    position: relative;
+    padding-top:7%;
   }
   &__features-eg{
     padding-top:92px;
@@ -33,20 +34,33 @@
     padding-top:95px;
     margin-bottom:30px;
   }
+  &__connect{
+    text-align: left;
+    padding-bottom: 39px;
+  }
+
+  &__write{
+    padding-top:94px;
+    margin-bottom:56px;
+  }
 }
 
 .c-text{
   font-size:15px;
   font-family:$domine-font;
   line-height:28px;
+  color: $blog-font-color;
   &__about-eg{
     text-align: center;
     max-width:679px;
     display: block;
     margin: 0 auto;
   }
-  &__features-right{
+  &__features-left{
     text-align: right;
+  }
+  &__features-right{
+    text-align: left;
   }
   &__features-stripe-eg{
     display: inline-block;
@@ -54,11 +68,16 @@
     color: #fff;
     margin: 4% 0 1% 36px;
   }
+  &__projects-or{
+      color:inherit;
+  }
+
   &__testim{
     max-width:894px;
     display: block;
     margin:0 auto 25px auto;
     text-align: center;
+    color: #fff;
     &_designation{
       margin-bottom:92px;
     }
@@ -127,8 +146,13 @@
   &__footer-eg{
     display: inline-block;
     position: absolute;
-    top:1%;
-    right:0.2%;
+    top: 1%;
+    right: .2%;
+    padding: 15px;
+    width: 134px;
+  }
+  &__connect-eg{
+    margin: 0 auto 93px auto;
   }
 }
 
@@ -145,15 +169,16 @@
   color: $def-header-color;
   text-transform: uppercase;
   &__features-right{
-    text-align: right;
+    text-align: left;
   }
   &__features-left{
-    text-align: left;
+    text-align: right;
   }
   &__projects-eg{
     margin: 0;
     padding-top:38px;
     padding-bottom:23px;
+    text-align: left;
     color: inherit;
   }
   &__testim-eg{
@@ -183,7 +208,6 @@
     line-height:2.5;
     color: $footer-nav-h-color;
   }
-
 }
 
 

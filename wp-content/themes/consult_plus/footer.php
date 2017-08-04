@@ -45,9 +45,8 @@
                             features
                             by email.</p>
                         <div class="subscribe-block">
-                            <input class="footer_input" placeholder="email address">
-                            <button class="c-button c-button__footer-eg"><a href="#" class="c-button_text">subscribe</a>
-                            </button>
+                            <input class="footer_input" type="email" name="EMAIL" placeholder="email address" required />
+                            <input class="c-button c-button__footer-eg" type="submit" value="subscribe" />
                         </div>
                     </div>
                 </div>
@@ -75,6 +74,11 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<script type="text/javascript">
+    jQuery(document).ready(function($){
+        $('.header-item').slick();
+    });
+</script>
 
 </body>
 </html>

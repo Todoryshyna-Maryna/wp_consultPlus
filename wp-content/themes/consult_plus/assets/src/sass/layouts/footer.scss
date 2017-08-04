@@ -11,6 +11,7 @@
   vertical-align: top;
   margin: 0;
   padding: 0;
+  max-width:125px;
 }
 
 .footer-nav__wr{
@@ -21,6 +22,7 @@
 .industry-nav{
   margin-left: 71px;
   padding: 0;
+  max-width:123px;
 }
 
 .footer-nav_li, .industry-nav_li{
@@ -73,7 +75,8 @@
   max-width:560px;
   display: block;
   padding-top:22px;
-  margin-left: 0;
+  padding-left: 0;
+  margin: 0;
 }
 
 .social_nav_li{
@@ -86,28 +89,39 @@
   font-family:$mont-font;
   font-weight:400;
   text-transform: uppercase;
+  &:hover{
+    text-decoration: none;
+  }
 }
 
 .fb{
-  color: $fb-color!important;
+  color: $fb-color;
 }
 
 .tw{
-  color: $tw-color!important;
+  color: $tw-color;
 }
 
 .ins{
-  color: $ins-color!important;
+  color: $ins-color;
 }
 
 .lnd{
-  color: $linked-color!important;
+  color: $linked-color;
 }
 
 .ggl{
-  color: $ggl-color!important;
+  color: $ggl-color;
  }
 
 .footer-nav__wr{
   max-width:337px;
+}
+
+input[type=submit]{
+  text-transform: uppercase;
+  color: white;
+  font-family: $mont-font;
+  font-weight: 400;
+  font-size: 15px;
 }

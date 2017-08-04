@@ -25,6 +25,10 @@
 # Normalize
 --------------------------------------------------------------*/
 
+//*{
+//  overflow-x: hidden;
+//}
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -334,6 +338,10 @@ ul {
   list-style: disc;
 }
 
+ul > li{
+  list-style-type: none;
+}
+
 ol {
   list-style: decimal;
 }
@@ -343,10 +351,6 @@ li > {
     margin-bottom: 0;
     margin-left: 1.5em;
   }
-}
-
-li{
-  list-style: none;
 }
 
 dt {
@@ -390,19 +394,6 @@ button {
   padding: .6em 1em .4em;
 }
 
-input {
-  &[type="button"], &[type="reset"], &[type="submit"] {
-    border: 1px solid;
-    border-color: #ccc #ccc #bbb;
-    border-radius: 3px;
-    background: #e6e6e6;
-    color: rgba(0, 0, 0, 0.8);
-    font-size: 12px;
-    font-size: 0.75rem;
-    line-height: 1;
-    padding: .6em 1em .4em;
-  }
-}
 
 button:hover {
   border-color: #ccc #bbb #aaa;
@@ -426,18 +417,6 @@ input {
 
 button:active {
   border-color: #aaa #bbb #bbb;
-}
-
-input {
-  &[type="button"]:active, &[type="reset"]:active, &[type="submit"]:active {
-    border-color: #aaa #bbb #bbb;
-  }
-  &[type="text"], &[type="email"], &[type="url"], &[type="password"], &[type="search"], &[type="number"], &[type="tel"], &[type="range"], &[type="date"], &[type="month"], &[type="week"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="color"] {
-    color: #666;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 3px;
-  }
 }
 
 textarea {
@@ -466,6 +445,9 @@ textarea {
 
 /*--------------------------------------------------------------
 # Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------

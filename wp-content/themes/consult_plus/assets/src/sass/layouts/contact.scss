@@ -1,0 +1,82 @@
+.connect-us {
+  padding-top: 95px;
+}
+
+.connect{
+  max-width:212px;
+  position: relative;
+}
+
+.connect_call{
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url("./assets/public/images/green-phone.png");
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 25px;
+  }
+}
+
+.connect_email{
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url("./assets/public/images/green-email.png");
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 25px;
+  }
+}
+
+.connect_address{
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url("./assets/public/images/green-address.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 25px;
+  }
+}
+
+.write-to-us{
+  background-color:$hr-color;
+}
+
+.connect-text__wr{
+  margin-left:60px;
+}
+
+.contact_input, .comment{
+  outline: 0;
+  padding: 0;
+  width:100%;
+  background: transparent;
+  border-width: 0 0 2px 0!important;
+  border-color: $contact-hr-color!important;
+  margin-bottom:60px;
+}
+
+.contact_input::placeholder, .comment::placeholder{
+  font-family:$mont-font;
+  font-size:12px;
+  text-transform: uppercase;
+  font-weight:400;
+  color: $def-header-color;
+}
+
+.map{
+  margin-bottom:94px;
+}
+
+.row__mb{
+  margin-bottom:94px;
+}
+
+.h3__ml{
+  margin-bottom: 0;
+}
