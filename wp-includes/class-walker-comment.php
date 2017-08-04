@@ -355,10 +355,6 @@ class Walker_Comment extends Walker {
 					<?php endif; ?>
 				</footer><!-- .comment-meta -->
 
-				<div class="comment-content">
-					<?php comment_text(); ?>
-				</div><!-- .comment-content -->
-
 				<?php
 				comment_reply_link( array_merge( $args, array(
 					'add_below' => 'div-comment',
@@ -368,7 +364,11 @@ class Walker_Comment extends Walker {
 					'after'     => '</div>'
 				) ) );
 				?>
-			</article><!-- .comment-body -->
+                <div class="comment-content">
+					<?php comment_text(); ?>
+                </div><!-- .comment-content -->
+
+            </article><!-- .comment-body -->
 <?php
 	}
 }

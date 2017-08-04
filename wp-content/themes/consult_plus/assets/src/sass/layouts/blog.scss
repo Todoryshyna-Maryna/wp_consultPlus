@@ -1,10 +1,13 @@
 @import "normalize";
 
 .m-container {
-  max-width: 1140px;
+  max-width: 1115px;
   width: 100%;
   padding: 0;
   display: block;
+  margin: auto;
+}
+.menu-toggle {
   margin: auto;
 }
 
@@ -88,11 +91,11 @@
   }
   &-label {
     min-width: 124px;
-    height: 31px;
+    @include width-height(auto, 31px);
     padding: 4px 15px;
-    width: auto;
     &_icon {
       background-image: url("/assets/public/images/quote-icon.png");
+      @include width-height(15px, 13px);
       height: 13px;
       width: 15px;
     }
@@ -132,13 +135,14 @@
 }
 
 .wp-post-image{
-  margin-left: -31px;
-  margin-top: -97px;
+  margin-left: 0;
+  margin-top: -98px;
   width: 100%;
 }
 
 .item-bg {
   width: 121%;
+  margin-left: -31px;
 }
 
 .m-blue-bg {
@@ -172,3 +176,11 @@
     text-align: center;
   }
 }
+
+.grid-item {
+  .gallery {
+    overflow: hidden;
+    display: none;
+  }
+}
+

@@ -1,0 +1,255 @@
+.m-single-post {
+  margin-top: 95px;
+
+  &_header {
+
+    position: relative;
+
+
+    .item-label {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      padding: 7px 12px;
+      font-size: 13px;
+    }
+  }
+  &_content {
+    font-size: 15px;
+    &_title {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 50px 0 25px 0;
+    }
+
+  }
+
+  &_footer{
+    &_contacts {
+      border: 1px solid #838b8c;
+      border-radius: 100px;
+      display: inline-block;
+      padding: 8px 60px 8px 20px;
+      font-size: 20px;
+      position: relative;
+      float: right;
+      a {
+        color: #838b8c;
+      }
+      i {
+        &:nth-child(2) {
+          margin: 0 8px;
+        }
+      }
+      &_share {
+        background-color: $c-orange;
+        color: white;
+        border-radius: 100%;
+        padding: 15px;
+        position: absolute;
+        top: -2px;
+        right: -3px;
+      }
+    }
+  }
+}
+
+.logged-in-as {
+  display: none;
+}
+
+.m-single-post_content {
+  display: block;
+  opacity: 1;
+
+  &_thumbnail {
+    display: block;
+    @include width-height(auto, 355px);
+    margin: auto;
+    overflow: hidden;
+    .wp-post-image {
+      margin-top: 0;
+    }
+  }
+  &_text {
+    padding: 0 100px;
+  }
+}
+
+.single-post {
+  &_related-posts {
+    display: block;
+    min-height: 260px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 80px;
+    &_heading {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $c-gray;
+      font-weight: 700;
+    }
+    &_item {
+      display: inline-block;
+      width: 263px;
+      overflow: hidden;
+      float: left;
+      a{
+        color: $c-gray;
+      }
+      &:nth-child(3) {
+        margin-left: 28px;
+      }
+      &:nth-child(4){
+        margin: 0 28px;
+      }
+    }
+    &_thumbnail {
+      display: block;
+      width: auto;
+      height: 153px;
+      margin: auto;
+      overflow: hidden;
+      .wp-post-image {
+        margin: 0;
+      }
+    }
+    &_date {
+      display: block;
+      .entry-date {
+        margin:0;
+        color: $c-orange;
+      }
+    }
+  }
+  &_comments {
+    display: flex;
+    &-respond {
+      width: 50%;
+      display: inline-block;
+      position: relative;
+      padding: 0 40px 0 0;
+    }
+    img {
+      height: auto;
+      width: 98px;
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+    }
+    &-form {
+      width: 49%;
+      display: inline-block;
+      padding: 0 20px;
+    }
+    &-title {
+      margin: 90px 0 45px 0;
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  &-title {
+    margin: 0 0 45px 0;
+  }
+  .comment-metadata {
+    display: none;
+  }
+  .reply {
+    padding: 6px 25px;
+    border-radius: 210px;
+    width: 75px;
+    float: right;
+    margin: 0;
+    margin-top: -27px;
+    @extend .green-label;
+    a {
+      color: white;
+    }
+  }
+  .comment-content {
+    max-width: 399px;
+    display: inline-block;
+    //float: right;
+    margin-top: 20px;
+    margin-left: 110px;
+  }
+  .fn {
+    margin-left: 110px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+
+
+//------------slider--------------
+
+#gallery-1 .gallery-slider .gallery-item {
+  width: 799px !important;
+  height: 350px;
+}
+
+#gallery-1 .gallery-slider img {
+  width: 100%;
+}
+
+.gallery-slider {
+  display: block;
+  margin: auto;
+}
+
+.comment-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  li {
+    display: block;
+    padding: 20px 0;
+  }
+}
+
+.m-single-post_content_text>p {
+  max-width: 800px;
+  min-width: 320px;
+}
+
+.comments-bg {
+  @include comments-gradient;
+}
+
+.form-submit>input[type=submit]{
+  @extend .green-label;
+  color: white;
+  @include width-height(182px, 44px);
+  border-radius: 210px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+ .comment-form-comment, .comment-form-author,
+ .comment-form-email {
+   textarea, input  {
+     width: 100%;
+     border: none;
+     border-bottom: 1px solid #ccc;
+     background: none;
+   }
+ }
+.comment-form-comment{
+  display: block;
+  margin-top: 70px;
+  float: left;
+}
+.comment-form-author,
+   .comment-form-email {
+  display: inline-block;
+  width: 32%;
+  float: right;
+}
+.comment-form-author {
+  float: left;
+  margin-left: -343px;
+}
+.comment-notes {
+  display: none;
+}

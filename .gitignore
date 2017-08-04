@@ -5,6 +5,11 @@ wp-login.php
 /wp-content/themes/twentysixteen/
 /wp-content/themes/consult_plus/node_modules/
 /wp-content/themes/consult_plus/bower_components/
+<<<<<<< HEAD
 /wp-content/themes/consult_plus/assets/public/
 !/wp-content/themes/consult_plus/assets/public/images/
+=======
+/wp-content/themes/consult_plus/main.min.css
+/wp-content/themes/consult_plus/assets/public/js/main.min.js
+>>>>>>> a365bda6ca57c89ca806986c58a51ad557ac4d49
 

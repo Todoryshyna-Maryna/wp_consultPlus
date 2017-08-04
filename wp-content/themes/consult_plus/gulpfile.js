@@ -20,7 +20,7 @@ var path = {
 
     src: {
         main_sass: './assets/src/sass/main.scss',
-        js: './assets/src/js/*.js'
+        js: './assets/src/js/main.js'
     },
 
     public: {
