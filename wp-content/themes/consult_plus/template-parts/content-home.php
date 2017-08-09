@@ -163,7 +163,7 @@
             <div class="col-lg-8">
                 <div class="project-column_right">
                     <div id="projectsCarousel" class="carousel slide projects-carousel" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner projects__inner">
                             <div class="item active rel__mod fixed-item">
                                 <button class="bgn-button"><a href="#" class="bgn-button_text">real estate</a></button>
                                 <img class="projects_item"
@@ -254,6 +254,11 @@
         </div>
     </div>
     <button class="c-button c-button__services-eg"><a href="#" class="c-button_text">full blog</a></button>
+    <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+        <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+        </div><!-- #primary-sidebar -->
+    <?php endif; ?>
 </section>
 <section class="testimonials">
     <h2 class="c-header c-header__testim-eg">testimonials</h2>

@@ -111,6 +111,7 @@ function consult_plus_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
+
 add_action( 'widgets_init', 'consult_plus_widgets_init' );
 
 /**
@@ -162,14 +163,6 @@ require get_template_directory() . '/inc/jetpack.php';
 
 require get_template_directory() . '/inc/custom-post-types.php';
 
-
-//function consultPlus_ajax_pagination() {
-
-//}
-//
-//add_action( 'wp_enqueue_scripts', 'consultPlus_ajax_pagination' );
-
-
 function misha_my_load_more_scripts() {
 
 	global $wp_query;
@@ -216,8 +209,6 @@ function misha_loadmore_ajax_handler(){
 			get_template_part( 'template-parts/content-blog', 'none' );
 			// for the test purposes comment the line above and uncomment the below one
 			// the_title();
-
-
 		endwhile;
 
 	endif;

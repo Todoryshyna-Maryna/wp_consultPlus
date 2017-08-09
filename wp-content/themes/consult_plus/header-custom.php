@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="site-branding col-lg-2 site-header_branding">
                     <?php
-                    the_custom_logo();?>
+                    the_custom_logo(); ?>
                 </div>
                 <nav id="site-navigation" class="main-navigation col-lg-7 site-header_navigation">
                     <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
